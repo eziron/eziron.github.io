@@ -1,0 +1,101 @@
+---
+// src/components/UselessButton.astro
+import { defaultLanguage, useTranslations, type LanguageCode } from '@/i18n/ui';
+import { Icon } from 'astro-icon/components'; // <-- IMPORTANTE: Añade esta línea
+
+const lang = (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
+const t = useTranslations(lang, 'uselessButton');
+
+const phrases = t('phrases');
+const initialTooltip = t('initialTooltip');
+---
+
+<!-- 1. El contenedor del botón. Ahora es un cuadrado y más visible -->
+<div class="relative h-10 w-10 rounded-lg bg-muted/40 p-2 group transition-all duration-300 ease-in-out" id="useless-button-container">
+  
+  <!-- El botón real, invisible pero funcional -->
+  <button 
+    id="useless-button" 
+    class="absolute inset-0 z-10 h-full w-full cursor-pointer appearance-none border-none bg-transparent"
+    aria-label={initialTooltip}
+    title={initialTooltip}
+  >
+  </button>
+  
+  <!-- 2. Contenedor para el contenido (icono y texto) -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    
+    <!-- El icono inicial -->
+    <span id="useless-button-icon" class="text-muted-foreground/50 transition-opacity duration-200">
+      <Icon name="mdi:circle-outline" class="size-5" />
+    </span>
+    
+    <!-- El texto que aparecerá después -->
+    <span id="useless-button-text" class="absolute text-center text-xs text-muted-foreground opacity-0 transition-opacity duration-200">
+      <!-- El texto se inyectará aquí con JavaScript -->
+    </span>
+
+  </div>
+  
+  <!-- Pista visual al pasar el cursor -->
+  <div class="absolute inset-0 rounded-md border-2 border-dashed border-transparent transition-colors duration-300 group-hover:border-muted-foreground/30"></div>
+</div>
+
+<script define:vars={{ phrases }}>
+  // 1. --- ELEMENTOS DEL DOM ---
+  const container = document.getElementById('useless-button-container');
+  const button = document.getElementById('useless-button');
+  const iconSpan = document.getElementById('useless-button-icon');
+  const textSpan = document.getElementById('useless-button-text');
+
+  // 2. --- CONFIGURACIÓN ---
+  const clicksToTrigger = 37;
+  const jokeVideos = [
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    'https://www.youtube.com/watch?v=y6120QOlsfU',
+    'https://www.youtube.com/watch?v=sCNrK-n68CM',
+    'https://youtu.be/UJwA7hu3aug?si=fkZQ8VDxwvQzV1Bl&t=61',
+    'https://www.youtube.com/watch?v=GjaWO1aLrxE',
+    "https://www.youtube.com/watch?v=BxzAXXskb2Y",
+  ];
+
+  // 3. --- LÓGICA DE CLICS ---
+  let clickCount = 0;
+  let timeoutId = null;
+
+  button.addEventListener('click', () => {
+    // En el primer clic, oculta el icono, muestra el texto y expande el botón
+    if (clickCount === 0) {
+      iconSpan.style.opacity = '0';
+      textSpan.style.opacity = '1';
+      container.classList.remove('w-10');
+      container.classList.add('w-32', 'px-4'); // Se expande para alojar el texto
+    }
+
+    clickCount++;
+
+    // Reinicia el contador y el estado del botón si hay inactividad
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      clickCount = 0;
+      textSpan.style.opacity = '0';
+      textSpan.textContent = '';
+      iconSpan.style.opacity = '1';
+      container.classList.remove('w-32', 'px-4');
+      container.classList.add('w-10');
+    }, 10000); 
+
+    if (clickCount >= clicksToTrigger) {
+      const randomIndex = Math.floor(Math.random() * jokeVideos.length);
+      window.location.href = jokeVideos[randomIndex];
+    } else {
+      if (clickCount === 1) {
+        textSpan.textContent = phrases[0]; 
+      } else {
+        const remainingPhrases = phrases.slice(1);
+        const randomPhraseIndex = Math.floor(Math.random() * remainingPhrases.length);
+        textSpan.textContent = remainingPhrases[randomPhraseIndex];
+      }
+    }
+  });
+</script>
