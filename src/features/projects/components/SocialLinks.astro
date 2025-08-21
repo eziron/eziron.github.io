@@ -1,0 +1,60 @@
+---
+// src/components/SocialLinks.astro
+import { Icon } from 'astro-icon/components';
+import EmailButton from './EmailButton.astro';
+
+// --- CONFIGURACIÓN CENTRAL DE TUS REDES ---
+// Edita esta sección con tus enlaces personales. Es el único lugar que necesitas tocar.
+const socialLinks = [
+  {
+    href: 'https://www.linkedin.com/in/rodrigo-fuentes-35b10b246',
+    label: 'LinkedIn',
+    iconName: 'mdi:linkedin',
+    ariaLabel: 'Visitar mi perfil de LinkedIn',
+    isSpecialLink: true,
+  },
+  {
+    href: 'https://github.com/eziron',
+    label: 'GitHub',
+    iconName: 'mdi:github-box', // Nota: Usé mdi:github que es más estándar, pero puedes usar mdi:github-box si prefieres el cuadrado.
+    ariaLabel: 'Visitar mi perfil de GitHub',
+    isSpecialLink: true,
+  },
+  {
+    href: 'https://www.instagram.com/eziron1',
+    label: 'Instagram',
+    iconName: 'mdi:instagram',
+    ariaLabel: 'Visitar mi perfil de Instagram',
+    isSpecialLink: true,
+  },
+];
+---
+
+<!-- 
+  Este contenedor organiza los enlaces en una fila. 
+  'flex-wrap' permite que se ajusten en pantallas pequeñas.
+  'gap' añade espacio entre los iconos.
+-->
+<div class="flex flex-wrap justify-center gap-6 md:gap-8">
+    <EmailButton email="rodrigo.fuentes357@gmail.com" /> 
+    {
+        socialLinks.map((link) => (
+        <a
+            href={link.href}
+            class="group flex flex-col items-center gap-2 text-muted-foreground transition-colors duration-300 hover:text-primary focus-visible:text-primary focus-visible:outline-none"
+            aria-label={link.ariaLabel}
+            target={link.href.startsWith('http') ? '_blank' : undefined}
+            rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            data-astro-reload={link.isSpecialLink} 
+        >
+            <!-- El icono. La clase 'group-hover:scale-110' le da un pequeño efecto de zoom al pasar el ratón. -->
+            <Icon
+            name={link.iconName}
+            class="size-16 transition-transform duration-300 group-hover:scale-110"
+            />
+            <!-- El texto debajo del icono. -->
+            <span class="text-sm font-medium">{link.label}</span>
+        </a>
+        ))
+    } 
+</div>

@@ -1,0 +1,34 @@
+---
+// src/features/media/screens/MediaScreen.astro
+import Heading from '@/components/Heading.astro';
+import type { LanguageCode, ui } from '@/i18n/ui';
+import type { TranslatedMediaItem } from '../type';
+import MediaCard from '../components/MediaCard.astro';
+import { EmptyState } from '@/components/empty-state';
+
+export type Props = {
+  mediaItems: Array<TranslatedMediaItem>;
+  t: (typeof ui)[LanguageCode];
+  lang: LanguageCode;
+};
+
+const { mediaItems, t, lang } = Astro.props;
+const mediaPageTranslations = t.mediaPage;
+---
+<div class="py-12 md:py-16">
+  <Heading title={mediaPageTranslations.title} />
+  {
+    mediaItems && mediaItems.length > 0 ? (
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {mediaItems.map((item) => (
+          <MediaCard item={item} lang={lang} />
+        ))}
+      </div>
+    ) : (
+      <EmptyState
+        title={mediaPageTranslations.noMedia}
+        description={mediaPageTranslations.noMediaDescription}
+      />
+    )
+  }
+</div>

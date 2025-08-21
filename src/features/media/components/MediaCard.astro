@@ -1,0 +1,31 @@
+---
+// src/features/media/components/MediaCard.astro
+import SectionCard from '@/components/section-card.astro';
+import { Badge } from '@/components/ui/badge';
+import type { TranslatedMediaItem } from '../type';
+import { formatDate } from '@/lib/utils';
+import type { LanguageCode } from '@/i18n/ui';
+
+export interface Props {
+  item: TranslatedMediaItem;
+  lang: LanguageCode;
+}
+
+const { item, lang } = Astro.props;
+---
+<a href={item.url} target="_blank" rel="noopener noreferrer" class="flex rounded-lg transition-shadow duration-200 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+  <SectionCard
+    title={item.title}
+    imageUrl={item.imageUrl}
+    imageAltText={`Imagen de la noticia de ${item.mediaOutlet}`}
+    className="w-full"
+  >
+    <div class="flex flex-wrap gap-2 mb-4">
+      <Badge variant="default">{item.mediaOutlet}</Badge>
+      <Badge variant="secondary">{formatDate(new Date(item.date), lang)}</Badge>
+    </div>
+    {item.description && (
+      <p class="text-sm text-muted-foreground">{item.description}</p>
+    )}
+  </SectionCard>
+</a>

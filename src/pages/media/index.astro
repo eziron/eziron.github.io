@@ -1,0 +1,17 @@
+---
+// src/pages/media/index.astro
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { defaultLanguage, type LanguageCode, ui } from '@/i18n/ui';
+import { getTranslatedMediaItems } from '@/features/media/service';
+import MediaScreen from '@/features/media/screens/MediaScreen.astro';
+
+const lang = (Astro.currentLocale ?? defaultLanguage) as LanguageCode;
+const t = ui[lang];
+const mediaItems = getTranslatedMediaItems(lang);
+
+const pageTitle = t.mediaPage.metaTitle;
+const pageDescription = t.mediaPage.metaDescription;
+---
+<BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
+  <MediaScreen mediaItems={mediaItems} t={t} lang={lang} />
+</BaseLayout>

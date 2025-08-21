@@ -1,0 +1,36 @@
+---
+import { getTranslatedSkills } from '@/features/projects/service';
+import type { LanguageCode } from '@/i18n/ui';
+import SkillPill from '@/components/SkillPill.astro';
+
+const lang = Astro.currentLocale as LanguageCode | undefined;
+const translatedSkillCategories = getTranslatedSkills(lang);
+---
+
+<section id="skills" class="py-16 sm:py-20">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12 lg:text-5xl">
+      Skills
+    </h2>
+
+    <div class="max-w-4xl mx-auto flex flex-col gap-6">
+      {translatedSkillCategories.map((category) => (
+        <div>
+          <h3 class="text-xl font-semibold mb-4 text-center">
+            {category.title}:
+          </h3>
+
+          <div class="flex flex-wrap gap-3 justify-center">
+            {category.technologies.map((tech) => (
+              <SkillPill
+                text={tech.name}
+                iconName={tech.iconName}
+                colorClass={tech.colorClass}
+              />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

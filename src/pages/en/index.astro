@@ -9,8 +9,7 @@ import {
 } from '@/features/projects';
 import { defaultLanguage, useTranslations, type LanguageCode } from '@/i18n/ui';
 
-const lang =
-  (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
+const lang = (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
 const t = useTranslations(lang, 'homePage');
 
 const pageTitle = t('pageTitle');
@@ -24,17 +23,16 @@ const layoutProps = {
   projects,
   skills,
   heroGreeting: t('heroGreeting'),
-  heroSubtitlePart1: t('heroSubtitlePart1'),
-  heroSubtitlePart2: t('heroSubtitlePart2'),
+  heroSubtitlePart: t('heroSubtitlePart'),
   heroIntroduction: t('heroIntroduction'),
   heroViewWorkButton: t('heroViewWorkButton'),
   heroContactButton: t('heroContactButton'),
   imageNotAvailable: t('imageNotAvailable'),
   featuredProjectsTitle: t('featuredProjectsTitle'),
-  featuredProjectsDescription: t('featuredProjectsDescription'),
   mySkillsTitle: t('mySkillsTitle'),
   mySkillsDescription: t('mySkillsDescription'),
   projectPreviewCtaText: t('projectCardViewProject'),
+  contactTitle: t('contactTitle'),
 };
 ---
 

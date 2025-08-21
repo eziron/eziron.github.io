@@ -8,20 +8,23 @@ import tailwindcss from '@tailwindcss/vite';
 import { remarkReadingTime } from './src/lib/remark-reading-time.mjs';
 import rehypeMermaid from 'rehype-mermaid';
 
-import vercel from '@astrojs/vercel';
+import icon from 'astro-icon';
 
 // Use different strategies based on environment
 const isProduction = process.env.NODE_ENV === 'production';
-const isVercel = process.env.VERCEL === '1';
 
 // Use 'pre-built' on Vercel/production to avoid Playwright, 'inline-svg' locally
-const mermaidStrategy = isProduction || isVercel ? 'pre-built' : 'inline-svg';
+//const mermaidStrategy = isProduction  ? 'pre-built' : 'inline-svg';
+const mermaidStrategy = 'inline-svg';
+
+const repoName = 'eziron.github.io';
 
 console.log(`Using Mermaid strategy: ${mermaidStrategy}`);
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com', // IMPORTANT: Replace with your actual domain in production
+  site: 'https://eziron.github.io', 
+  base: '/',
   integrations: [
     react(),
     mdx({
@@ -30,10 +33,7 @@ export default defineConfig({
         [
           rehypeMermaid,
           {
-            strategy:
-              process.env.NODE_ENV === 'production'
-                ? 'pre-mermaid'
-                : 'inline-svg',
+            strategy: 'inline-svg'
           },
         ],
       ],
@@ -42,11 +42,12 @@ export default defineConfig({
         excludeLangs: ['mermaid'],
       },
     }),
+    icon(),
   ],
 
   i18n: {
-    locales: ['fr', 'en'],
-    defaultLocale: 'fr',
+    locales: ['es', 'en'],
+    defaultLocale: 'es',
     routing: {
       prefixDefaultLocale: false,
     },
@@ -56,5 +57,4 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: vercel(),
 });

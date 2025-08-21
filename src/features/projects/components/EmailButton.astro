@@ -1,0 +1,114 @@
+---
+// src/features/projects/components/EmailButton.astro
+import { Icon } from 'astro-icon/components';
+
+export interface Props {
+  email: string;
+  label?: string;
+  successLabel?: string;
+  iconName?: string;
+  successIconName?: string;
+  ariaLabel?: string;
+}
+
+const {
+  email,
+  label = 'Email',
+  successLabel = 'Copy!',
+  iconName = 'mdi:email',
+  successIconName = 'mdi:check-circle-outline',
+  ariaLabel = `Copiar mi correo: ${email}`,
+} = Astro.props;
+---
+
+<button
+  class="group flex flex-col items-center gap-2 text-muted-foreground transition-colors duration-300 hover:text-primary focus-visible:text-primary focus-visible:outline-none"
+  aria-label={ariaLabel}
+  data-email={email}
+  data-label={label}
+  data-success-label={successLabel}
+>
+  <!-- Icono Inicial (visible por defecto) -->
+  <span class="email-icon">
+    <Icon
+      name={iconName}
+      class="size-16 transition-transform duration-300 group-hover:scale-110"
+    />
+  </span>
+  <!-- Icono de Éxito (oculto por defecto) -->
+  <span class="success-icon hidden">
+    <Icon
+      name={successIconName}
+      class="size-16 text-green-500"
+    />
+  </span>
+  <!-- Etiqueta de Texto -->
+  <span class="email-label text-sm font-medium">{label}</span>
+</button>
+
+<script is:inline>
+  // Esta función se encarga de inicializar todos los botones de email en la página.
+  function setupEmailCopyButtons() {
+    const emailButtons = document.querySelectorAll('button[data-email]');
+
+    emailButtons.forEach((button) => {
+      // Usamos una propiedad en el elemento para asegurarnos de no añadir el listener dos veces.
+      // Esto es importante para las transiciones de vista de Astro ("View Transitions").
+      if (button.dataset.listenerAdded === 'true') {
+        return;
+      }
+      button.dataset.listenerAdded = 'true';
+
+      button.addEventListener('click', (event) => {
+        const currentButton = event.currentTarget;
+        const email = currentButton.dataset.email;
+
+        if (!email) {
+          console.error('No se encontró el atributo data-email en el botón.');
+          return;
+        }
+
+        navigator.clipboard.writeText(email).then(() => {
+          // Éxito al copiar: dar feedback visual
+          const initialIcon = currentButton.querySelector('.email-icon');
+          const successIcon = currentButton.querySelector('.success-icon');
+          const labelElement = currentButton.querySelector('.email-label');
+          
+          const originalLabelText = currentButton.dataset.label;
+          const successLabelText = currentButton.dataset.successLabel;
+
+          if (!initialIcon || !successIcon || !labelElement) return;
+
+          // 1. Cambiar icono y texto para dar feedback
+          initialIcon.classList.add('hidden');
+          successIcon.classList.remove('hidden');
+          labelElement.textContent = successLabelText;
+
+          // 2. Volver al estado original después de 2 segundos
+          setTimeout(() => {
+            initialIcon.classList.remove('hidden');
+            successIcon.classList.add('hidden');
+            labelElement.textContent = originalLabelText;
+          }, 2000);
+
+        }).catch(err => {
+          console.error('Error al copiar el email al portapapeles:', err);
+          // Opcional: Mostrar un mensaje de error al usuario
+          const labelElement = currentButton.querySelector('.email-label');
+          if (labelElement) {
+            const originalLabelText = labelElement.textContent;
+            labelElement.textContent = 'Error!';
+            setTimeout(() => {
+              labelElement.textContent = originalLabelText;
+            }, 2000);
+          }
+        });
+      });
+    });
+  }
+
+  // Ejecutar la función cuando el DOM esté listo por primera vez.
+  document.addEventListener('DOMContentLoaded', setupEmailCopyButtons);
+  // Y también después de cada transición de página que hace Astro.
+  document.addEventListener('astro:after-swap', setupEmailCopyButtons);
+</script>

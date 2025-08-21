@@ -1,13 +1,11 @@
 ---
 import { defaultLanguage, type LanguageCode } from '@/i18n/ui';
-import { getRelativeLocaleUrl } from 'astro:i18n';
 import { cn } from '@/lib/utils';
 import ThemeToggle from './ThemeToggle.astro';
 import { LanguageSelector } from './LanguageSelector';
 import { type LanguageSelectorItem } from '@/lib/i18n-utils';
 
 import type { NavItem } from '@/layouts/BaseLayout.astro';
-import { buttonVariants } from './ui/button';
 
 const currentLocale =
   (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
@@ -33,7 +31,7 @@ const { navItems, languagesForSelector } = Astro.props;
   >
     {
       navItems.map((item) => {
-        const localizedHref = getRelativeLocaleUrl(currentLocale, item.href);
+        const localizedHref = item.href;
 
         // Determine active state more accurately for localized paths
         let isActive = currentPathname === localizedHref;

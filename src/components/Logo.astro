@@ -5,6 +5,16 @@ const currentLocale =
   (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
 ---
 
-<a href={getRelativeLocaleUrl(currentLocale)}>
-  <span class="text-2xl font-bold text-primary"> Your Logo </span>
+<a href={getRelativeLocaleUrl(currentLocale)} class="block">
+  <img
+    src="/logos/logo-light.svg"
+    alt="Logo del Portafolio"
+    class="h-8 w-auto scale-200 transition-transform hover:scale-175 dark:hidden"
+  />
+
+  <img
+    src="/logos/logo-dark.svg"
+    alt="Logo del Portafolio"
+    class="hidden h-8 w-auto scale-200 transition-transform hover:scale-175 dark:block"
+  />
 </a>
