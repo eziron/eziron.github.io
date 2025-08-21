@@ -13,6 +13,7 @@ import type { TranslatedProject, TranslatedSkill } from '../type';
 
 import SkillsSection from '../components/SkillsSection.astro';
 import SocialLinks from '../components/SocialLinks.astro';
+import UselessButton from '@/components/UselessButton.astro';
 
 export type Props = {
   lang: LanguageCode;
@@ -62,8 +63,11 @@ const {
 
     {/* Hero Image (Placeholder for now) */}
     <div class="md:text-center">
-      <div
-        class="md:w-[460px] w-full h-92 bg-muted rounded-lg shadow-xl overflow-hidden md:mx-auto"
+      <!-- 1. El activador: un div alrededor de la imagen -->
+      <div 
+        id="hero-image-trigger" 
+        class="md:w-[460px] w-full h-92 bg-muted rounded-lg shadow-xl overflow-hidden md:mx-auto cursor-pointer group"
+        title="Haz clic aquí... quizás pase algo."
       >
         <Image
           src={heroImage}
@@ -72,7 +76,7 @@ const {
           height={368}
           densities={[1, 1.5, 2]}
           quality="high"
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-101"
           style="object-position: center 28%;"
         />
       </div>
@@ -113,8 +117,45 @@ const {
     title={contactTitle}
     className="max-w-2xl mx-auto"
   />
-  <div class="mt-8">
+  <div class="mt-8 flex flex-col items-center gap-8">
     <SocialLinks />
+    <UselessButton />
   </div>
 </section>
 
+<script>
+  const trigger = document.getElementById('hero-image-trigger');
+  const uselessButtonWrapper = document.getElementById('useless-button-wrapper');
+
+  if (trigger && uselessButtonWrapper) {
+    const clicksToReveal = 7; // ¿Cuántos clics en la foto para que aparezca el botón?
+    let clickCount = 0;
+    let timeoutId = null;
+
+    trigger.addEventListener('click', () => {
+      clickCount++;
+
+      // Feedback visual: la imagen "pulsa"
+      trigger.style.transition = 'transform 0.15s ease-in-out';
+      trigger.style.transform = 'scale(0.995)';
+      setTimeout(() => {trigger.style.transform = 'scale(1)';}, 150);
+
+      // Reiniciar si el usuario tarda mucho
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {clickCount = 0;}, 2000); // 2 segundos de inactividad
+
+      if (clickCount >= clicksToReveal) {
+        // ¡Revelar el botón!
+        uselessButtonWrapper.classList.remove('hidden');
+
+        // Opcional: Desplazar la vista suavemente hacia el botón
+        uselessButtonWrapper.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        // Desactivar el activador para no poder revelarlo de nuevo
+        trigger.style.pointerEvents = 'none';
+        trigger.style.cursor = 'default';
+        trigger.title = '¡Lo encontraste!';
+      }
+    });
+  }
+</script>
