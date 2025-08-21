@@ -52,30 +52,35 @@ import sumoAllJapan2018Gal2 from '@/assets/projects/sumo-all-japan-2018-gal2.web
 import sumoAllJapan2018Gal3 from '@/assets/projects/sumo-all-japan-2018-gal3.webp';
 import sumoAllJapan2018Gal4 from '@/assets/projects/sumo-all-japan-2018-gal4.webp';
 import sumoAllJapan2018Gal5 from '@/assets/projects/sumo-all-japan-2018-gal5.webp';
-/*
+
 // --- Imágenes Hexapod 2021 ---
 import hexapod2021Main from '@/assets/projects/hexapod-2021-main.webp';
 import hexapod2021Gal1 from '@/assets/projects/hexapod-2021-gal1.webp';
 import hexapod2021Gal2 from '@/assets/projects/hexapod-2021-gal2.webp';
 import hexapod2021Gal3 from '@/assets/projects/hexapod-2021-gal3.webp';
+import hexapod2021Gal4 from '@/assets/projects/hexapod-2021-gal4.webp';
 
 // --- Imágenes FOC Experimental 2022 ---
 import focExperimental2022Main from '@/assets/projects/foc-experimental-2022-main.webp';
 import focExperimental2022Gal1 from '@/assets/projects/foc-experimental-2022-gal1.webp';
 import focExperimental2022Gal2 from '@/assets/projects/foc-experimental-2022-gal2.webp';
 import focExperimental2022Gal3 from '@/assets/projects/foc-experimental-2022-gal3.webp';
+import focExperimental2022Gal4 from '@/assets/projects/foc-experimental-2022-gal4.webp';
 
 // --- Imágenes Battlebot BRC 2022 ---
 import battlebotBrc2022Main from '@/assets/projects/battlebot-brc-2022-main.webp';
 import battlebotBrc2022Gal1 from '@/assets/projects/battlebot-brc-2022-gal1.webp';
 import battlebotBrc2022Gal2 from '@/assets/projects/battlebot-brc-2022-gal2.webp';
-import battlebotBrc2022Gal3 from '@/assets/projects/battlebot-brc-2022-gal3.webp';
+import battlebotBrc2022Gal3 from '@/assets/projects/battlebot-brc-2022-gal3.webp'; 
+import battlebotBrc2022Gal4 from '@/assets/projects/battlebot-brc-2022-gal4.webp';
+
 
 // --- Imágenes Robot Contest 2022 ---
 import robotcontest2022Main from '@/assets/projects/robotcontest-2022-main.webp';
 import robotcontest2022Gal1 from '@/assets/projects/robotcontest-2022-gal1.webp';
 import robotcontest2022Gal2 from '@/assets/projects/robotcontest-2022-gal2.webp';
 import robotcontest2022Gal3 from '@/assets/projects/robotcontest-2022-gal3.webp';
+import robotcontest2022Gal4 from '@/assets/projects/robotcontest-2022-gal4.webp';
 
 // --- Imágenes Seguidor STM32 BRC 2023 ---
 import seguidorStm32Brc2023Main from '@/assets/projects/seguidor-stm32-brc-2023-main.webp';
@@ -88,6 +93,7 @@ import sumoAsuraKabuto2023Main from '@/assets/projects/sumo-asura-kabuto-2023-ma
 import sumoAsuraKabuto2023Gal1 from '@/assets/projects/sumo-asura-kabuto-2023-gal1.webp';
 import sumoAsuraKabuto2023Gal2 from '@/assets/projects/sumo-asura-kabuto-2023-gal2.webp';
 import sumoAsuraKabuto2023Gal3 from '@/assets/projects/sumo-asura-kabuto-2023-gal3.webp';
+import sumoAsuraKabuto2023Gal4 from '@/assets/projects/sumo-asura-kabuto-2023-gal4.webp';
 
 // --- Imágenes Robot Contest Verstappen 2024 ---
 import robotcontestVerstappen2024Main from '@/assets/projects/robotcontest-verstappen-2024-main.webp';
@@ -106,6 +112,7 @@ import proyectoTituloFoc2024Main from '@/assets/projects/proyecto-titulo-foc-202
 import proyectoTituloFoc2024Gal1 from '@/assets/projects/proyecto-titulo-foc-2024-gal1.webp';
 import proyectoTituloFoc2024Gal2 from '@/assets/projects/proyecto-titulo-foc-2024-gal2.webp';
 import proyectoTituloFoc2024Gal3 from '@/assets/projects/proyecto-titulo-foc-2024-gal3.webp';
+import proyectoTituloFoc2024Gal4 from '@/assets/projects/proyecto-titulo-foc-2024-gal4.webp';
 
 // --- Imágenes Robot Contest 2025 ---
 import robotcontest2025Main from '@/assets/projects/robotcontest-2025-main.webp';
@@ -118,6 +125,7 @@ import freelanceMesas2025Main from '@/assets/projects/freelance-mesas-2025-main.
 import freelanceMesas2025Gal1 from '@/assets/projects/freelance-mesas-2025-gal1.webp';
 import freelanceMesas2025Gal2 from '@/assets/projects/freelance-mesas-2025-gal2.webp';
 import freelanceMesas2025Gal3 from '@/assets/projects/freelance-mesas-2025-gal3.webp';
+import freelanceMesas2025Gal4 from '@/assets/projects/freelance-mesas-2025-gal4.webp'; 
 
 // --- Imágenes Robotracer All Japan 2025 ---
 import robotracerAllJapan2025Main from '@/assets/projects/robotracer-all-japan-2025-main.webp';
@@ -125,13 +133,14 @@ import robotracerAllJapan2025Gal1 from '@/assets/projects/robotracer-all-japan-2
 import robotracerAllJapan2025Gal2 from '@/assets/projects/robotracer-all-japan-2025-gal2.webp';
 import robotracerAllJapan2025Gal3 from '@/assets/projects/robotracer-all-japan-2025-gal3.webp';
 
+/*
+
 // --- Imágenes Freelance Bobinadora 2025 ---
 import freelanceBobinadora2025Main from '@/assets/projects/freelance-bobinadora-2025-main.webp';
 import freelanceBobinadora2025Gal1 from '@/assets/projects/freelance-bobinadora-2025-gal1.webp';
 import freelanceBobinadora2025Gal2 from '@/assets/projects/freelance-bobinadora-2025-gal2.webp';
 import freelanceBobinadora2025Gal3 from '@/assets/projects/freelance-bobinadora-2025-gal3.webp';
 */
-
 // ===================================================================================
 //  LISTA DE PROYECTOS
 // ===================================================================================
@@ -162,6 +171,7 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal3', src: freelanceBobinadora2025Gal3 },
     ],
   },
+  */
   {
     id: 'robotracerAllJapan2025',
     slug: 'mundial-robotracer-japon-2025',
@@ -184,8 +194,10 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: robotracerAllJapan2025Gal1 },
       { id: 'gal2', src: robotracerAllJapan2025Gal2 },
       { id: 'gal3', src: robotracerAllJapan2025Gal3 },
+      { id: 'galM', src: robotracerAllJapan2025Main },
     ],
   },
+  
   {
     id: 'freelanceMesas2025',
     slug: 'controlador-mesas-flotantes',
@@ -209,6 +221,8 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: freelanceMesas2025Gal1 },
       { id: 'gal2', src: freelanceMesas2025Gal2 },
       { id: 'gal3', src: freelanceMesas2025Gal3 },
+      { id: 'gal4', src: freelanceMesas2025Gal4 },
+      { id: 'galM', src: freelanceMesas2025Main },
     ],
   },
   {
@@ -233,8 +247,10 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: robotcontest2025Gal1 },
       { id: 'gal2', src: robotcontest2025Gal2 },
       { id: 'gal3', src: robotcontest2025Gal3 },
+      { id: 'galM', src: robotcontest2025Main },
     ],
   },
+  
   {
     id: 'proyectoTituloFoc2024',
     slug: 'proyecto-titulo-controlador-foc',
@@ -242,7 +258,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     codeUrl: '',
     tags: ['Proyecto de Título', 'Control FOC', 'STM32', 'Electrónica de Potencia'],
     category: 'Investigación y Desarrollo',
-    date: '2024-12-01',
+    date: '2025-03-31',
     keyFeatures: [
       { id: 'disenoDriverFoc' },
       { id: 'pcb4Capas' },
@@ -258,6 +274,8 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: proyectoTituloFoc2024Gal1 },
       { id: 'gal2', src: proyectoTituloFoc2024Gal2 },
       { id: 'gal3', src: proyectoTituloFoc2024Gal3 },
+      { id: 'gal4', src: proyectoTituloFoc2024Gal4 },
+      { id: 'galM', src: proyectoTituloFoc2024Main },
     ],
   },
   {
@@ -282,6 +300,7 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: seguidorV5Brc2024Gal1 },
       { id: 'gal2', src: seguidorV5Brc2024Gal2 },
       { id: 'gal3', src: seguidorV5Brc2024Gal3 },
+      { id: 'galM', src: seguidorV5Brc2024Main },
     ],
   },
   {
@@ -306,8 +325,10 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: robotcontestVerstappen2024Gal1 },
       { id: 'gal2', src: robotcontestVerstappen2024Gal2 },
       { id: 'gal3', src: robotcontestVerstappen2024Gal3 },
+      { id: 'galM', src: robotcontestVerstappen2024Main },
     ],
   },
+  
   {
     id: 'sumoAsuraKabuto2023',
     slug: 'mega-sumo-asura-kabuto-2023',
@@ -330,6 +351,8 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: sumoAsuraKabuto2023Gal1 },
       { id: 'gal2', src: sumoAsuraKabuto2023Gal2 },
       { id: 'gal3', src: sumoAsuraKabuto2023Gal3 },
+      { id: 'gal4', src: sumoAsuraKabuto2023Gal4 },
+      { id: 'galM', src: sumoAsuraKabuto2023Main },
     ],
   },
   {
@@ -354,6 +377,7 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: seguidorStm32Brc2023Gal1 },
       { id: 'gal2', src: seguidorStm32Brc2023Gal2 },
       { id: 'gal3', src: seguidorStm32Brc2023Gal3 },
+      { id: 'galM', src: seguidorStm32Brc2023Main },
     ],
   },
   {
@@ -377,8 +401,11 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: robotcontest2022Gal1 },
       { id: 'gal2', src: robotcontest2022Gal2 },
       { id: 'gal3', src: robotcontest2022Gal3 },
+      { id: 'gal4', src: robotcontest2022Gal4 },
+      { id: 'galM', src: robotcontest2022Main },
     ],
   },
+  
   {
     id: 'battlebotBrc2022',
     slug: 'brc-2022-battlebot',
@@ -401,6 +428,8 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: battlebotBrc2022Gal1 },
       { id: 'gal2', src: battlebotBrc2022Gal2 },
       { id: 'gal3', src: battlebotBrc2022Gal3 },
+      { id: 'gal4', src: battlebotBrc2022Gal4 },
+      { id: 'galM', src: battlebotBrc2022Main },
     ],
   },
   {
@@ -425,8 +454,11 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: focExperimental2022Gal1 },
       { id: 'gal2', src: focExperimental2022Gal2 },
       { id: 'gal3', src: focExperimental2022Gal3 },
+      { id: 'gal4', src: focExperimental2022Gal4 },
+      { id: 'galM', src: focExperimental2022Main },
     ],
   },
+  
   {
     id: 'hexapod2021',
     slug: 'robot-hexapodo-autonomo-2021',
@@ -450,9 +482,11 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal1', src: hexapod2021Gal1 },
       { id: 'gal2', src: hexapod2021Gal2 },
       { id: 'gal3', src: hexapod2021Gal3 },
+      { id: 'gal4', src: hexapod2021Gal4 },
+      { id: 'galM', src: hexapod2021Main },
     ],
   },
-  */
+  
   {
     id: 'sumoAllJapan2018',
     slug: 'mundial-sumo-japon-2018',
@@ -476,6 +510,7 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal3', src: sumoAllJapan2018Gal3 },
       { id: 'gal4', src: sumoAllJapan2018Gal4 },
       { id: 'gal5', src: sumoAllJapan2018Gal5 },
+      { id: 'galM', src: sumoAllJapan2018Main },
     ],
   },
   /*
@@ -526,6 +561,7 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal3', src: sumoUtfsm2018Gal3 },
       { id: 'gal4', src: sumoUtfsm2018Gal4 },
       { id: 'gal5', src: sumoUtfsm2018Gal5 },
+      { id: 'galM', src: sumoUtfsm2018Main },
     ],
   },
   
@@ -577,6 +613,7 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'gal2', src: frcLosAngeles2016Gal2 },
       { id: 'gal3', src: frcLosAngeles2016Gal3 },
       { id: 'gal4', src: frcLosAngeles2016Gal4 },
+      { id: 'galM', src: frcLosAngeles2016Main },
     ],
   },
 ];
