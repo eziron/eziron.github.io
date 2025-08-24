@@ -205,7 +205,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     id: 'proyectoTituloFoc2024',
     slug: 'proyecto-titulo-controlador-foc',
     imageUrl: proyectoTituloFoc2024Main,
-    codeUrl: '',
+    codeUrl: 'https://github.com/eziron/driver_FOC',
     date: '2025-03-31',
     galleryImages: [
       { id: 'gal1', src: proyectoTituloFoc2024Gal1 },
@@ -274,7 +274,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     id: 'robotcontest2022',
     slug: 'robot-contest-2022-segundo-lugar',
     imageUrl: robotcontest2022Main,
-    codeUrl: '',
+    codeUrl: 'https://github.com/eziron/OpenLamborghino',
     date: '2022-11-01',
     galleryImages: [
       { id: 'gal1', src: robotcontest2022Gal1 },
@@ -333,7 +333,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     id: 'hexapod2021',
     slug: 'robot-hexapodo-autonomo-2021',
     imageUrl: hexapod2021Main,
-    codeUrl: '',
+    codeUrl: 'https://github.com/eziron/hexapod',
     date: '2021-08-01',
     galleryImages: [
       { id: 'gal1', src: hexapod2021Gal1 },
