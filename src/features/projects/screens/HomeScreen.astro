@@ -25,8 +25,9 @@ export type Props = {
   heroContactButton: string;
   imageNotAvailable: string;
   featuredProjectsTitle: string;
-  projectPreviewCtaText: string; // Added for specific project CTA
+  projectPreviewCtaText: string; 
   contactTitle: string;
+  viewAllProjectsButton: string;
 };
 
 const {
@@ -35,12 +36,10 @@ const {
   heroGreeting,
   heroSubtitlePart,
   heroIntroduction,
-  heroViewWorkButton,
-  heroContactButton,
-  imageNotAvailable,
   featuredProjectsTitle,
   projectPreviewCtaText,
   contactTitle,
+  viewAllProjectsButton,
 } = Astro.props;
 ---
 
@@ -96,7 +95,7 @@ const {
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     {
-      projects.slice(0, 3).map((project: TranslatedProject) => {
+      projects.slice(0, 6).map((project: TranslatedProject) => {
         return (
           <FeaturedProjectPreview
             lang={lang}
@@ -109,6 +108,15 @@ const {
         );
       })
     }
+  </div>
+
+  <div class="mt-12 text-center">
+    <a
+      href={getRelativeLocaleUrl(lang, '/projects')}
+      class={buttonVariants({ variant: 'default', size: 'lg' })}
+    >
+      {viewAllProjectsButton}
+    </a>
   </div>
 </section>
 

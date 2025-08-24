@@ -103,6 +103,7 @@ export const ui = {
       featuredProjectsTitle: 'Últimos Proyectos',
       projectCardViewProject: 'Ver proyecto',
       projectCardViewCode: 'Ver código',
+      viewAllProjectsButton: 'Ver todos mis proyectos',
       imageNotAvailable: 'Imagen no disponible por ahora',
       mySkillsTitle: 'Skills',
       contactTitle: 'Contactame',
