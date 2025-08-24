@@ -10,11 +10,10 @@ const phrases = t('phrases');
 const initialTooltip = t('initialTooltip');
 ---
 
-<!-- El contenedor del botón. AHORA EMPIEZA OCULTO con la clase `hidden` -->
 <div 
   id="useless-button-wrapper" 
-  class="relative h-10 w-10 rounded-lg bg-muted/40 p-2 group transition-all duration-300 ease-in-out flex items-center justify-center"
->
+  class="hidden relative h-10 w-10 rounded-lg bg-muted/40 p-2 group transition-all duration-300 ease-in-out flex items-center justify-center"
+  >
   <button 
     id="useless-button" 
     class="absolute inset-0 z-10 h-full w-full cursor-pointer appearance-none border-none bg-transparent"
@@ -35,21 +34,16 @@ const initialTooltip = t('initialTooltip');
   <div class="absolute inset-0 rounded-md border-2 border-dashed border-transparent transition-colors duration-300 group-hover:border-muted-foreground/30"></div>
 </div>
 
-<!-- La lógica de clics del botón AHORA VIVE DENTRO del componente -->
 <script define:vars={{ phrases }}>
   const wrapper = document.getElementById('useless-button-wrapper');
   const button = document.getElementById('useless-button');
   const iconSpan = document.getElementById('useless-button-icon');
   const textSpan = document.getElementById('useless-button-text');
 
-  const clicksToTrigger = 15;
+  const clicksToTrigger = 25;
   const jokeVideos = [
     'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    'https://www.youtube.com/watch?v=y6120QOlsfU',
-    'https://www.youtube.com/watch?v=sCNrK-n68CM',
     'https://youtu.be/UJwA7hu3aug?si=fkZQ8VDxwvQzV1Bl&t=61',
-    'https://www.youtube.com/watch?v=GjaWO1aLrxE',
-    "https://www.youtube.com/watch?v=BxzAXXskb2Y",
   ];
 
   let clickCount = 0;
@@ -71,9 +65,9 @@ const initialTooltip = t('initialTooltip');
       textSpan.style.opacity = '0';
       textSpan.textContent = '';
       iconSpan.style.opacity = '1';
-      wrapper.classList.remove('w-64', 'px-4'); // <-- Esta línea
+      wrapper.classList.remove('w-64', 'px-4'); 
       wrapper.classList.add('w-10');
-    }, 3000);
+    }, 5000);
 
     if (clickCount >= clicksToTrigger) {
       window.location.href = jokeVideos[Math.floor(Math.random() * jokeVideos.length)];

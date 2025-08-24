@@ -1,3 +1,5 @@
+import React from 'react'; 
+import Autoplay from 'embla-carousel-autoplay';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Card, CardContent } from '@/components/ui/card';
 import {
@@ -20,6 +22,14 @@ interface ProjectGalleryProps {
 }
 
 export default function ProjectGallery({ images }: ProjectGalleryProps) {
+  const autoplay = React.useRef(
+    Autoplay({
+      delay: 4000, // Tiempo en milisegundos entre cada slide (4 segundos)
+      stopOnInteraction: true, // ¡Clave! Detiene el autoplay cuando el usuario interactúa (botones o swipe)
+      stopOnMouseEnter: false, // Opcional pero recomendado: detiene el autoplay al pasar el ratón por encima
+    })
+  );
+
   return (
     <Carousel
       className="w-full md:ml-12"
@@ -27,6 +37,7 @@ export default function ProjectGallery({ images }: ProjectGalleryProps) {
         align: 'start',
         loop: true,
       }}
+      plugins={[autoplay.current]}
     >
       <CarouselContent className="-ml-1 not-prose">
         {images.map((image, index) => (

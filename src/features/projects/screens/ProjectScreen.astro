@@ -54,9 +54,24 @@ const { project, t, lang } = Astro.props;
       }
     </div>
 
-    <!-- Image -->
+    <!-- Image or Video -->
     {
-      project.imageUrl && (
+      project.videoUrl ? (
+        // Bloque para mostrar el VIDEO
+        <div class="not-prose mb-8 aspect-[16/9] relative w-full">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+            src={project.videoUrl}
+            title={`Video del proyecto: ${project.title}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      ) : project.imageUrl ? (
+        // Bloque para mostrar la IMAGEN (si no hay video)
         <div class="mb-8 aspect-[16/9] overflow-hidden rounded-lg shadow-lg">
           <Image
             src={project.imageUrl}
@@ -67,18 +82,37 @@ const { project, t, lang } = Astro.props;
             quality="high"
           />
         </div>
-      )
+      ) : null
     }
 
     <!-- Detailed Description -->
     {
-      project.detailedDescription && (
-        <section class="mb-8">
-          <h2>{t.projectDetailPage?.aboutTitle ?? 'About this project'}</h2>
-          <p>{project.detailedDescription}</p>
-        </section>
-      )
+  (() => {
+    // 1. Asegurarse de que tenemos algo que mostrar
+    if (!project.detailedDescription) return null;
+
+    // 2. Normalizar la entrada a un array de párrafos
+    let paragraphs: string[] = [];
+    if (typeof project.detailedDescription === 'string') {
+      // Si es un string, lo dividimos por saltos de línea
+      paragraphs = project.detailedDescription.split('\n');
+    } else {
+      // Si ya es un array, simplemente lo usamos
+      paragraphs = project.detailedDescription;
     }
+
+    // 3. Renderizar el HTML
+    return (
+      <section class="mb-8">
+        <h2>{t.projectDetailPage?.aboutTitle ?? 'About this project'}</h2>
+        {paragraphs.map((paragraph) =>
+          // Filtramos los párrafos vacíos que pueden resultar del .split()
+          paragraph.trim() ? <p>{paragraph.trim()}</p> : null
+        )}
+      </section>
+    );
+  })()
+}
 
     {
       project.keyFeaturesTranslated &&

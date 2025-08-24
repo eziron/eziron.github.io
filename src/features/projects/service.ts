@@ -152,19 +152,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'controlador-bobinadora-cobre',
     imageUrl: freelanceBobinadora2025Main,
     codeUrl: '',
-    tags: ['Freelance', 'STM32 HAL', 'Firmware', 'Control de Motores'],
-    category: 'Desarrollo para Cliente',
     date: '2025-04-01',
-    keyFeatures: [
-      { id: 'algoritmoTrapezoidal' },
-      { id: 'libreriaNoBloqueante' },
-      { id: 'desarrolloRemotoAvanzado' },
-    ],
-    technologiesUsed: [
-      { id: 'cplusplus', name: 'C++' },
-      { id: 'stm32', name: 'STM32 HAL' },
-      { id: 'motoresPasoAPaso', name: 'Motores PaP' },
-    ],
     galleryImages: [
       { id: 'gal1', src: freelanceBobinadora2025Gal1 },
       { id: 'gal2', src: freelanceBobinadora2025Gal2 },
@@ -177,46 +165,21 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'mundial-robotracer-japon-2025',
     imageUrl: robotracerAllJapan2025Main,
     codeUrl: '',
-    tags: ['Mundial', 'Japón', 'Análisis de Fallos', 'Ingeniería'],
-    category: 'Robótica Competitiva',
+    videoUrl: '',
     date: '2025-02-15',
-    keyFeatures: [
-      { id: 'integracionEncoders' },
-      { id: 'gestionCrisis' },
-      { id: 'aprendizajeCritico' },
-    ],
-    technologiesUsed: [
-      { id: 'stm32', name: 'STM32 HAL' },
-      { id: 'encoders', name: 'Encoders' },
-      { id: 'analisisCausaRaiz', name: 'Análisis Causa-Raíz' },
-    ],
     galleryImages: [
-      { id: 'gal1', src: robotracerAllJapan2025Gal1 },
-      { id: 'gal2', src: robotracerAllJapan2025Gal2 },
-      { id: 'gal3', src: robotracerAllJapan2025Gal3 },
-      { id: 'galM', src: robotracerAllJapan2025Main },
+      { id: 'gal1', src: robotracerAllJapan2025Gal1 }, 
+      { id: 'gal2', src: robotracerAllJapan2025Gal2 }, 
+      { id: 'gal3', src: robotracerAllJapan2025Gal3 }, 
+      { id: 'galM', src: robotracerAllJapan2025Main }, 
     ],
   },
-  
   {
     id: 'freelanceMesas2025',
     slug: 'controlador-mesas-flotantes',
     imageUrl: freelanceMesas2025Main,
     codeUrl: '',
-    tags: ['Freelance', 'Diseño de PCB', 'Electrónica Industrial', 'Seguridad'],
-    category: 'Desarrollo para Cliente',
     date: '2025-01-30',
-    keyFeatures: [
-      { id: 'disenoRobusto' },
-      { id: 'aislamientoGalvanico' },
-      { id: 'gestionProyectoIntegral' },
-    ],
-    technologiesUsed: [
-      { id: 'stm32', name: 'STM32 HAL' },
-      { id: 'eagle', name: 'Autodesk Eagle' },
-      { id: 'reles', name: 'Relés de Potencia' },
-      { id: 'optoacopladores', name: 'Optoacopladores' },
-    ],
     galleryImages: [
       { id: 'gal1', src: freelanceMesas2025Gal1 },
       { id: 'gal2', src: freelanceMesas2025Gal2 },
@@ -230,19 +193,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'robot-contest-2025-segundo-lugar',
     imageUrl: robotcontest2025Main,
     codeUrl: '',
-    tags: ['2º Lugar', 'Internacional', 'Optimización', 'Motores Coreless'],
-    category: 'Robótica Competitiva',
     date: '2025-01-15',
-    keyFeatures: [
-      { id: 'segundoLugarInternacional' },
-      { id: 'transicionMotoresCoreless' },
-      { id: 'mejoraTiempoRespuesta' },
-    ],
-    technologiesUsed: [
-      { id: 'motoresCoreless', name: 'Motores Coreless' },
-      { id: 'stm32', name: 'STM32 HAL' },
-      { id: 'optimizacionMecatronica', name: 'Optimización Mecatrónica' },
-    ],
     galleryImages: [
       { id: 'gal1', src: robotcontest2025Gal1 },
       { id: 'gal2', src: robotcontest2025Gal2 },
@@ -250,26 +201,12 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'galM', src: robotcontest2025Main },
     ],
   },
-  
   {
     id: 'proyectoTituloFoc2024',
     slug: 'proyecto-titulo-controlador-foc',
     imageUrl: proyectoTituloFoc2024Main,
     codeUrl: '',
-    tags: ['Proyecto de Título', 'Control FOC', 'STM32', 'Electrónica de Potencia'],
-    category: 'Investigación y Desarrollo',
     date: '2025-03-31',
-    keyFeatures: [
-      { id: 'disenoDriverFoc' },
-      { id: 'pcb4Capas' },
-      { id: 'notaMaxima' },
-    ],
-    technologiesUsed: [
-      { id: 'controlFoc', name: 'Control FOC' },
-      { id: 'c', name: 'Lenguaje C' },
-      { id: 'stm32', name: 'STM32' },
-      { id: 'eagle', name: 'Autodesk Eagle' },
-    ],
     galleryImages: [
       { id: 'gal1', src: proyectoTituloFoc2024Gal1 },
       { id: 'gal2', src: proyectoTituloFoc2024Gal2 },
@@ -283,19 +220,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'brc-2024-doble-primer-lugar',
     imageUrl: seguidorV5Brc2024Main,
     codeUrl: '',
-    tags: ['Campeón', '1er Lugar', 'STM32 HAL', 'Firmware', 'Innovación'],
-    category: 'Robótica Competitiva',
     date: '2024-10-01',
-    keyFeatures: [
-      { id: 'doblePrimerLugar' },
-      { id: 'migracionHal' },
-      { id: 'disenoSensor12Canales' },
-    ],
-    technologiesUsed: [
-      { id: 'stm32', name: 'STM32H7 (HAL)' },
-      { id: 'cplusplus', name: 'C++' },
-      { id: 'disenoSensores', name: 'Diseño de Sensores IR' },
-    ],
     galleryImages: [
       { id: 'gal1', src: seguidorV5Brc2024Gal1 },
       { id: 'gal2', src: seguidorV5Brc2024Gal2 },
@@ -308,19 +233,8 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'robot-contest-2024-verstappen-turbina',
     imageUrl: robotcontestVerstappen2024Main,
     codeUrl: '',
-    tags: ['Campeón', '1er Lugar', 'Innovación', 'Aerodinámica'],
-    category: 'Robótica Competitiva',
+    videoUrl: "https://www.youtube.com/embed/Vr5NUf_jjDw",
     date: '2024-01-15',
-    keyFeatures: [
-      { id: 'primerLugarNacional' },
-      { id: 'innovacionTurbinaSuccion' },
-      { id: 'acreditacionMundial' },
-    ],
-    technologiesUsed: [
-      { id: 'efectoSuelo', name: 'Efecto Suelo' },
-      { id: 'stm32', name: 'STM32' },
-      { id: 'impresion3d', name: 'Diseño 3D Avanzado' },
-    ],
     galleryImages: [
       { id: 'gal1', src: robotcontestVerstappen2024Gal1 },
       { id: 'gal2', src: robotcontestVerstappen2024Gal2 },
@@ -328,25 +242,13 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'galM', src: robotcontestVerstappen2024Main },
     ],
   },
-  
   {
     id: 'sumoAsuraKabuto2023',
     slug: 'mega-sumo-asura-kabuto-2023',
     imageUrl: sumoAsuraKabuto2023Main,
     codeUrl: '',
-    tags: ['Mundial', 'Japón', 'Diseño CNC', 'Electrónica de Potencia'],
-    category: 'Robótica Competitiva',
+    videoUrl: "https://www.youtube.com/embed/zOOkVbwjxT4",
     date: '2023-12-01',
-    keyFeatures: [
-      { id: 'chasisAluminio7075' },
-      { id: 'estrategiaTanque' },
-      { id: 'gestionPatrocinios' },
-    ],
-    technologiesUsed: [
-      { id: 'controlFoc', name: 'Control FOC (Odrive)' },
-      { id: 'disenoCnc', name: 'Diseño CNC' },
-      { id: 'motoresBrushless', name: 'Motores Brushless de Alta Potencia' },
-    ],
     galleryImages: [
       { id: 'gal1', src: sumoAsuraKabuto2023Gal1 },
       { id: 'gal2', src: sumoAsuraKabuto2023Gal2 },
@@ -360,19 +262,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'brc-2023-seguidor-stm32',
     imageUrl: seguidorStm32Brc2023Main,
     codeUrl: '',
-    tags: ['STM32', 'Diseño de PCB', 'SMD', 'Análisis de Fallos'],
-    category: 'Robótica Competitiva',
     date: '2023-10-01',
-    keyFeatures: [
-      { id: 'primeraPcbStm32' },
-      { id: 'rendimientoSuperior' },
-      { id: 'diagnosticoFalloEsd' },
-    ],
-    technologiesUsed: [
-      { id: 'stm32', name: 'STM32' },
-      { id: 'electronicaSmd', name: 'Electrónica SMD' },
-      { id: 'eagle', name: 'Autodesk Eagle' },
-    ],
     galleryImages: [
       { id: 'gal1', src: seguidorStm32Brc2023Gal1 },
       { id: 'gal2', src: seguidorStm32Brc2023Gal2 },
@@ -385,18 +275,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'robot-contest-2022-segundo-lugar',
     imageUrl: robotcontest2022Main,
     codeUrl: '',
-    tags: ['2º Lugar', 'Open Source', 'Resolución de Problemas'],
-    category: 'Robótica Competitiva',
     date: '2022-11-01',
-    keyFeatures: [
-      { id: 'segundoLugarNacional' },
-      { id: 'reparacionEmergencia' },
-      { id: 'trabajoBajoPresion' },
-    ],
-    technologiesUsed: [
-      { id: 'arduino', name: 'Arduino Nano' },
-      { id: 'openLamborghino', name: 'Open Lamborghino' },
-    ],
     galleryImages: [
       { id: 'gal1', src: robotcontest2022Gal1 },
       { id: 'gal2', src: robotcontest2022Gal2 },
@@ -405,25 +284,13 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'galM', src: robotcontest2022Main },
     ],
   },
-  
   {
     id: 'battlebotBrc2022',
     slug: 'brc-2022-battlebot',
     imageUrl: battlebotBrc2022Main,
     codeUrl: '',
-    tags: ['BattleBot', 'Control FOC', 'Odrive', 'Diseño Mecatrónico'],
-    category: 'Robótica Competitiva',
+    videoUrl: "https://www.youtube.com/embed/h7rRnIOr6zU",
     date: '2022-10-30',
-    keyFeatures: [
-      { id: 'aplicacionFocCombate' },
-      { id: 'estructuraMixta' },
-      { id: 'pcbCompacta' },
-    ],
-    technologiesUsed: [
-      { id: 'controlFoc', name: 'Control FOC (Odrive)' },
-      { id: 'motoresBrushless', name: 'Motores Brushless' },
-      { id: 'disenoMecatronico', name: 'Diseño Mecatrónico' },
-    ],
     galleryImages: [
       { id: 'gal1', src: battlebotBrc2022Gal1 },
       { id: 'gal2', src: battlebotBrc2022Gal2 },
@@ -432,24 +299,28 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'galM', src: battlebotBrc2022Main },
     ],
   },
+  /*
   {
-    id: 'focExperimental2022',
-    slug: 'prototipo-experimental-foc-2022',
+    id: 'RodeoRobotica2022',
+    slug: 'Rodeo-Robotica-2022',
+    imageUrl: RodeoRobotica2022Main,
+    codeUrl: '',
+    date: '2022-08-30',
+    galleryImages: [
+      { id: 'gal1', src: RodeoRobotica2022Gal1 },
+      { id: 'gal2', src: RodeoRobotica2022Gal2 },
+      { id: 'gal3', src: RodeoRobotica2022Gal3 },
+      { id: 'gal4', src: RodeoRobotica2022Gal4 },
+      { id: 'galM', src: RodeoRobotica2022Main },
+    ],
+  },
+  */
+  {
+    id: 'focExperimental',
+    slug: 'prototipo-experimental-foc',
     imageUrl: focExperimental2022Main,
     codeUrl: '',
-    tags: ['Control FOC', 'Odrive', 'Experimentación', 'Prototipado'],
-    category: 'Investigación y Desarrollo',
-    date: '2022-09-01',
-    keyFeatures: [
-      { id: 'primeraImplementacionFoc' },
-      { id: 'disenoPcbShield' },
-      { id: 'plataformaModular' },
-    ],
-    technologiesUsed: [
-      { id: 'controlFoc', name: 'Control FOC (Odrive 3.6)' },
-      { id: 'motoresBrushless', name: 'Motores Brushless' },
-      { id: 'impresion3d', name: 'Impresión 3D' },
-    ],
+    date: '2024-03-01',
     galleryImages: [
       { id: 'gal1', src: focExperimental2022Gal1 },
       { id: 'gal2', src: focExperimental2022Gal2 },
@@ -458,26 +329,12 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'galM', src: focExperimental2022Main },
     ],
   },
-  
   {
     id: 'hexapod2021',
     slug: 'robot-hexapodo-autonomo-2021',
     imageUrl: hexapod2021Main,
     codeUrl: '',
-    tags: ['Python', 'Cinemática Inversa', 'Raspberry Pi', 'Diseño de PCB'],
-    category: 'Proyectos Personales',
     date: '2021-08-01',
-    keyFeatures: [
-      { id: 'desarrolloDesdeCero' },
-      { id: 'primerPatrocinioInternacional' },
-      { id: 'integracionTotal' },
-    ],
-    technologiesUsed: [
-      { id: 'python', name: 'Python' },
-      { id: 'cinematicaInversa', name: 'Cinemática Inversa' },
-      { id: 'raspberryPi', name: 'Raspberry Pi' },
-      { id: 'eagle', name: 'Autodesk Eagle' },
-    ],
     galleryImages: [
       { id: 'gal1', src: hexapod2021Gal1 },
       { id: 'gal2', src: hexapod2021Gal2 },
@@ -486,24 +343,12 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'galM', src: hexapod2021Main },
     ],
   },
-  
   {
     id: 'sumoAllJapan2018',
     slug: 'mundial-sumo-japon-2018',
     imageUrl: sumoAllJapan2018Main,
     codeUrl: '',
-    tags: ['Mundial', 'Japón', 'Competencia Internacional'],
-    category: 'Robótica Competitiva',
     date: '2018-12-01',
-    keyFeatures: [
-      { id: 'representacionNacional' },
-      { id: 'experienciaInternacional' },
-      { id: 'mejoraContinua' },
-    ],
-    technologiesUsed: [
-      { id: 'arduino', name: 'Arduino' },
-      { id: 'motoresBrushless', name: 'Motores Brushless' },
-    ],
     galleryImages: [
       { id: 'gal1', src: sumoAllJapan2018Gal1 },
       { id: 'gal2', src: sumoAllJapan2018Gal2 },
@@ -519,17 +364,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'robotracer-utfsm-2018',
     imageUrl: robotracerUtfsm2018Main,
     codeUrl: '',
-    tags: ['Seguidor de Línea', 'Experimentación', 'Arduino'],
-    category: 'Robótica Competitiva',
     date: '2018-10-02',
-    keyFeatures: [
-      { id: 'primeraAproximacionSeguidor' },
-      { id: 'aprendizajeDesafios' },
-    ],
-    technologiesUsed: [
-      { id: 'arduino', name: 'Arduino' },
-      { id: 'sensoresIr', name: 'Sensores Infrarrojos' },
-    ],
     galleryImages: [
       { id: 'gal1', src: robotracerUtfsm2018Gal1 },
       { id: 'gal2', src: robotracerUtfsm2018Gal2 },
@@ -542,19 +377,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'campeon-nacional-mega-sumo-2018',
     imageUrl: sumoUtfsm2018Main,
     codeUrl: '',
-    tags: ['Campeón', '1er Lugar', 'Motores Brushless', 'Diseño Mecánico'],
-    category: 'Robótica Competitiva',
     date: '2018-10-01',
-    keyFeatures: [
-      { id: 'primerLugarNacional' },
-      { id: 'incursionBrushless' },
-      { id: 'chasisAluminio' },
-    ],
-    technologiesUsed: [
-      { id: 'motoresBrushless', name: 'Motores Brushless' },
-      { id: 'arduino', name: 'Arduino' },
-      { id: 'disenoMecanico', name: 'Diseño en Aluminio' },
-    ],
     galleryImages: [
       { id: 'gal1', src: sumoUtfsm2018Gal1 },
       { id: 'gal2', src: sumoUtfsm2018Gal2 },
@@ -564,26 +387,13 @@ const projectsListUnsorted: Array<ProjectData> = [
       { id: 'galM', src: sumoUtfsm2018Main },
     ],
   },
-  
   /*
   {
     id: 'sumoUtfsm2017',
     slug: 'fundacion-grupo-robotica-liceo-2017',
     imageUrl: sumoUtfsm2017Main,
     codeUrl: '',
-    tags: ['Liderazgo', 'Sumo Robótico', 'Diseño 3D', 'Arduino'],
-    category: 'Iniciativas de Liderazgo',
     date: '2017-10-01',
-    keyFeatures: [
-      { id: 'fundacionGrupo' },
-      { id: 'primerDiseno3d' },
-      { id: 'aprendizajeResiliencia' },
-    ],
-    technologiesUsed: [
-      { id: 'arduino', name: 'Arduino' },
-      { id: 'inventor', name: 'Autodesk Inventor' },
-      { id: 'impresion3d', name: 'Impresión 3D' },
-    ],
     galleryImages: [
       { id: 'gal1', src: sumoUtfsm2017Gal1 },
       { id: 'gal2', src: sumoUtfsm2017Gal2 },
@@ -596,18 +406,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     slug: 'first-robotics-competition-2016',
     imageUrl: frcLosAngeles2016Main,
     codeUrl: '',
-    tags: ['FIRST Robotics', 'Electrónica', 'Competencia Internacional'],
-    category: 'Robótica Competitiva',
     date: '2016-04-01',
-    keyFeatures: [
-      { id: 'primeraExperienciaCompetitiva' },
-      { id: 'cableadoEstructurado' },
-      { id: 'trabajoEquipo' },
-    ],
-    technologiesUsed: [
-      { id: 'integracionSistemas', name: 'Integración de Sistemas' },
-      { id: 'cableado', name: 'Cableado Estructurado' },
-    ],
     galleryImages: [
       { id: 'gal1', src: frcLosAngeles2016Gal1 },
       { id: 'gal2', src: frcLosAngeles2016Gal2 },
@@ -635,74 +434,44 @@ function translateProject(
   project: ProjectData,
   lang: LanguageCode
 ): TranslatedProject {
-  type ProjectIdKey =
-    keyof (typeof ui)[typeof defaultLanguage]['projectsContent'];
+  type ProjectIdKey = keyof (typeof ui)[typeof defaultLanguage]['projectsContent'];
   const currentProjectId = project.id as ProjectIdKey;
-
-  const projectContentSource = ui[lang]?.projectsContent?.[currentProjectId]
-    ? ui[lang].projectsContent
-    : ui[defaultLanguage].projectsContent;
-
+  const projectContentSource = ui[lang]?.projectsContent?.[currentProjectId] ? ui[lang].projectsContent : ui[defaultLanguage].projectsContent;
   const i18nData = projectContentSource[currentProjectId];
 
   if (!i18nData) {
     // Fallback if translation for the project ID is missing
     // This might happen if i18n/ui.ts is not updated after adding a new project
-    console.warn(
-      `Translation missing for project ID: ${project.id} in language: ${lang}. Using default values.`
-    );
+    console.warn(`Translation missing for project ID: ${project.id} in language: ${lang}. Using default values.`);
     return {
       ...project,
       title: project.id, // Fallback title
       description: 'Description missing for this project.', // Fallback description
       imageAltText: 'Placeholder image', // Fallback alt text
-      categoryText: project.category,
+      categoryText: 'N/A',
       dateText: project.date,
       detailedDescription: 'Detailed description missing.',
-      keyFeaturesTranslated:
-        project.keyFeatures?.map((kf) => ({
-          ...kf,
-          title: kf.id,
-          description: 'N/A',
-        })) ?? [],
+      keyFeaturesTranslated: [],
       galleryImagesTranslated:
-        project.galleryImages?.map((gi) => ({
-          ...gi,
-          alt: 'N/A',
-          caption: 'N/A',
-        })) ?? [],
+        project.galleryImages?.map((gi) => ({...gi,alt: 'N/A',caption: 'N/A',})) ?? [],
       challenges: 'Challenges information missing.',
       learnings: 'Learnings information missing.',
+      tags: [],
     };
   }
 
-  const keyFeaturesTranslated =
-    project.keyFeatures?.map((kf) => {
-      const typedKeyFeatures = i18nData?.keyFeatures as Record<
-        string,
-        { title: string; description: string } | undefined
-      >;
-      const featureTranslations = typedKeyFeatures?.[kf.id] ?? {
-        title: kf.id,
-        description: 'Description missing',
-      };
-      return {
-        ...kf,
-        title: featureTranslations.title,
-        description: featureTranslations.description,
-      };
-    }) ?? [];
+  const keyFeaturesTranslated = i18nData.keyFeatures
+    ? Object.entries(i18nData.keyFeatures).map(([id, featureData]) => ({
+        id,
+        title: featureData.title,
+        description: featureData.description,
+      }))
+    : [];
 
   const galleryImagesTranslated =
     project.galleryImages?.map((gi) => {
-      const typedGalleryImages = i18nData?.galleryImages as Record<
-        string,
-        { alt: string; caption: string } | undefined
-      >;
-      const imageTranslations = typedGalleryImages?.[gi.id] ?? {
-        alt: `Alt text for ${gi.id} missing`,
-        caption: '',
-      };
+      const typedGalleryImages = i18nData?.galleryImages as Record<string,{ alt: string; caption: string } | undefined>;
+      const imageTranslations = typedGalleryImages?.[gi.id] ?? {alt: `Alt text for ${gi.id} missing`,caption: '',};
       return {
         ...gi, // This includes src and id
         alt: imageTranslations.alt,
@@ -715,21 +484,19 @@ function translateProject(
     title: i18nData.title,
     description: i18nData.description,
     imageAltText: i18nData.imageAltText,
-    categoryText: i18nData.categoryText ?? project.category,
+    categoryText: i18nData.categoryText,
     dateText: i18nData.dateText ?? project.date,
-    detailedDescription:
-      i18nData?.detailedDescription ?? 'Detailed description missing',
+    detailedDescription: i18nData?.detailedDescription ?? 'Detailed description missing',
     keyFeaturesTranslated,
     galleryImagesTranslated,
     challenges: i18nData?.challenges ?? 'Challenges information missing',
     learnings: i18nData?.learnings ?? 'Learnings information missing',
+    tags: [...(i18nData.tags ?? [])], 
   };
 }
 
 // Function to get projects with translated content
-export function getTranslatedProjects(
-  lang: LanguageCode | undefined
-): Array<TranslatedProject> {
+export function getTranslatedProjects(lang: LanguageCode | undefined): Array<TranslatedProject> {
   const currentLang = lang || defaultLanguage;
   return projectsList.map((project) => translateProject(project, currentLang));
 }
