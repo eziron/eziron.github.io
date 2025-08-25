@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { defaultLanguage, useTranslations, type LanguageCode } from '@/i18n/ui';
 import {
   PortfolioScreen,
   getTranslatedProjects,
@@ -7,9 +8,9 @@ import {
   type TranslatedSkill,
   type TranslatedProject,
 } from '@/features/projects';
-import { defaultLanguage, useTranslations, type LanguageCode } from '@/i18n/ui';
 
-const lang = (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
+const lang =
+  (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
 const t = useTranslations(lang, 'homePage');
 
 const pageTitle = t('pageTitle');
@@ -30,7 +31,7 @@ const layoutProps = {
   imageNotAvailable: t('imageNotAvailable'),
   featuredProjectsTitle: t('featuredProjectsTitle'),
   mySkillsTitle: t('mySkillsTitle'),
-  mySkillsDescription: t('mySkillsDescription'),
+  viewAllProjectsButton: t('viewAllProjectsButton'),
   projectPreviewCtaText: t('projectCardViewProject'),
   contactTitle: t('contactTitle'),
 };

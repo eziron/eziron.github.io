@@ -33,11 +33,11 @@ const tSite = useTranslations(lang, 'site');
 const tNav = useTranslations(lang, 'nav');
 
 const navItems: Array<NavItem> = [
-  { href: '/', label: tNav('home'), icon: Home },
-  { href: '/projects', label: tNav('projects'), icon: Briefcase },
-  //{ href: '/blog', label: tNav('blog'), icon: FileText },
-  { href: '/#contact', label: tNav('contact'), icon: MessageSquare },
-  { href: '/media', label: tNav('media'), icon: Newspaper },
+  { href: getRelativeLocaleUrl(lang, '/'), label: tNav('home'), icon: Home },
+  { href: getRelativeLocaleUrl(lang, '/projects'), label: tNav('projects'), icon: Briefcase },
+  //{ href: getRelativeLocaleUrl(lang, '/blog'), label: tNav('blog'), icon: FileText },
+  { href: `${getRelativeLocaleUrl(lang, '/')}#contact`, label: tNav('contact'), icon: MessageSquare },
+  { href: getRelativeLocaleUrl(lang, '/media'), label: tNav('media'), icon: Newspaper },
 ];
 
 const languagesForSelector: Array<LanguageSelectorItem> =
@@ -159,7 +159,6 @@ const languagesForSelector: Array<LanguageSelectorItem> =
   <body class="h-[100dvh] bg-background font-sans antialiased flex flex-col">
     {/* Tailwind classes for the body */}
     <header class="hidden md:block">
-      <!-- passer aussi navItems mais sans le premier element dont le href === '/' -->
       <Header
         languagesForSelector={languagesForSelector}
         navItems={navItems}

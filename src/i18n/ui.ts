@@ -1,6 +1,6 @@
-export const languages: Record<'es' , { name: string; flag: string }> = {
+export const languages: Record<'es' | 'en' , { name: string; flag: string }> = {
   es: { name: 'Español', flag: 'cl' },
-  //en: { name: 'English', flag: 'us' }, | 'en'
+  en: { name: 'English', flag: 'us' }, 
 } as const;
 
 export const defaultLanguage = 'es';
@@ -830,37 +830,6 @@ export const ui = {
     },
   },
   en: {
-    projectsContent: {
-      sampleProject: {
-        title: 'Sample Project',
-        description: 'This is a sample project for the template.',
-        imageAltText: 'Placeholder image for the sample project',
-        categoryText: 'Web Application',
-        dateText: 'January 2025',
-        detailedDescription:
-          'A more detailed description of this sample project, showing how to structure content for the project detail page.',
-        keyFeatures: {
-          responsiveDesign: {
-            title: 'Responsive Design',
-            description: 'The project adapts to all screen sizes.',
-          },
-          contentManagement: {
-            title: 'Easy Content Management',
-            description:
-              'Allows for easy content management via Markdown files or a CMS.',
-          },
-        },
-        galleryImages: {
-          // sampleGalleryImage1: { // If you enable gallery for the example
-          //   alt: 'Alt text for gallery image 1',
-          //   caption: 'Caption for gallery image 1',
-          // },
-        },
-        challenges:
-          'Description of challenges encountered while creating this sample project.',
-        learnings: 'Description of learnings from this sample project.',
-      },
-    },
     uselessButton: {
       initialTooltip: 'What is this?',
       phrases: [
@@ -868,142 +837,193 @@ export const ui = {
         'Seriously, it does nothing',
         'Are you bored?',
         'Keep trying...',
-        'Maybe the next click...',
+        'Maybe on the next click...',
         'Nope.',
         'Still here?',
         'Curiosity killed the cat',
         'Almost...',
         'Keep going!',
-        'c@#r&pT3d!',
-        "You're gonna break it!",
+        'lja#hd%',
+        "You're going to break it!",
         'Got a lot of free time?',
         'Go touch grass',
-        'Sapeee!',
-        'Error 404: Joke not found',
+        'Gotcha!',
+        'Error 404: Humor not found',
         'Insert coin to continue',
         'undefined',
         'null',
         'My projects are more interesting',
         "This wasn't in the requirements",
         'Achievement Unlocked: Patience',
-        'With great clicking comes...',
+        'My spidey-sense is tingling...',
         "Don't wear out your mouse",
         'Loading joke...',
-        "It's a trap!", 
-        "All your base are belong to us", 
-        "Son of a bitch!", 
-        "They did surgery on a grape",
+        "It's alive!",
+        'Just one more click, I promise.',
+        'Okay, you win.',
+        'I need a flowerpot.',
       ],
     },
     skillsContent: {
       technicalSkills: {
-        title: 'technicalSkills', // <-- CAMBIO
-        description: '',
+        title: 'Technical Skills',
       },
       programmingLanguages: {
-        title: 'programmingLanguages', // <-- CAMBIO
-        description: '',
+        title: 'Programming Languages',
       },
-      toolsAndFrameworks: {
-        title: 'toolsAndFrameworks', // <-- CAMBIO
-        description: '',
+      toolsAndPrograms: {
+        title: 'Tools and Programs',
+      },
+      frameworksAndPlatforms: {
+        title: 'Frameworks and Platforms',
       },
     },
+    technologiesContent: {
+      embedded: 'Embedded Systems',
+      processing: 'Analog/Digital Processing',
+      pcb: 'PCB Design',
+      smd: 'SMD Soldering',
+      printing: '3D Printing',
+      plc: 'PLC Control',
+      cplusplus: 'C/C++',
+      python: 'Python',
+      ladder: 'Ladder',
+      eagle: 'Autodesk Eagle',
+      inventor: 'Autodesk Inventor',
+      cubemx: 'STM32CubeMX',
+      git: 'Git',
+      linuxcli: 'Linux CLI',
+      stm32: 'STM32 (HAL)',
+      arduino: 'Arduino',
+      rpi: 'Raspberry Pi',
+      rpipico: 'RPi Pico (SDK)',
+    },
     site: {
-      title: 'My Awesome Template',
+      title: 'Rodrigo Fuentes | Portfolio',
       description:
-        'A modern and performant Astro template to kickstart your project.',
+        'Portfolio of Rodrigo Fuentes Pedreros, an Electronics Execution Engineer specializing in the development of embedded systems and robotics.',
     },
     nav: {
       home: 'Home',
       blog: 'Blog',
       contact: 'Contact',
       projects: 'Projects',
+      media: 'Media',
     },
     footer: {
       rights: 'All rights reserved.',
     },
     homePage: {
-      pageTitle: 'Home | YOUR_NAME - FullStack Developer',
+      pageTitle: 'Rodrigo Fuentes | Electronics Engineer and Embedded Systems Developer',
       pageDescription:
-        'Welcome to the portfolio of YOUR_NAME, a FullStack developer passionate about creating innovative web experiences.',
-      heroGreeting: "Hi, I'm YOUR_NAME",
-      heroSubtitlePart: 'Full Stack Developer',
-      heroIntroduction: 'Add an introduction here.',
-      heroViewWorkButton: 'View My Work',
-      heroContactButton: 'Get In Touch',
-      heroImageAlt:
-        'Illustration representing YOUR_NAME or a development concept',
-      featuredProjectsTitle: '3 latest projects',
-      projectCardViewProject: 'View Project',
-      projectCardViewCode: 'View Code',
+        'Welcome to the portfolio of Rodrigo Fuentes, an Electronics Engineer passionate about robotics, PCB design, and microcontroller programming.',
+      heroGreeting: 'Rodrigo Fuentes',
+      heroSubtitlePart: 'Embedded Systems Developer',
+      heroIntroduction:
+        'Electronics Engineer specializing in PCB design and microcontroller programming. My experience in robotics competitions has forged in me a solid ability to create complex systems from scratch and solve critical problems under pressure.',
+      heroViewWorkButton: 'View my projects',
+      heroContactButton: 'Contact me',
+      heroImageAlt: 'Profile picture of Rodrigo Fuentes Pedreros',
+      featuredProjectsTitle: 'Latest Projects',
+      projectCardViewProject: 'View project',
+      projectCardViewCode: 'View code',
+      viewAllProjectsButton: 'View all my projects',
       imageNotAvailable: 'Image not available for now',
-      mySkillsTitle: 'My Skills',
-      mySkillsDescription:
-        'Explore the expertise and abilities that define my work and passion.',
+      mySkillsTitle: 'Skills',
+      contactTitle: 'Contact me',
     },
     blogPage: {
       pageTitle: 'My Technical Blog',
       pageDescription:
-        'Articles and thoughts on web development, software architecture, and new technologies.',
+        'Articles and insights on embedded systems, robotics, electronic design, and new technologies.',
       title: 'My Technical Blog',
       description:
-        'Articles and thoughts on web development, software architecture, and new technologies.',
-      comingSoon: 'Blog posts will appear here soon. Check back later!',
-      heroImageAlt: 'Hero image for article: ',
+        'Articles and insights on embedded systems, robotics, electronic design, and new technologies.',
+      comingSoon: 'Blog articles will appear here soon. Check back later!',
+      heroImageAlt: 'Cover image for the article: ',
       publishedOn: 'Published on: ',
       readMore: 'Read more',
       readingTimeSuffix: 'min read',
       searchPlaceholder: 'Search articles...',
       filterByTagButtonLabel: 'Filter by tag',
-      noTagFound: 'No tag found.',
-      selectTagCommandPlaceholder: 'Search tag...',
+      noTagFound: 'No tags found.',
+      selectTagCommandPlaceholder: 'Search for a tag...',
       allTagsLabel: 'All tags',
-      noPostsFound: 'No posts found.',
+      noPostsFound: 'No articles found.',
     },
     blogPost: {
       publishedOn: 'Published on: ',
       updatedOn: 'Updated on: ',
-      heroImageAlt: 'Hero image for article: ',
-      backToList: 'Back to blog list',
+      heroImageAlt: 'Cover image for the article: ',
+      backToList: 'Back to article list',
       readingTimeSuffix: 'min read',
-      relatedPostsTitle: 'Continue Reading',
+      relatedPostsTitle: 'You might also like:',
       readMore: 'Read more',
+      editOnGithub: 'Suggest a change on GitHub',
     },
     toc: {
       title: 'Table of Contents',
     },
-    contactPage: {
-      pageTitle: 'Contact Me',
-      pageDescription:
-        "Let's discuss your project, a potential collaboration, or just chat about tech!",
-
-      title: 'Contact Me',
-      description:
-        "Let's discuss your project, a potential collaboration, or just chat about tech!",
-      formTitle: 'Send a message',
-      firstNameLabel: 'First Name',
-      lastNameLabel: 'Last Name',
-      emailLabel: 'Email',
-      messageLabel: 'Message',
-      sendButtonLabel: 'Send',
-      firstNamePlaceholder: 'Your first name',
-      lastNamePlaceholder: 'Your last name',
-      emailPlaceholder: 'Your email address',
-      messagePlaceholder: 'Your message here...',
-      calendarTitle: 'Schedule a Meeting',
-      calendarDescription:
-        'Prefer to talk live? Book a slot directly in my calendar.',
-      calendarButtonLabel: 'See my availability',
-      calendarLinkLabel: 'See my calendar',
-      calendarPlaceHolder:
-        'The integration with Google Calendar will be soon...',
-      orSeparatorText: 'OR',
-      toastSuccessMessageSent: 'Message sent successfully!',
-      toastErrorFailedToSend: 'Failed to send message.',
-      toastErrorUnexpected: 'An unexpected error occurred.',
-      toastErrorDetails: 'Error details:',
-      toastErrorValidationFailed: 'Form validation failed.',
+    mediaContent: {
+      perfilUDEC2025: {
+        title: 'Rodrigo Fuentes: Between Wires, Ambitions, and Dreams',
+        description:
+          'A personal profile on my journey, challenges, and passion for robotics from childhood to university achievements.',
+      },
+      grubbJapon2025: {
+        title: 'From Chile to Japan: GRUBB in International Competition',
+        description:
+          'Celebrating the participation of the UBB Robotics Group, representing the country in the "All Japan Micromouse Contest" in Tokyo.',
+      },
+      tvuRobotracer2025: {
+        title: 'UBB Students to Participate in the "All Japan Robotracer Contest"',
+        description:
+          'Announcement and interview about the UBB Robotics Group qualifying for the "All Japan Robotracer Contest" in Tokyo.',
+      },
+      relatoExperienciaUBB2024: {
+        title: 'Account of Experience in National and International Competitions',
+        description:
+          'The UBB Robotics Group and the school team "Entuercas" share their experiences in robotics competitions.',
+      },
+      exitosMundialUBB2023: {
+        title: 'UBB Robotics Group Reaps Success and Prepares for World Championship',
+        description:
+          'A chronicle of the UBB Robotics Group\'s successes and their preparation to qualify for the world competition in Japan.',
+      },
+      participacionNacionalUBB2023: {
+        title: 'UBB Robotics Group Participates in Two Major Competitions',
+        description:
+          'News about the UBB Robotics Group\'s participation in the Beauchef Robotics Challenge and the All Chile Robot Contest.',
+      },
+      reconocimientoNacionalUBB2023: {
+        title: 'Recognition for Performance in National Competitions',
+        description:
+          'Congratulations to the UBB Robotics Group for their excellent performance in two national competitions.',
+      },
+      visitaMoneda2019: {
+        title: 'Robotics Winners Visit La Moneda Palace',
+        description:
+          'Publication about the visit of student robotics tournament winners to La Moneda to meet with the Minister of Science.',
+      },
+      coelemuJapon2018: {
+        title: 'Students from Coelemu Travel to Japan for Robotics Competition',
+        description:
+          'Article about students from Coelemu traveling to Japan to compete in the "All Japan Robot-Sumo Tournament".',
+      },
+    },
+    mediaPage: {
+      title: 'Media Presence',
+      metaTitle: 'Media | Rodrigo Fuentes Portfolio',
+      metaDescription: 'A collection of news and publications about my projects and achievements.',
+      noMedia: 'No media publications to show yet.',
+      noMediaDescription: 'Check back later for updates.',
+    },
+    notFoundPage: {
+      pageTitle: 'Page Not Found',
+      title: 'Oops! Page Not Found',
+      message:
+        "Sorry, the page you're looking for doesn't seem to exist. Check the URL or go back to the homepage.",
+      homeLink: 'Back to Home',
     },
     projectDetailPage: {
       backToProjects: 'Back to Projects',
@@ -1019,32 +1039,724 @@ export const ui = {
     },
     projectsPage: {
       title: 'My Projects',
-      metaTitle: "My Projects | YOUR_NAME's Portfolio",
-      metaDescription: "Discover all of YOUR_NAME's projects.",
-      noProjects: 'No projects to display at the moment.',
-      noProjectsDescription:
-        "It seems that you don't have any projects to display at the moment.",
+      metaTitle: 'Projects | Rodrigo Fuentes Portfolio',
+      metaDescription: 'Discover the hardware and software projects developed by Rodrigo Fuentes.',
+      noProjects: 'No projects to show at the moment.',
+      noProjectsDescription: "I'm preparing my projects to display here. Come back soon!",
     },
-    notFoundPage: {
-      pageTitle: 'Page Not Found',
-      title: 'Oops! Page Not Found',
-      message:
-        'Sorry, the page you are looking for does not seem to exist. Check the URL or return to the homepage.',
-      homeLink: 'Return to Homepage',
-    },
-
-    zodErrors: {
-      // Common errors
-      invalid_type: 'Invalid type.',
-      invalid_type_received_undefined: 'This field is required.', // For required fields (fallback)
-      required_field_custom: 'The {fieldName} field is required.',
-      // String errors
-      too_small_string_minimum: 'Must be at least {minimum} characters long.',
-      too_big_string_maximum: 'Must be no more than {maximum} characters long.',
-      invalid_string_email: 'Invalid email address.',
-      invalid_string_url: 'Invalid URL.',
-      invalid_string_uuid: 'Invalid UUID.',
-      // You can add more specific messages as needed
+    projectsContent: {
+      freelanceBobinadora2025: {
+        title: 'Precision Controller for Filament Winding Machine',
+        description:
+          'Development of a custom controller for a copper winding machine, featuring firmware with trapezoidal motion control and an innovative remote development methodology.',
+        imageAltText: 'Cover image for the winding machine project',
+        categoryText: 'Freelance',
+        dateText: 'April 2025',
+        detailedDescription: [
+          'This freelance project involved designing a PCB and developing custom firmware to automate a copper filament winding machine. The system needed to precisely synchronize the spool\'s rotation and the movement of a guide rod, as well as measure the length of the wound filament using an odometer.',
+          "The core of the solution is an STM32 microcontroller. The main complexity was in the software: I programmed a motion control algorithm with a trapezoidal profile for the stepper motors from scratch, ensuring smooth starts and stops. Additionally, I developed a non-blocking library for the TM1637 display, as existing solutions interfered with the real-time control of the motors.",
+        ],
+        tags: ['STM32 HAL', 'Firmware', 'PCB Design', 'Embedded Systems'],
+        keyFeatures: {
+          key1: {
+            title: 'Trapezoidal Motion Control',
+            description:
+              'Implementation of a control algorithm for stepper motors with acceleration and deceleration ramps, programmed from scratch using STM32 timers for precise and synchronized movement.',
+          },
+          key2: {
+            title: 'Non-Blocking Display Library',
+            description:
+              'Development of a custom communication library for the TM1637 integrated circuit, using interrupts to avoid blocking the main loop and ensure real-time system performance.',
+          },
+          key3: {
+            title: 'Remote Development Methodology',
+            description:
+              'The entire firmware was developed and debugged without physical access to the final hardware. I used a testing environment with a logic analyzer and a "twin" project structure in WSL with symbolic links to compile the same code for two different microcontrollers.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+        },
+        challenges:
+          'The biggest challenge was developing and debugging the firmware completely blind, without access to the machine or the final hardware. This required creating a simulation and signal validation environment with a logic analyzer, as well as a dual-compilation structure to ensure code compatibility between my test platform and the client\'s.',
+        learnings:
+          'This project consolidated my skills in low-level programming with STM32 HAL and taught me how to create robust solutions under extreme constraints. The need for remote development pushed me to design a highly structured and verifiable software workflow, an invaluable skill for any embedded systems project.',
+      },
+      freelanceMesas2025: {
+        title: 'Controller for Lifting Tables in a Co-Working Space',
+        description:
+          'Development of a custom control system for two lifting tables, implemented in a co-working space in the Costanera Center Tower, Santiago.',
+        imageAltText: 'Cover image for the lifting tables control project',
+        categoryText: 'Freelance',
+        dateText: 'January 2025',
+        detailedDescription: [
+          'This project involved developing the electronic control unit for a large-scale mechanical system: two 800 kg tables, each driven by a set of three cargo winches. The main requirement was to ensure precise and completely safe operation in a busy co-working space.',
+          'My responsibility covered the entire development cycle, from hardware and PCB design to firmware programming. The solution centralizes the operation of 6 high-load motors, 6 servomotors for the safety latches, and 12 inductive positioning sensors. Control is managed through a physical user interface with selectors and push buttons, providing visual feedback of the system\'s status.',
+        ],
+        tags: ['STM32 HAL', 'PCB Design', 'Firmware', 'Embedded Systems'],
+        keyFeatures: {
+          key1: {
+            title: 'Centralized High-Load Control',
+            description:
+              'Management of 6 bidirectional motors, 12 NPN position sensors, and 6 servos, all from a single controller board based on an STM32 microcontroller.',
+          },
+          key2: {
+            title: 'Electrical Isolation and Safety',
+            description:
+              'All input and output signals were opto-isolated to protect the microcontroller. Isolated power supplies were used to separate the control circuit from the power circuit, ensuring maximum reliability.',
+          },
+          key3: {
+            title: 'Professional Manufacturing and Assembly',
+            description:
+              'The board was manufactured and assembled using JLCPCB\'s PCBA services. I later performed the enclosure mounting and final on-site wiring.',
+          },
+          key4: {
+            title: 'Firmware with Safety Logic',
+            description:
+              'The firmware, programmed in C++ with HAL libraries, includes multiple layers of safety and validations to prevent misuse and protect the integrity of the mechanical system and users.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main technical challenge was ensuring the system\'s maximum robustness and reliability. The criticality of the application, handling 800 kg loads in a public environment, demanded a foolproof electronic design with galvanic isolation and firmware with redundant control logic to mitigate any risk.',
+        learnings:
+          'This project provided me with valuable experience in designing control systems for high-responsibility industrial applications, reinforcing the importance of galvanic isolation and managing a freelance project from start to finish, from conceptual design to on-site implementation.',
+      },
+      hexapod2021: {
+        title: 'Hexapod Robot',
+        description:
+          'An 8-month personal project integrating 3D mechanical design, custom PCB development, and inverse kinematics programming in Python to control an advanced 18-servo robot.',
+        imageAltText: 'Cover image for the Hexapod Robot project',
+        categoryText: 'Innovation and Development',
+        dateText: 'August 2021',
+        detailedDescription: [
+          'Conceived from scratch during the pandemic, this Hexapod robot represents one of my most comprehensive projects. Over 8 months, I designed and fabricated its entire structure using 3D printing, creating the complex mechanical parts that bring its 6 legs to life, each with 3 degrees of freedom.',
+          'Its electronic architecture is a distributed control system: a Raspberry Pi 4 handles the inverse kinematics calculations in Python, while a Raspberry Pi Pico is dedicated to real-time management of PWM signals for the 18 servomotors. This project was my gateway to PCB design, fueled by a sponsorship from JLCPCB I secured thanks to the project\'s visibility.',
+          'The robot\'s control is flexible, supporting remote operation via SSH terminal or wirelessly with a joystick. The software was designed with a multiprocessing approach, using sockets to decouple the control logic from the kinematics engine, ensuring smooth performance and a modular architecture.',
+        ],
+        tags: ['Python', 'Inverse Kinematics', 'PCB Design', '3D Design'],
+        keyFeatures: {
+          key1: {
+            title: 'Evolutionary 3D Design',
+            description:
+              'The robot evolved through 3 major versions, improving structural robustness, optimizing cable routing, and adapting the chassis for progressively more powerful servomotors (from 8 kg·cm to 60 kg·cm).',
+          },
+          key2: {
+            title: 'Dual Control System (Pi 4 + Pico)',
+            description:
+              'A distributed control architecture where the RPi 4 acts as the high-level brain (kinematics) and the RPi Pico functions as a low-level controller dedicated to precise servo management.',
+          },
+          key3: {
+            title: 'Custom Control PCB',
+            description:
+              'A custom PCB was designed and manufactured to integrate the RPi Pico, the PCA9685 servo controller, and current measurement systems per leg, centralizing all control electronics.',
+          },
+          key4: {
+            title: 'Inverse Kinematics Library',
+            description:
+              'Development of a Python software library that translates high-level movement commands (e.g., "move forward", "rotate") into the precise angles for each of the robot\'s 18 axes.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was managing the mechanical load. The first iteration suffered from oscillations due to a lack of torque, while the second burned out the most stressed servos. This required a complete redesign of the structure to integrate high-performance servomotors, validating the importance of iterative design.',
+        learnings:
+          'This project consolidated my skills in mechanical design for additive manufacturing, PCB design, and the practical implementation of complex algorithms. The fundamental lesson was the importance of iteration to solve unforeseen problems and the need to oversize critical components to ensure system reliability.',
+      },
+      frcLosAngeles2016: {
+        title: 'FIRST Robotics Competition 2016',
+        description:
+          'My debut in international competitive robotics with the "Corazón de Chile" team. As a member of the electronics division.',
+        imageAltText: 'Cover image for the FIRST Robotics Competition 2016 project',
+        categoryText: 'Competitive Robotics',
+        dateText: 'April 2016',
+        detailedDescription: [
+          'My first foray into large-scale robotics was an immersive experience at the FRC in Los Angeles. I was part of the "Corazón de Chile" team, an organization of over 20 people divided into areas like design, mechanics, and programming. As part of the electronics division, my main responsibility was the assembly and management of the robot\'s internal wiring, a critical task to ensure communication and power for all systems in a highly demanding environment.',
+        ],
+        tags: ['CDCH ❤️', 'International', 'Teamwork'],
+        keyFeatures: {
+          key1: {
+            title: 'Robust Fail-Proof Wiring',
+            description:
+              'Our validation method was as practical as it was effective: the 50+ kg robot was completely flipped over to ensure that no component or cable would come loose under stress.',
+          },
+          key2: {
+            title: 'Immersion in a Development Organization',
+            description:
+              'Witnessing firsthand the dynamics of a large team with specialized leaders and divisions was a revelation. Although my role was execution-focused, understanding this structure inspired me and laid the foundation for my interest in project leadership.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The biggest challenge was logistical and time-related. Due to the strict 6-week deadline, we didn\'t complete the robot\'s assembly before shipping it. This forced us to do almost all the electrical wiring directly at the competition venue, working under immense pressure to get the robot operational for the first rounds.',
+        learnings:
+          'Beyond the technical aspects, the most profound lesson was understanding how a large-scale development team works. Seeing the organization and leadership in action motivated me not only to continue in robotics but to aspire to create and lead my own teams—a seed that germinated the following year when I founded the robotics group at my high school.',
+      },
+      proyectoTituloFoc2024: {
+        title: 'Thesis Project: FOC Driver',
+        description:
+          'Design and implementation of a Field-Oriented Control (FOC) driver for brushless motors as my thesis project, realizing the personal goal that drove me to study Electronics Engineering.',
+        imageAltText: 'Cover image of the thesis document on the FOC controller.',
+        categoryText: 'Innovation and Development',
+        dateText: 'March 2025',
+        detailedDescription: [
+          'This project represents the culmination of my degree and the very reason I started it. It was the formal materialization of the goal I set for myself in 2018: to create a brushless motor controller superior to commercial ESCs, based on Field-Oriented Control (FOC).',
+          'Leveraging all my prior experience, the work was structured with a clear methodology under the guidance of my co-advisor, Pedro Melin. The development spanned four months of intensive firmware programming, one month for the final PCB design, and two additional months for testing, validation, and polishing details.',
+          'The result is a functional and validated FOC driver that not only meets the technical requirements but also demonstrates a complete research and development cycle. On March 31, 2025, I defended this work, earning the highest grade and closing a chapter that defined my professional path.',
+        ],
+        tags: ['FOC Control', 'Power Electronics', 'PCB Design', 'STM32 HAL'],
+        keyFeatures: {
+          key1: {
+            title: 'Optimized FOC Algorithm',
+            description:
+              'Complete implementation of the FOC algorithm on an STM32 microcontroller, achieving precise torque and speed control for superior motor performance.',
+          },
+          key2: {
+            title: 'Robust Power Stage Design',
+            description:
+              'Creation of a three-phase inverter with MOSFETs capable of handling high currents, incorporating gate drivers and a PCB layout optimized for signal integrity.',
+          },
+          key3: {
+            title: 'Real-Time Firmware',
+            description:
+              'Programming the STM32 with HAL libraries to execute the FOC control loop at 48 kHz, managing sensor readings and PWM generation in a synchronized manner.',
+          },
+          key4: {
+            title: 'Academic Methodology and Validation',
+            description:
+              'Application of a formal R&D process, from theoretical study to experimental validation of the results, documenting every stage of the process.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was translating the complex mathematical theory of FOC into an optimized, real-time firmware. The power stage design was equally critical, requiring a careful PCB layout to handle high currents and minimize noise.',
+        learnings:
+          'This project consolidated my training in embedded systems, power electronics, and advanced control. I learned to structure a complex project within an academic framework, to rigorously document the process, and to methodically validate the results, confirming the value of perseverance.',
+      },
+      focExperimental: {
+        title: 'FOC Driver Prototypes and Development',
+        description:
+          'A chronicle of the self-taught development of an FOC controller, from the first homemade PCBs to functional prototypes that laid the groundwork for my thesis project.',
+        imageAltText: 'Prototype of the FOC controller board on a test bench.',
+        categoryText: 'Innovation and Development',
+        dateText: 'March 2024',
+        detailedDescription: [
+          'It all began in 2018, after competing in the ALL JAPAN ROBOT SUMO TOURNAMENT and realizing that commercial ESC controllers were a significant bottleneck. They didn\'t offer the starting torque or the response I needed to fully leverage the qualities of brushless motors. This frustration became a goal: to build my own FOC controller, a goal that led me to study electronics.',
+          'For several years, I dedicated myself to independent research and experimentation. The process was iterative and hands-on: I designed four versions of PCBs, starting with homemade acid etching and later professionalizing the process with JLCPCB. Along the way, I burned countless MOSFETs and microcontrollers, and even explored using FPGAs, learning from every mistake.',
+          'This phase culminated in a functional prototype and, most importantly, a deep, practical understanding of motor control and power electronics. It was a journey of trial and error that prepared me with a solid foundation to formalize all this knowledge in my thesis project.',
+        ],
+        tags: ['PCB Design', 'Power Electronics', 'Firmware', 'STM32'],
+        keyFeatures: {
+          key1: {
+            title: 'Iterative Hardware Design',
+            description:
+              'Evolution of the design through multiple PCB prototypes, improving layout, thermal management, and component selection in each version.',
+          },
+          key2: {
+            title: 'Self-Taught Research',
+            description:
+              'A self-guided learning process on the theory of FOC control, the operation of MOSFET bridges, and low-level programming to apply them in practice.',
+          },
+          key3: {
+            title: 'Prototyping and Testing',
+            description:
+              'Manufacturing and assembling functional boards, facing and solving real hardware problems like electrical noise and power component failures.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was the steep self-learning curve: translating complex theoretical concepts into functional hardware without formal guidance. This involved a long process of trial, error, and diagnosis, especially when working with high currents and voltages.',
+        learnings:
+          'I learned that the best way to understand theory is by applying it, even if it means failing repeatedly. This process taught me to be resilient, to diagnose failures in power hardware, and to build an invaluable practical foundation before formally tackling the project.',
+      },
+      sumoAsuraKabuto2023: {
+        title: 'Mega Sumo "Asura Kabuto"',
+        description:
+          'Design and fabrication of a high-performance Mega Sumo robot with a CNC aluminum chassis and FOC control, representing Chile at the 2023 "All Japan Robot-Sumo Tournament".',
+        imageAltText: 'Asura Kabuto robot in the competition arena.',
+        categoryText: 'Competitive Robotics',
+        dateText: 'December 2023',
+        detailedDescription: [
+          '"Asura Kabuto" represents the culmination of years of research and development in sumo robotics. It was conceived as my ultimate creation, applying all the knowledge acquired about brushless motor control with ODrive and advanced mechanical design.',
+          'The project took a qualitative leap forward thanks to a sponsorship from PCBWAY, which allowed us to move from 3D printed prototypes to a final chassis made of 7075 aluminum via CNC, giving it exceptional robustness. Support from Synopsys and the UBB Faculty of Engineering was crucial for funding the trip and competing in Japan.',
+          'In combat, the robot behaved like a true "tank," with an unbeatable frontal pushing force thanks to its Sunnysky motors and a high gear ratio. However, its top speed, lower than that of elite competitors, became a crucial tactical disadvantage that resulted in a defeat by flanking in the first round.',
+        ],
+        tags: ['International', 'CNC Design', 'FOC Control', 'R&D'],
+        keyFeatures: {
+          key1: {
+            title: '7075 CNC Aluminum Chassis',
+            description:
+              'Main structure made of aerospace-grade aluminum to maximize rigidity and durability, withstanding the violent impacts of high-level sumo.',
+          },
+          key2: {
+            title: 'High-Power FOC Control',
+            description:
+              'Use of two 1600W brushless motors controlled by an ODrive 3.6, modified to handle high current peaks and deliver massive, instantaneous torque.',
+          },
+          key3: {
+            title: '"Tank" Strategy',
+            description:
+              'Design focused on brute force and endurance, using an array of neodymium magnets to maximize grip on the metal track and nullify the opponent\'s push.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main technical challenge was adapting the ODrive 3.6 to withstand the brutal current spikes from the motors without overheating. In competition, the challenge was purely tactical: the low speed made the robot vulnerable to being outflanked by more agile opponents.',
+        learnings:
+          'This experience showed that in elite sumo, the balance between torque and speed is fundamental. A purely "tank" robot can be neutralized by agility. It was a key lesson on the importance of strategy and versatility over brute force.',
+      },
+      battlebotBrc2022: {
+        title: 'BattleBot for BRC 2022',
+        description:
+          'Development of a combat robot for BRC 2022, applying FOC control for the first time in a destructive environment with a mixed structure of aluminum and 3D printed parts.',
+        imageAltText: 'Combat robot in the BRC 2022 arena.',
+        categoryText: 'Competitive Robotics',
+        dateText: 'October 2022',
+        detailedDescription: [
+          'This robot was a direct evolution of the experimental FOC prototype, designed to take that technology to a new level of demand in the BRC BattleBot category. The goal was to validate its performance in a real combat environment.',
+          'The structure was a hybrid, combining the strength of aluminum for the main chassis with the versatility of 3D printing for complex geometries and internal supports. An ODrive was used for traction control and a traditional ESC for the spinning weapon.',
+          'For this project, I designed a new, more compact and robust PCB that efficiently integrated the microcontroller and the ODrive, optimizing space distribution and the protection of electronic components.',
+        ],
+        tags: ['National', 'FOC Control', '3D Design', 'PCB Design'],
+        keyFeatures: {
+          key1: {
+            title: 'Precise Traction with FOC Control',
+            description:
+              'Implementation of an ODrive to govern the brushless traction motors, allowing for agile maneuverability and instantaneous torque, crucial for combat.',
+          },
+          key2: {
+            title: 'High-Impact Spinning Weapon',
+            description:
+              'Use of a powerful brushless motor, controlled by an ESC, to maximize the weapon\'s kinetic energy and the damage inflicted on the opponent.',
+          },
+          key3: {
+            title: 'Hybrid Design for Survivability',
+            description:
+              'Combination of aluminum and 3D printed parts to achieve an optimal balance between weight, structural strength, and the ability to absorb impacts.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was designing a structure that effectively protected the electronics, especially the ODrive, from the violent impacts of combat. Additionally, managing power distribution between an FOC traction system and a high-demand weapon was complex.',
+        learnings:
+          'This project was the ultimate validation of FOC control in a high-demand application. I learned to design mechanical systems to withstand catastrophic failures and the importance of isolating and protecting electronic components in an extremely hostile environment.',
+      },
+      rodeorobotica2022: {
+        title: 'Experimental Prototype with FOC Control',
+        description:
+          'Development of an experimental robot for the "Robotics Rodeo," my first platform for testing and understanding FOC motor control technology with an ODrive 3.6.',
+        imageAltText: 'Experimental robot with ODrive and 3D printed structure.',
+        categoryText: 'Competitive Robotics',
+        dateText: 'August 2022',
+        detailedDescription: [
+          'This robot was conceived as a purely experimental project to participate in a recreational activity. Its main objective was to serve as a learning platform for Field-Oriented Control (FOC) technology, which I had only known in theory until then.',
+          'Using a sponsorship from JLCPCB, I designed a custom PCB that allowed for a clean integration of a microcontroller with the ODrive 3.6. The entire robot structure was fabricated using 3D printing, which facilitated rapid design iteration.',
+          'Participating in the "Robotics Rodeo" provided a low-pressure environment ideal for conducting the first tests, understanding the ODrive configuration process, and observing the behavior of brushless motors under this advanced type of control.',
+        ],
+        tags: ['FOC Control', 'R&D', 'PCB Design', '3D Printing'],
+        keyFeatures: {
+          key1: {
+            title: 'FOC Learning Platform',
+            description:
+              'First functional robot in which I implemented and configured an ODrive 3.6, laying the foundation for all my future projects with brushless motor control.',
+          },
+          key2: {
+            title: 'Custom Integration PCB',
+            description:
+              'Design of a printed circuit board to directly connect the main control microcontroller with the ODrive board, simplifying wiring and improving reliability.',
+          },
+          key3: {
+            title: 'Rapid Prototyping with 3D Printing',
+            description:
+              'Intensive use of 3D printing to manufacture the entire chassis and supports, allowing for agile and low-cost development.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was the steep learning curve of the ODrive ecosystem, including its configuration, calibration, and programming the communication with the main microcontroller. It was a process of much trial and error.',
+        learnings:
+          'This project was fundamental. It allowed me to understand in practice the benefits of FOC control, such as high torque at zero RPM and instantaneous response. The experience gained here was the foundation upon which much more complex competition robots, like the BattleBot and "Asura Kabuto," were built.',
+      },
+      sumoAllJapan2018: {
+        title: 'Debut at the 2018 World Sumo Championship in Japan',
+        description:
+          'First participation in the "All Japan Robot-Sumo Tournament" in Tokyo, a transformative experience after winning the national UTFSM competition as a high school student.',
+        imageAltText: 'Sumo robot competing at the 2018 World Championship in Japan.',
+        categoryText: 'Competitive Robotics',
+        dateText: 'December 2018',
+        detailedDescription: [
+          'After winning the national competition at UTFSM, I earned a spot at the Fujisoft World Robot-Sumo Tournament in Tokyo. This was my first immersion into elite global robotics competition, while still a high school student.',
+          'For the event, the champion robot was upgraded with more precise sensors and reprogrammed control logic. However, the technological and strategic gap was evident, resulting in a first-round defeat. The experience was a reality check against the highest level of competition.',
+        ],
+        tags: ['International', 'Leadership', 'Arduino', 'Perseverance'],
+        keyFeatures: {
+          key1: {
+            title: 'World Championship Experience',
+            description:
+              'Facing the best robot sumo teams on the planet, gaining an invaluable perspective on the state-of-the-art in the discipline.',
+          },
+          key2: {
+            title: 'Hardware and Software Upgrades',
+            description:
+              'Implementation of improvements in detection systems and control algorithms to try to compete in a much more demanding scenario.',
+          },
+          key3: {
+            title: 'National Representation',
+            description:
+              'Having the honor of representing Chile in one of the most prestigious robotics competitions in the world.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          gal5: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was the overwhelming jump in level. The robots in Japan were orders of magnitude faster and more powerful. Adapting to such a professional environment with limited resources and in such a short time was an immense task.',
+        learnings:
+          'This experience was a crucial source of motivation. It revealed the construction techniques, technologies, and strategies that defined the world elite. It set the path for me, igniting the spark to research and develop my own motor controller and return to compete at that level.',
+      },
+      sumoUtfsm2018: {
+        title: '2018 National Mega Sumo Champion',
+        description:
+          'Achieved first place in the Autonomous Mega Sumo category at UTFSM, qualifying for the world championship in Japan with an innovative aluminum chassis and brushless motors.',
+        imageAltText: '2018 National Mega Sumo champion robot.',
+        categoryText: 'Competitive Robotics',
+        dateText: 'October 2018',
+        detailedDescription: [
+          'This project was my personal revenge after the previous year\'s experience. With a greater investment of time and my own resources, a completely new robot was designed, abandoning 3D printing for the chassis in favor of a much more robust aluminum structure.',
+          'It was my first foray into the world of brushless motors for traction, a decision that, although challenging, proved key to the robot\'s superior performance. The electronics, still based on Arduino, were optimized for more effective control.',
+          'The effort culminated in winning first place in the national competition, an achievement that not only validated the new design approach but also granted me the coveted spot for the world championship in Japan.',
+        ],
+        tags: ['National', 'CNC Design', 'Arduino', 'Innovation'],
+        keyFeatures: {
+          key1: {
+            title: 'Aluminum Chassis',
+            description:
+              'Migration to a metal chassis that provided far superior rigidity and impact resistance, a decisive competitive advantage.',
+          },
+          key2: {
+            title: 'Foray into Brushless Motors',
+            description:
+              'First implementation of brushless motors for traction, a fundamental step that opened the door to a new level of power and speed.',
+          },
+          key3: {
+            title: 'Championship and World Qualification',
+            description:
+              'The robot\'s dominant performance secured the national victory and a spot for the All Japan Robot-Sumo Tournament in Tokyo.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          gal5: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The biggest technical challenge was controlling the brushless motors with conventional ESCs, which proved to have serious limitations in starting torque and response time. It was a constant struggle to make them work effectively for sumo.',
+        learnings:
+          'This victory consolidated the importance of quality in mechanical design. But above all, the frustration with the ESCs left me with an indelible lesson: to exploit the true potential of brushless motors, I needed a superior controller. That need became the goal that would define my career.',
+      },
+      robotracerAllJapan2025: {
+        title: 'Robotracer V6 in Japan',
+        description:
+          'Culmination of years of development by competing in the "All Japan Micromouse Contest," taking our line follower design with a turbine to the highest international level in Tokyo.',
+        imageAltText: 'Cover image for the Robotracer V6 in Japan project',
+        categoryText: 'Competitive Robotics',
+        dateText: 'February 2025',
+        detailedDescription: [
+          'As a result of qualifying in the national competition, we participated in the prestigious "All Japan Micromouse Contest." This event was the ultimate test for our design, facing the best teams on a world-class stage.',
+          'Final improvements for this competition focused on precision and reliability. Magnetic encoders were integrated into the wheels to implement closed-loop speed control, allowing for constant speeds set in m/s. Additionally, new high-strength turbine propellers were manufactured to safely maximize the ground effect.',
+        ],
+        tags: ['International', 'STM32 HAL', '3D Design', 'Motor Control'],
+        keyFeatures: {
+          key1: {
+            title: 'Speed Control with Encoders',
+            description:
+              'A closed-loop speed control was implemented using magnetic encoders, allowing the robot to maintain a constant and precise speed, regardless of load or battery level.',
+          },
+          key2: {
+            title: 'Turbine Optimization for High Performance',
+            description:
+              'The turbine propellers were made from high-toughness resin, allowing them to operate at higher RPMs safely to generate superior downforce and improve grip in corners.',
+          },
+          key3: {
+            title: 'Tuning for International Track',
+            description:
+              'Fine-tuning of sensors and adjustments to control algorithms were made to adapt the robot\'s behavior to the specific conditions of the official track in Japan.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The biggest setback was the turbine and motor breaking during testing, which required an emergency repair with parts from a drone purchased in Akihabara. Later, using a new high-grip material on the wheels exposed a minimal misalignment in the axles (due to wear), causing the excess grip to slow the robot down in the corners of the official track.',
+        learnings:
+          'The fundamental lesson was that optimizing one component can expose hidden weaknesses in others. We learned the critical importance of testing every change under conditions identical to the competition and the need to bring key spare parts for every system of the robot, especially for international events.',
+      },
+      robotcontest2025: {
+        title: 'Robotracer V5 - Coreless Optimization',
+        description:
+          'Secured second place in the All Chile Robot Contest with a lighter, more agile version of the robot, optimized with two high-performance coreless motors.',
+        imageAltText: 'Cover image for the Robotracer V5 project',
+        categoryText: 'Competitive Robotics',
+        dateText: 'January 2025',
+        detailedDescription: [
+          'For the 2024 edition of the Robot Contest (held in January 2025), we consolidated our design with a refined version that faced a high level of competition, including a team from Mexico. The result was a solid second place that validated the improvements made.',
+          'The key innovation was the transition from four motors to just two high-performance coreless motors. This change drastically reduced the robot\'s weight and inertia, significantly improving its agility and response time. On the software side, the implementation of advanced control routines in STM32 HAL was finalized, squeezing the maximum performance out of the new hardware.',
+        ],
+        tags: ['National', 'STM32 HAL', '3D Design', 'Optimization'],
+        keyFeatures: {
+          key1: {
+            title: 'Improved Agility with Coreless Motors',
+            description:
+              'The 4-motor setup was replaced by 2 coreless motors, which significantly decreased the total weight and improved responsiveness and acceleration in corners.',
+          },
+          key2: {
+            title: 'Firmware Optimization',
+            description:
+              'The migration to a more robust and optimized code in STM32 HAL was completed, adjusting the control parameters for the new robot dynamics and achieving more stable performance.',
+          },
+          key3: {
+            title: 'Validation of Competitive Design',
+            description:
+              'The robot proved to be a reliable and highly competitive platform, confirming that the design decisions around aerodynamics and integrated electronics were the right ones.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main technical challenge was completely readjusting the PD controller parameters for a much lighter and more reactive robot. The presence of high-level international competitors forced us to push the robot\'s performance to its absolute limit.',
+        learnings:
+          'This competition reinforced the principle that often, "less is more." Simplifying the drivetrain not only reduced complexity but resulted in a direct performance improvement. It was a valuable experience to measure our technical level against international teams.',
+      },
+      seguidorV5Brc2024: {
+        title: 'Robotracer V4 - Total Redesign and Dominance',
+        description:
+          'Double first place at BRC 2024 (Student and Open categories) thanks to a radical redesign that included an STM32H7 microcontroller and a custom 12-channel sensor.',
+        imageAltText: 'Cover image for the Robotracer V4 project',
+        categoryText: 'Competitive Robotics',
+        dateText: 'October 2024',
+        detailedDescription: [
+          'With the experience gained, and with the support of a Spanish team that shared their knowledge, we carried out a complete redesign of the robot to maximize efficiency. The new architecture separated the chassis from the electronics, creating a much more compact and powerful control PCB.',
+          'The technological leap was immense: we migrated to a high-performance STM32H7 microcontroller and designed our own 12-channel infrared sensor for track reading with unprecedented resolution on the national scene. Furthermore, in an intensive effort, I migrated the entire firmware to the STM32 HAL libraries in just three days before the event.',
+          'The result was absolute dominance in the competition, achieving a triple podium for the team and securing first place in the two main categories.',
+        ],
+        tags: ['National', 'STM32 HAL', 'PCB Design', 'Firmware'],
+        keyFeatures: {
+          key1: {
+            title: 'Control PCB with STM32H7',
+            description:
+              'A new 4-layer PCB was designed with a powerful STM32H7 microcontroller, allowing for much faster data processing and more sophisticated control.',
+          },
+          key2: {
+            title: 'Custom 12-Channel Infrared Sensor',
+            description:
+              'We designed and assembled our own 12-channel sensor, which provided us with line detection with higher resolution and precision than commercial 8-channel sensors.',
+          },
+          key3: {
+            title: 'Migration to HAL Firmware',
+            description:
+              'The codebase was rewritten to use the STM32 HAL libraries, giving us low-level control over the hardware, optimizing interrupt times and efficiency.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The biggest challenge was migrating and debugging the entire firmware to STM32 HAL in an extremely tight 3-day deadline. This required a deep understanding of the microcontroller\'s architecture and intensive debugging to ensure stability.',
+        learnings:
+          'This experience demonstrated the enormous performance leap gained by moving to a low-level programming environment (HAL vs. Arduino). It consolidated my skills in complex PCB design and high-performance firmware development under pressure.',
+      },
+      robotcontestVerstappen2024: {
+        title: 'Robotracer V3 - The Turbine Innovation',
+        description:
+          'First place in the All Chile Robot Contest and qualification for Japan with "Verstappen," the first robot in Chile with a suction turbine to generate ground effect.',
+        imageAltText: 'Cover image for the Robotracer V3 Verstappen project',
+        categoryText: 'Competitive Robotics',
+        dateText: 'January 2024',
+        detailedDescription: [
+          'This project marked a turning point in the national line follower scene. We introduced "Verstappen," the first competition robot in Chile to successfully implement a suction turbine to generate "ground effect," an advanced technique inspired by Japanese competitions.',
+          'Building on the STM32 electronics base, a 3D printed chassis was designed to integrate a 4-wheel drive configuration and the turbine in the center. Although the design was robust, the aerodynamic advantage was decisive, allowing us to take corners at a much higher speed than our competitors.',
+          'This technological milestone secured us first place and the accreditation to represent Chile at the "All Japan Micromouse Contest."',
+        ],
+        tags: ['National', 'Innovation', 'STM32', '3D Design'],
+        keyFeatures: {
+          key1: {
+            title: 'Pioneers in Suction Turbine',
+            description:
+              'We were the first in Chile to implement a turbine to generate ground effect, dramatically increasing the robot\'s traction by creating a low-pressure zone under the chassis.',
+          },
+          key2: {
+            title: '4WD Chassis Optimized for Aerodynamics',
+            description:
+              'A 3D printed body was designed that not only housed the 4 motors and the turbine but also managed airflow to maximize downforce.',
+          },
+          key3: {
+            title: 'Qualification for International Competition',
+            description:
+              'The superior performance, a result of innovation, earned us first place and a ticket to compete in the prestigious Robotracer event in Japan.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was designing a functional turbine system from scratch, balancing power consumption, additional weight, and the suction force generated. Integrating this new technology into a 3D printed chassis was a complex mechanical design challenge.',
+        learnings:
+          'This project demonstrated that disruptive innovation, inspired by technologies from other regions, can offer an overwhelming competitive advantage. It was a profound learning experience in applying aerodynamic principles to mobile robotics.',
+      },
+      seguidorStm32Brc2023: {
+        title: 'Robotracer V2 - The Leap to STM32',
+        description:
+          'Development of the team\'s first line follower with an STM32 microcontroller and integrated electronics, laying the technical foundation for future successes.',
+        imageAltText: 'Cover image for the Robotracer V2 with STM32 project',
+        categoryText: 'Competitive Robotics',
+        dateText: 'October 2023',
+        detailedDescription: [
+          'In 2023, we made a fundamental qualitative leap in our line follower platform. This was the first robot for which I designed a custom PCB that integrated the microcontroller (STM32) and motor driver directly soldered (SMD), abandoning Arduino modules.',
+          'The hardware was enhanced with high-performance components, such as JSumo motors and high-grip silicone wheels, which gave us a clear mechanical advantage. The robot was visibly faster than its competitors in testing.',
+          'Unfortunately, the competition was marred by a technical failure by the organization: the aluminum track generated electrostatic discharges that damaged our robot. Despite not being able to complete the race, the design showed its enormous potential and laid the groundwork for the future.',
+        ],
+        tags: ['National', 'STM32', 'PCB Design', 'R&D'],
+        keyFeatures: {
+          key1: {
+            title: 'Migration to STM32 Architecture',
+            description:
+              'The Arduino platform was abandoned in favor of an STM32 microcontroller, which allowed for faster data processing, more precise interrupts, and more advanced control.',
+          },
+          key2: {
+            title: 'Control PCB with Integrated Components',
+            description:
+              'The first custom PCB with SMD components was designed, integrating the microcontroller and motor drivers to achieve a more compact, robust, and reliable system.',
+          },
+          key3: {
+            title: 'Use of High-Performance Components',
+            description:
+              'The incorporation of JSumo motors and high-grip silicone wheels provided far superior traction and speed compared to the standard components used until then.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The biggest and most unexpected challenge was the competition\'s aluminum track, which was out of regulation and caused electrostatic discharges (ESD). This led to reboots and eventually burned out the microcontrollers, a problem impossible to fix without SMD soldering tools.',
+        learnings:
+          'This bitter experience taught us firsthand the critical importance of including ESD protection in PCB design. Additionally, we learned that we must be prepared for unforeseen issues that go beyond the robot, including failures in the event\'s infrastructure.',
+      },
+      robotcontest2022: {
+        title: 'Robotracer V1 - Debut and Resilience',
+        description:
+          'Secured second place in the All Chile Robot Contest after an intense day of teamwork that culminated in rebuilding the robot in 10 minutes.',
+        imageAltText: 'Cover image for the Robotracer V1 project',
+        categoryText: 'Competitive Robotics',
+        dateText: 'November 2022',
+        detailedDescription: [
+          'This project marked our team\'s debut in the post-pandemic line follower category. I joined to support my GRUBB teammates the day before the event, using PCBs from the open-source "Open Lamborghino" project that we had manufactured.',
+          'After a night of intensive work for setup, we faced the ultimate adversity during the competition: the main robot burned out. With time against us, we had to assemble a new one from scratch in just 10 minutes with spare parts.',
+          'Despite everything, this incredible display of resilience and teamwork allowed us to secure a commendable second place, laying the foundation for our journey in the category.',
+        ],
+        tags: ['National', 'Open source', 'Leadership', 'Teamwork'],
+        keyFeatures: {
+          key1: {
+            title: 'Based on the Open Lamborghino Project',
+            description:
+              'We used the open-source "Open Lamborghino" project as a starting point, which allowed us to speed up development and learn from a platform already tested by the community.',
+          },
+          key2: {
+            title: 'Problem-Solving Under Extreme Pressure',
+            description:
+              'The team demonstrated an exceptional ability to solve problems by assembling a functional robot from scratch in just 10 minutes during a live competition.',
+          },
+          key3: {
+            title: 'Foundations of Teamwork',
+            description:
+              'The success of this project was not based on technology, but on collaboration, communication, and the ability to support each other in the most critical moments.',
+          },
+        },
+        galleryImages: {
+          gal1: { alt: '', caption: '' },
+          gal2: { alt: '', caption: '' },
+          gal3: { alt: '', caption: '' },
+          gal4: { alt: '', caption: '' },
+          galM: { alt: '', caption: '' },
+        },
+        challenges:
+          'The main challenge was twofold: first, the lack of time for initial preparation, and second, the crisis of having to rebuild the robot in 10 minutes. It was an extreme test of our technical skills and, above all, our ability to stay calm under pressure.',
+        learnings:
+          'This competition taught me the invaluable worth of teamwork and the importance of preparation, not just for the main robot, but also for having spare parts and a contingency plan. It was the foundation upon which we built all future developments.',
+      },
     },
   },
 } as const;

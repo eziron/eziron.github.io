@@ -54,7 +54,7 @@ export function LanguageSelector({
           size="icon"
           disabled={isPending}
           className="size-8 p-0 hover:bg-accent"
-          aria-label="Changer de langue"
+          aria-label="Change language"
         >
           {currentLanguage ? (
             <img
@@ -65,7 +65,7 @@ export function LanguageSelector({
               className="object-contain"
             />
           ) : (
-            <span className="text-sm">{currentLocale.toUpperCase()}</span> // Fallback si drapeau non trouvé
+            <span className="text-sm">{currentLocale.toUpperCase()}</span> 
           )}
         </Button>
       </DropdownMenuTrigger>
