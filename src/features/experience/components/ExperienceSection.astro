@@ -1,0 +1,28 @@
+---
+// src/features/experience/components/ExperienceSection.astro
+
+import Heading from '@/components/Heading.astro';
+import type { TranslatedExperience } from '../type';
+import ExperienceCard from './ExperienceCard.astro';
+import { useTranslations, type LanguageCode } from '@/i18n/ui';
+
+interface Props {
+  experiences: TranslatedExperience[];
+}
+
+const { experiences } = Astro.props;
+const lang = Astro.currentLocale as LanguageCode;
+const t = useTranslations(lang, 'experiencePage');
+---
+<section id="experience" class="py-12 md:py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <Heading
+      title={t('title')}
+      className="text-center mb-10"
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+      {experiences.map(exp => <ExperienceCard experience={exp} />)}
+    </div>
+  </div>
+</section>

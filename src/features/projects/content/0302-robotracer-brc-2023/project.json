@@ -1,0 +1,75 @@
+{
+  "id": "robotracerBrc2023",
+  "slug": "robotracer-v2",
+  "date": "2023-11-19",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Robotracer V2 - El Salto a STM32",
+    "description": "Primer robotracer con hardware 100% propio: una PCB con STM32 y componentes SMD integrados que sentó las bases técnicas para futuros éxitos a pesar de un fallo inducido por el entorno.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Noviembre 2023",
+    "detailedDescription": [
+      "Este proyecto representó un salto cualitativo, evolucionando desde plataformas basadas en módulos. Fue el primer seguidor de línea en el que diseñé una PCB personalizada que integraba el microcontrolador (STM32) y el driver de motores directamente soldados (SMD).",
+      "El hardware se potenció con componentes de alto rendimiento, como motores JSumo y ruedas de silicona de alta adherencia, dándonos una clara ventaja mecánica. El robot era visiblemente más rápido que sus competidores.",
+      "Durante la competencia, un entorno imprevisto —una pista con superficie de aluminio fuera de reglamento— generó descargas electrostáticas (ESD) que dañaron la electrónica. A pesar de no poder completar la carrera, la experiencia validó el potencial del diseño y proporcionó un aprendizaje crucial sobre la necesidad de protecciones robustas."
+    ],
+    "tags": [
+      "Nacional",
+      "STM32",
+      "Diseño de PCB",
+      "Soldadura SMD"
+    ],
+    "keyFeatures": [
+      {
+        "title": "PCB de Control con Componentes Integrados (SMD)",
+        "description": "Se diseñó la primera PCB que integró el microcontrolador y los drivers de motor como componentes SMD, abandonando los módulos para lograr un sistema más compacto, robusto y fiable."
+      },
+      {
+        "title": "Migración a Arquitectura STM32",
+        "description": "Se abandonó la plataforma Arduino para utilizar un microcontrolador STM32 (programado inicialmente con el framework de Arduino), permitiendo un procesamiento más rápido y un control más avanzado."
+      },
+      {
+        "title": "Componentes de Alto Rendimiento Mecánico",
+        "description": "La incorporación de motores JSumo y ruedas de silicona de alta adherencia proporcionó una tracción y velocidad muy superiores."
+      }
+    ],
+    "challenges": "El principal desafío fue un fallo de hardware inducido por el entorno. La pista de la competencia, con una superficie de aluminio no reglamentaria, generaba descargas electrostáticas (ESD) que provocaron reinicios y finalmente dañaron los microcontroladores. La falta de herramientas de soldadura SMD en el evento imposibilitó la reparación en el momento.",
+    "learnings": "Esta experiencia demostró de forma crítica la importancia de incluir protecciones contra ESD en el diseño de PCBs, especialmente para operar en entornos no controlados. El incidente subrayó la necesidad de estar preparado para fallos de hardware en competencia, no solo con repuestos, sino también con las herramientas adecuadas para reparaciones complejas."
+  },
+  "en": {
+    "title": "Robotracer V2 - The Leap to STM32",
+    "description": "First line-follower with 100% custom hardware: a PCB with an integrated STM32 and SMD components that laid the technical foundation for future successes despite an environment-induced failure.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "November 2023",
+    "detailedDescription": [
+      "This project represented a fundamental qualitative leap from module-based platforms. It was the first line-follower for which I designed a custom PCB integrating the microcontroller (STM32) and motor driver as SMD components.",
+      "The hardware was enhanced with high-performance components, such as JSumo motors and high-grip silicone wheels, giving us a clear mechanical advantage. The robot was visibly faster than its competitors.",
+      "During the competition, an unforeseen operating environment—a track with an out-of-regulation aluminum surface—generated electrostatic discharges (ESD) that damaged the electronics. Despite being unable to complete the race, the experience validated the design's potential and provided a crucial lesson on robust hardware protection."
+    ],
+    "tags": [
+      "National",
+      "STM32",
+      "PCB Design",
+      "SMD Soldering"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Control PCB with Integrated SMD Components",
+        "description": "Designed the first PCB to integrate the microcontroller and motor drivers as SMD components, moving away from modules to achieve a more compact, robust, and reliable system."
+      },
+      {
+        "title": "Migration to STM32 Architecture",
+        "description": "The Arduino platform was abandoned in favor of an STM32 microcontroller (initially programmed with the Arduino framework), allowing for faster processing and more advanced control."
+      },
+      {
+        "title": "High-Performance Mechanical Components",
+        "description": "The incorporation of JSumo motors and high-grip silicone wheels provided far superior traction and speed."
+      }
+    ],
+    "challenges": "The main challenge was an environment-induced hardware failure. The competition track, with a non-regulation aluminum surface, generated electrostatic discharges (ESD) that caused reboots and ultimately damaged the microcontrollers. The lack of SMD soldering tools at the event made on-the-spot repairs impossible.",
+    "learnings": "This experience critically demonstrated the importance of including ESD protection in PCB design, especially for uncontrolled environments. The incident highlighted the need to be prepared for hardware failures in competition, not just with spare parts, but also with the appropriate tools for complex repairs."
+  }
+}

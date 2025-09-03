@@ -1,12 +1,15 @@
 export type ProjectData = {
   id: string; // Keep as is, used for main i18n key and internal reference
   slug: string; // New: for URL generation, e.g., 'my-awesome-project'
-  imageUrl?: ImageMetadata; // Main project image, keep as is
+  dirName: string;
+  imageUrl?: any; // Main project image, keep as is
   projectUrl?: string; // Link to live project, keep as is
   codeUrl?: string; // Link to source code, keep as is
   date: string; // New: e.g., '2023-06-15', 'Jan 2023 - Mar 2024'. Will be translated.
-  galleryImages?: Array<{ id: string; src: ImageMetadata }>; // Store raw image data, alt/captions come from i18n
+  galleryImages?: Array<{ id: string; src: any }>; // Store raw image data, alt/captions come from i18n
   videoUrl?: string;
+  isFeatured?: boolean; 
+  isHidden?: boolean;   
 };
 
 export type TranslatedKeyFeature = {

@@ -8,6 +8,7 @@ import {
   type TranslatedSkill,
   type TranslatedProject,
 } from '@/features/projects';
+import { getTranslatedExperiences, type TranslatedExperience } from '@/features/experience';
 
 const lang =
   (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
@@ -16,12 +17,14 @@ const t = useTranslations(lang, 'homePage');
 const pageTitle = t('pageTitle');
 const pageDescription = t('pageDescription');
 
-const projects: Array<TranslatedProject> = getTranslatedProjects(lang);
+const projects: Array<TranslatedProject> = await getTranslatedProjects(lang);
+const experiences: Array<TranslatedExperience> = await getTranslatedExperiences(lang);
 const skills: Array<TranslatedSkill> = getTranslatedSkills(lang);
 
 const layoutProps = {
   lang,
   projects,
+  experiences,
   skills,
   heroGreeting: t('heroGreeting'),
   heroSubtitlePart: t('heroSubtitlePart'),

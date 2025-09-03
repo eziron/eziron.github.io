@@ -1,0 +1,75 @@
+{
+  "id": "driverFocV22023",
+  "slug": "foc-v2",
+  "date": "2023-06-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Driver FOC V2 - La Plataforma de Pruebas",
+    "description": "El prototipo clave que integró un microcontrolador STM32 y sensores de corriente, permitiendo las primeras pruebas del algoritmo FOC antes de una falla que inspiró el diseño definitivo.",
+    "categoryText": "Innovación y Desarrollo",
+    "dateText": "Junio 2023",
+    "detailedDescription": [
+      "La V2 unió la electrónica de potencia con la lógica de control. Diseñada para usar una placa 'Black Pill' con STM32, fue la primera versión en incorporar componentes cruciales para el FOC: resistencias shunt y amplificadores INA240 para la medición de corriente.",
+      "Con esta placa, implementé y probé con éxito las primeras etapas del algoritmo FOC. Pude realizar las transformadas de Clarke y Park y controlar la velocidad de un motor en lazo abierto sincronizado con un encoder. Incluso experimenté con técnicas avanzadas como el debilitamiento de campo magnético.",
+      "Sin embargo, el proyecto tuvo un final abrupto. Durante una prueba, una mala práctica al cargar el código sin desconectar la alimentación provocó un cortocircuito que destruyó toda la placa. Esta falla demostró la necesidad crítica de una protección a nivel de hardware, una lección que se convirtió en un requisito no negociable para la versión final."
+    ],
+    "tags": [
+      "Control FOC",
+      "Electrónica de Potencia",
+      "Firmware",
+      "STM32"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Integración de Microcontrolador STM32",
+        "description": "Primer diseño que integró una placa de desarrollo STM32, permitiendo ejecutar la lógica de control directamente en el driver."
+      },
+      {
+        "title": "Medición de Corriente en Fase",
+        "description": "Inclusión de resistencias shunt y amplificadores INA240, un pilar fundamental para la implementación del control FOC."
+      },
+      {
+        "title": "Validación de Algoritmos FOC",
+        "description": "Ejecución exitosa de las transformadas matemáticas y control básico del motor, validando la adquisición de datos y la lógica de control."
+      }
+    ],
+    "challenges": "Implementar el lazo de control FOC por primera vez fue un gran reto de firmware. Sin embargo, la falla final, causada por no tener una protección hardware para desactivar el puente MOSFET, fue el desafío que definió los requisitos de seguridad para la versión V3.",
+    "learnings": "Este prototipo me enseñó a implementar la teoría FOC en un firmware real. La falla me enseñó que la protección del hardware es tan importante como el algoritmo de control, una lección que se aplicó directamente en el diseño del driver de mi proyecto de título."
+  },
+  "en": {
+    "title": "FOC Driver V2 - The Testbed Platform",
+    "description": "The key prototype that integrated an STM32 microcontroller and current sensors, enabling FOC algorithm tests before a final failure inspired the definitive design.",
+    "categoryText": "Innovation and Development",
+    "dateText": "June 2023",
+    "detailedDescription": [
+      "The V2 merged power electronics with control logic. Designed for a 'Black Pill' board, it was the first version to incorporate crucial FOC components: shunt resistors and INA240 amplifiers for current sensing.",
+      "With this board, I successfully tested the initial stages of the FOC algorithm. I performed Clarke and Park transforms and controlled a motor's speed in an open loop with an encoder. I even experimented with advanced techniques like field weakening.",
+      "However, the project came to an abrupt end. A bad practice of uploading code without disconnecting the power supply caused a short circuit that destroyed the entire board. This failure demonstrated the critical need for hardware-level protection, a lesson that became a non-negotiable requirement for the final version."
+    ],
+    "tags": [
+      "FOC Control",
+      "Power Electronics",
+      "Firmware",
+      "STM32"
+    ],
+    "keyFeatures": [
+      {
+        "title": "STM32 Microcontroller Integration",
+        "description": "First design to integrate an STM32 development board, allowing control logic to run directly on the driver."
+      },
+      {
+        "title": "In-Phase Current Sensing",
+        "description": "Inclusion of shunt resistors and INA240 amplifiers, a fundamental pillar for implementing FOC."
+      },
+      {
+        "title": "FOC Algorithm Validation",
+        "description": "Successful execution of the mathematical transforms and basic motor control, validating data acquisition and control logic."
+      }
+    ],
+    "challenges": "Implementing the FOC control loop for the first time was a major firmware challenge. However, the final failure, caused by not having hardware protection to disable the MOSFET bridge, was the challenge that defined the safety requirements for the V3.",
+    "learnings": "This prototype taught me how to implement FOC theory in real firmware. The failure taught me that hardware protection is as important as the control algorithm, a lesson directly applied to the design of my thesis project driver."
+  }
+}

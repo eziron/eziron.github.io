@@ -1,0 +1,63 @@
+{
+  "id": "frc2016",
+  "slug": "frc",
+  "date": "2016-04-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "FIRST Robotics Competition 2016",
+    "description": "Mi debut en la robótica competitiva internacional con el equipo \"Corazón de Chile\". Como miembro de la división de electrónica.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Abril 2016",
+    "detailedDescription": [
+      "Mi primera incursión en la robótica a gran escala fue una experiencia inmersiva en la FRC de Los Ángeles. Formé parte del equipo \"Corazón de Chile\", una organización de más de 20 personas dividida en áreas como diseño, mecánica y programación. Integrado en la división de electrónica, mi principal responsabilidad fue el montaje y la gestión del cableado interno del robot, una tarea crítica para asegurar la comunicación y alimentación de todos los sistemas en un entorno de alta exigencia."
+    ],
+    "tags": [
+      "CDCH",
+      "Internacional",
+      "Trabajo en Equipo",
+      "Cableado"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Cableado Robusto a Prueba de Fallos",
+        "description": "Nuestro método de validación era tan práctico como efectivo: el robot, de más de 50 kg, era volteado por completo para asegurar que ningún componente o cable se soltara bajo estrés."
+      },
+      {
+        "title": "Inmersión en una Organización de Desarrollo",
+        "description": "Observar de primera mano la dinámica de un equipo grande, con líderes y divisiones especializadas, fue una revelación. Aunque mi rol fue de ejecución, entender esta estructura sentó las bases de mi interés por el liderazgo de proyectos."
+      }
+    ],
+    "challenges": "El mayor desafío fue logístico y de tiempo. Debido al estricto plazo de 6 semanas, no completamos el ensamblaje del robot antes de enviarlo. Esto nos obligó a realizar casi todo el cableado eléctrico directamente en el recinto de la competencia, trabajando bajo una inmensa presión para tener el robot operativo para las primeras rondas.",
+    "learnings": "Más allá de la técnica, el aprendizaje más profundo fue entender cómo funciona un equipo de desarrollo a gran escala. Ver la organización y el liderazgo en acción me motivó no solo a continuar en la robótica, sino a aspirar a crear y liderar mis propios equipos, lo que me impulsó a fundar el grupo de robótica de mi liceo al año siguiente."
+  },
+  "en": {
+    "title": "FIRST Robotics Competition 2016",
+    "description": "My debut in international competitive robotics with the \"Corazón de Chile\" team. As a member of the electronics division.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "April 2016",
+    "detailedDescription": [
+      "My first foray into large-scale robotics was an immersive experience at the FRC in Los Angeles. I was part of the \"Corazón de Chile\" team, an organization of over 20 people divided into areas like design, mechanics, and programming. As part of the electronics division, my main responsibility was the assembly and management of the robot's internal wiring, a critical task to ensure communication and power for all systems in a highly demanding environment."
+    ],
+    "tags": [
+      "CDCH",
+      "International",
+      "Teamwork",
+      "Wiring"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Robust Fail-Proof Wiring",
+        "description": "Our validation method was as practical as it was effective: the 50+ kg robot was completely flipped over to ensure that no component or cable would come loose under stress."
+      },
+      {
+        "title": "Immersion in a Development Organization",
+        "description": "Witnessing firsthand the dynamics of a large team with specialized leaders and divisions was a revelation. Although my role was execution-focused, understanding this structure laid the foundation for my interest in project leadership."
+      }
+    ],
+    "challenges": "The biggest challenge was logistical and time-related. Due to the strict 6-week deadline, we didn't complete the robot's assembly before shipping it. This forced us to do almost all the electrical wiring directly at the competition venue, working under immense pressure to get the robot operational for the first rounds.",
+    "learnings": "Beyond the technical aspects, the most profound lesson was understanding how a large-scale development team works. Seeing the organization and leadership in action motivated me not only to continue in robotics but to aspire to create and lead my own teams—a motivation that led me to found the robotics group at my high school the following year."
+  }
+}

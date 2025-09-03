@@ -1,0 +1,81 @@
+{
+  "id": "freelanceMesas2025",
+  "slug": "mesas",
+  "date": "2025-01-30",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": true,
+  "isHidden": false,
+  "es": {
+    "title": "Controlador para Mesones Levadizos",
+    "description": "Desarrollo de un sistema de control a medida para dos mesones levadizos, implementado en un espacio de cowork en la Torre Costanera, Santiago.",
+    "categoryText": "Freelance",
+    "dateText": "Enero 2025",
+    "detailedDescription": [
+      "Este proyecto consistió en el desarrollo de la unidad de control electrónico para un sistema mecánico de gran envergadura: dos mesones de 800 kg cada uno, accionados por un conjunto de tres huinches de carga por mesa. La principal exigencia era garantizar un control preciso y completamente seguro para su operación en un concurrido espacio de cowork.",
+      "Mi responsabilidad abarcó el ciclo completo de desarrollo, desde el diseño del hardware y la PCB hasta la programación del firmware. La solución centraliza la operación de 6 motores de alta carga, 6 servomotores para los pestillos de seguridad y 12 sensores inductivos de posicionamiento. El control se realiza a través de una interfaz de usuario física con selectores y botoneras, proporcionando retroalimentación visual del estado del sistema."
+    ],
+    "tags": [
+      "STM32 HAL",
+      "Diseño de PCB",
+      "Firmware",
+      "Sistemas Embebidos"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Control Centralizado de Alta Carga",
+        "description": "Gestión de 6 motores bidireccionales, 12 sensores de posición NPN y 6 servos, todo desde una única placa controladora basada en un microcontrolador STM32."
+      },
+      {
+        "title": "Aislamiento Eléctrico y Seguridad",
+        "description": "Todas las señales de entrada y salida fueron optoacopladas para proteger el microcontrolador. Se utilizaron fuentes de poder aisladas para separar el circuito de control del de potencia, garantizando máxima fiabilidad."
+      },
+      {
+        "title": "Fabricación y Montaje Profesional",
+        "description": "La placa fue fabricada y ensamblada utilizando los servicios de PCBA de JLCPCB. Posteriormente realicé el montaje en gabinete y la conexión final en terreno."
+      },
+      {
+        "title": "Firmware con Lógica de Seguridad",
+        "description": "El firmware, programado en C++ con librerías HAL, incluye múltiples capas de seguridad y validaciones para prevenir malos usos y proteger la integridad del sistema mecánico y de los usuarios."
+      }
+    ],
+    "challenges": "El principal desafío técnico fue garantizar la máxima robustez y fiabilidad del sistema. La criticidad de la aplicación, manejando cargas de 800 kg en un entorno público, exigió un diseño electrónico con un robusto aislamiento galvánico y un firmware con una lógica de control redundante para mitigar cualquier riesgo.",
+    "learnings": "Este proyecto me proporcionó una valiosa experiencia en el diseño de sistemas de control para aplicaciones industriales de alta responsabilidad, reforzando la importancia del aislamiento galvánico y la gestión de un proyecto freelance de principio a fin, desde el diseño conceptual hasta la implementación en terreno."
+  },
+  "en": {
+    "title": "Controller for Lifting Tables",
+    "description": "Development of a custom control system for two lifting tables, implemented in a co-working space in the Costanera Center Tower, Santiago.",
+    "categoryText": "Freelance",
+    "dateText": "January 2025",
+    "detailedDescription": [
+      "This project involved developing the electronic control unit for a large-scale mechanical system: two 800 kg tables, each driven by a set of three cargo winches. The main requirement was to ensure precise and completely safe operation in a busy co-working space.",
+      "My responsibility covered the entire development cycle, from hardware and PCB design to firmware programming. The solution centralizes the operation of 6 high-load motors, 6 servomotors for the safety latches, and 12 inductive positioning sensors. Control is managed through a physical user interface with selectors and push buttons, providing visual feedback of the system's status."
+    ],
+    "tags": [
+      "STM32 HAL",
+      "PCB Design",
+      "Firmware",
+      "Embedded Systems"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Centralized High-Load Control",
+        "description": "Management of 6 bidirectional motors, 12 NPN position sensors, and 6 servos, all from a single controller board based on an STM32 microcontroller."
+      },
+      {
+        "title": "Electrical Isolation and Safety",
+        "description": "All input and output signals were opto-isolated to protect the microcontroller. Isolated power supplies were used to separate the control circuit from the power circuit, ensuring maximum reliability."
+      },
+      {
+        "title": "Professional Manufacturing and Assembly",
+        "description": "The board was manufactured and assembled using JLCPCB's PCBA services. I later performed the enclosure mounting and final on-site wiring."
+      },
+      {
+        "title": "Firmware with Safety Logic",
+        "description": "The firmware, programmed in C++ with HAL libraries, includes multiple layers of safety and validations to prevent misuse and protect the integrity of the mechanical system and users."
+      }
+    ],
+    "challenges": "The main technical challenge was ensuring the system's maximum robustness and reliability. The criticality of the application, handling 800 kg loads in a public environment, demanded a robust electronic design with galvanic isolation and firmware with redundant control logic to mitigate any risk.",
+    "learnings": "This project provided me with valuable experience in designing control systems for high-responsibility industrial applications, reinforcing the importance of galvanic isolation and managing a freelance project from start to finish, from conceptual design to on-site implementation."
+  }
+}

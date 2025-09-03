@@ -1,0 +1,75 @@
+{
+  "id": "freelanceTanquesitoV1",
+  "slug": "tanquesito-v1",
+  "date": "2022-06-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Tanquesito V1 - Torreta de Combate",
+    "description": "Primer prototipo de torreta RC para un vehículo de airsoft, centrado en el control de servos y la integración con un sistema FPV, que culminó en un valioso aprendizaje tras una falla en campo.",
+    "categoryText": "Freelance",
+    "dateText": "Junio 2022",
+    "detailedDescription": [
+      "Este proyecto, en colaboración con el youtuber Yio, fue el primer intento de evolucionar su 'Tanquesito'. El objetivo era añadir una torreta móvil radiocontrolada para apuntar un rifle de airsoft de forma independiente al chasis.",
+      "Se diseñó una torreta impresa en 3D, movida por dos servos de 25 kg·cm y controlada por un Arduino Leonardo que interpretaba las señales de un receptor Flysky. El sistema incluía un servo para el gatillo y una cámara FPV para operación remota.",
+      "Aunque funcional en pruebas iniciales, el diseño demostró ser frágil. El día de la grabación, se añadió peso extra sobre el arma (una cámara y una power bank), lo que sobrecargó y quemó el servo del eje horizontal, terminando el proyecto de forma prematura y evidenciando la necesidad de un rediseño completo."
+    ],
+    "tags": [
+      "Freelance",
+      "Diseño 3D",
+      "Arduino",
+      "Impresión 3D"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Diseño de Torreta Móvil en 3D",
+        "description": "Creación de una torreta con dos grados de libertad impresa en 3D, diseñada para soportar un rifle de airsoft de gran tamaño y ser controlada por servomotores."
+      },
+      {
+        "title": "Control Centralizado con Arduino",
+        "description": "Se utilizó un Arduino Leonardo para gestionar todas las señales de control, incluyendo el servo de dirección del vehículo, los dos servos de la torreta y el servo del gatillo."
+      },
+      {
+        "title": "Integración de Sistema FPV",
+        "description": "Se montó una cámara FPV en el arma para permitir el control y apuntado del vehículo a distancia, sentando las bases para una operación remota efectiva."
+      }
+    ],
+    "challenges": "El principal reto fue el fallo catastrófico del servo de la torreta al añadir peso imprevisto el día de la grabación. Otro desafío persistente fue el control 'explosivo' del vehículo base, heredado del ESC comercial, que dificultaba cualquier maniobra precisa a baja velocidad.",
+    "learnings": "Este fracaso enseñó la importancia crítica de dimensionar los componentes mecánicos para el peor escenario de carga y no solo para las condiciones ideales. Fue una lección práctica sobre la gestión de torque en servomotores y la necesidad de un sistema de tracción mucho más sofisticado que un ESC estándar."
+  },
+  "en": {
+    "title": "Tanquesito V1: First Combat Turret",
+    "description": "First RC turret prototype for an airsoft vehicle, focused on servo control and FPV integration, which culminated in a valuable lesson after a field failure.",
+    "categoryText": "Freelance",
+    "dateText": "June 2022",
+    "detailedDescription": [
+      "This project, in collaboration with YouTuber Yio, was the first attempt to evolve his 'Tanquesito.' The goal was to add a remote-controlled mobile turret to aim a large airsoft rifle independently of the chassis.",
+      "A 3D-printed turret was designed, moved by two 25 kg·cm servos and controlled by an Arduino Leonardo that interpreted signals from a Flysky receiver. The system included a servo for the trigger and an FPV camera for remote operation.",
+      "Although functional in initial tests, the design proved to be fragile. On the day of filming, extra weight was added to the weapon (a camera and a power bank), which overloaded and burned out the horizontal axis servo, ending the project prematurely and highlighting the need for a complete redesign."
+    ],
+    "tags": [
+      "Freelance",
+      "3D Design",
+      "Arduino",
+      "3D Printing"
+    ],
+    "keyFeatures": [
+      {
+        "title": "3D Mobile Turret Design",
+        "description": "Creation of a 3D-printed turret with two degrees of freedom, designed to support a large airsoft rifle and be controlled by servomotors."
+      },
+      {
+        "title": "Centralized Control with Arduino",
+        "description": "An Arduino Leonardo was used to manage all control signals, including the vehicle's steering servo, the two turret servos, and the trigger servo."
+      },
+      {
+        "title": "FPV System Integration",
+        "description": "An FPV camera was mounted on the weapon to allow remote control and aiming of the vehicle, laying the groundwork for effective remote operation."
+      }
+    ],
+    "challenges": "The main challenge was the catastrophic failure of the turret servo when unexpected weight was added on the day of filming. Another persistent challenge was the 'explosive' control of the base vehicle, inherited from the commercial ESC, which made any precise low-speed maneuver difficult.",
+    "learnings": "This failure taught the critical importance of sizing mechanical components for the worst-case load scenario and not just for ideal conditions. It was a practical lesson on torque management in servomotors and the need for a much more sophisticated traction system than a standard ESC."
+  }
+}

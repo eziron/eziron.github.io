@@ -1,0 +1,87 @@
+{
+  "id": "freelanceTanquesitoV2",
+  "slug": "tanquesito-v2",
+  "date": "2025-09-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": true,
+  "es": {
+    "title": "Tanquesito V2: Rediseño con FOC y Head Tracking",
+    "description": "Rediseño completo del vehículo RC de combate, implementando control FOC para una tracción precisa y un sistema de seguimiento de cabeza para el control intuitivo de la torreta.",
+    "categoryText": "Freelance",
+    "dateText": "En desarrollo (Septiembre 2025)",
+    "detailedDescription": [
+      "La V2 es la respuesta a todas las lecciones aprendidas con el primer prototipo. El proyecto se rediseñó desde cero para crear una plataforma de combate robusta, precisa y tecnológicamente avanzada.",
+      "El cambio más radical está en la tracción: se reemplazó el ESC comercial por una ODrive y un motor con encoder, implementando control FOC. Esto elimina el arranque explosivo y permite un control de velocidad suave y preciso, fundamental para apuntar en movimiento.",
+      "La torreta fue optimizada para ser más ligera y rápida, usando una pistola y servos de alta velocidad. Toda la lógica se centraliza en una PCB 'All-in-One' diseñada a medida con un STM32, que no solo controla el vehículo, sino que también implementará un sistema de 'head tracking' para apuntar.",
+      "Este sistema utilizará un MPU en el visor FPV del operador y un transceptor NRF24L01 para comunicar de forma inalámbrica los movimientos de la cabeza, que serán replicados por la torreta en tiempo real, ofreciendo un control totalmente inmersivo."
+    ],
+    "tags": [
+      "Freelance",
+      "Control FOC",
+      "STM32 HAL",
+      "Diseño de PCB",
+      "Sistemas Embebidos"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Control de Tracción Preciso con FOC",
+        "description": "Implementación de una ODrive y un encoder para lograr un control de motor FOC, permitiendo un movimiento suave y un torque controlado a cualquier velocidad."
+      },
+      {
+        "title": "PCB de Control 'All-in-One' con STM32",
+        "description": "Diseño de una placa compacta de 35x45mm que integra un STM32F405, la comunicación con la ODrive, gestión de servos y conectores para los módulos de comunicación inalámbrica."
+      },
+      {
+        "title": "Sistema de Apuntado por Head Tracking",
+        "description": "Integración de un MPU y un NRF24L01 para transmitir los movimientos de la cabeza del operador y controlar la torreta de forma intuitiva y natural."
+      },
+      {
+        "title": "Torreta Optimizada de Alta Velocidad",
+        "description": "Rediseño completo de la torreta para ser más ligera, compacta y reactiva, utilizando servos de alta velocidad para un apuntado rápido y preciso."
+      }
+    ],
+    "challenges": "El principal reto de este proyecto es la integración de múltiples sistemas complejos en una PCB compacta: el control FOC, la comunicación inalámbrica de baja latencia para el head tracking y la gestión de todos los servos. El desarrollo del firmware para coordinar estos subsistemas en tiempo real es el desafío central.",
+    "learnings": "Este proyecto está siendo una profunda inmersión en el diseño de sistemas embebidos completos y a medida. El aprendizaje clave se centra en la arquitectura de software para sistemas de tiempo real y la integración de diferentes protocolos (UART, I2C, SPI) en una solución unificada."
+  },
+  "en": {
+    "title": "Tanquesito V2: Redesign with FOC and Head Tracking",
+    "description": "Complete redesign of the combat RC vehicle, implementing FOC for precise traction and a head-tracking system for intuitive turret control.",
+    "categoryText": "Freelance",
+    "dateText": "In development (September 2025)",
+    "detailedDescription": [
+      "The V2 is the answer to all the lessons learned from the first prototype. The project was redesigned from the ground up to create a robust, precise, and technologically advanced combat platform.",
+      "The most radical change is in the traction: the commercial ESC was replaced with an ODrive and an encoded motor, implementing FOC. This eliminates the explosive start and allows for smooth, precise speed control, which is essential for aiming on the move.",
+      "The turret was optimized to be lighter and faster, using a pistol and high-speed servos. All logic is centralized on a custom-designed 'All-in-One' PCB with an STM32, which not only controls the vehicle but will also implement a head-tracking system for aiming.",
+      "This system will use an MPU on the operator's FPV goggles and an NRF24L01 transceiver to wirelessly communicate head movements, which will be replicated by the turret in real-time, offering fully immersive control."
+    ],
+    "tags": [
+      "Freelance",
+      "FOC Control",
+      "STM32 HAL",
+      "PCB Design",
+      "Embedded Systems"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Precise Traction Control with FOC",
+        "description": "Implementation of an ODrive and an encoder to achieve FOC motor control, allowing for smooth movement and controlled torque at any speed."
+      },
+      {
+        "title": "All-in-One Control PCB with STM32",
+        "description": "Design of a compact 35x45mm board that integrates an STM32F405, communication with the ODrive, servo management, and connectors for wireless communication modules."
+      },
+      {
+        "title": "Head Tracking Aiming System",
+        "description": "Integration of an MPU and an NRF24L01 to transmit the operator's head movements and control the turret intuitively and naturally."
+      },
+      {
+        "title": "Optimized High-Speed Turret",
+        "description": "Complete redesign of the turret to be lighter, more compact, and responsive, using high-speed servos for fast and accurate aiming."
+      }
+    ],
+    "challenges": "The main challenge of this project is the integration of multiple complex systems into a compact PCB: FOC traction control, low-latency wireless communication for head tracking, and management of all servos. Developing the firmware to coordinate these subsystems in real-time is the central challenge.",
+    "learnings": "This project is proving to be a deep dive into the design of complete, custom embedded systems. The key learning is focused on software architecture for real-time systems and the integration of different protocols (UART, I2C, SPI) into a unified solution."
+  }
+}

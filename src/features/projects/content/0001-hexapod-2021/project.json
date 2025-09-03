@@ -1,0 +1,84 @@
+{
+  "id": "hexapod2021",
+  "slug": "hexapod",
+  "date": "2021-08-01",
+  "codeUrl": "https://github.com/eziron/hexapod",
+  "videoUrl": "",
+  "isFeatured": true,
+  "isHidden": false,
+  
+  "es": {
+    "title": "Robot Hexapod",
+    "description": "Un proyecto personal de 8 meses que integra diseño mecánico 3D, desarrollo de PCBs personalizadas y la programación de cinemática inversa en Python para controlar un avanzado robot de 18 servos.",
+    "categoryText": "Innovación y Desarrollo",
+    "dateText": "Agosto 2021",
+    "detailedDescription": [
+      "Concebido desde cero durante la pandemia, este robot Hexapod representa uno de mis proyectos más integrales. A lo largo de 8 meses, diseñé y fabriqué toda su estructura mediante impresión 3D, creando las complejas piezas mecánicas que dan vida a sus 6 patas, cada una con 3 grados de libertad.",
+      "Su arquitectura electrónica es un sistema de control distribuido: una Raspberry Pi 4 ejecuta los cálculos de cinemática inversa en Python, mientras que una Raspberry Pi Pico se dedica a la gestión en tiempo real de las señales PWM para los 18 servomotores. Este proyecto fue mi puerta de entrada al diseño de PCBs, impulsado por un patrocinio de JLCPCB que obtuve gracias a la visibilidad del proyecto.",
+      "El control del robot es flexible, soportando operación remota vía terminal SSH o de forma inalámbrica con un joystick. El software fue diseñado con un enfoque multiproceso, utilizando sockets para desacoplar la lógica de control del motor de cinemática, garantizando un rendimiento fluido y una arquitectura modular."
+    ],
+    "tags": [
+      "Python",
+      "Cinemática Inversa",
+      "Diseño de PCB",
+      "Diseño 3D"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Diseño Evolutivo en 3D",
+        "description": "El robot evolucionó a través de 3 versiones principales, mejorando la robustez estructural, optimizando el ruteo de cables y adaptando el chasis para servomotores progresivamente más potentes (desde 8 kg·cm hasta 60 kg·cm)."
+      },
+      {
+        "title": "Sistema de Control Dual (Pi 4 + Pico)",
+        "description": "Una arquitectura de control distribuida: una Raspberry Pi 4 ejecuta los cálculos de cinemática inversa en Python, mientras que una Raspberry Pi Pico actúa como co-procesador en tiempo real, dedicado exclusivamente a la generación de señales PWM para los 18 servos."
+      },
+      {
+        "title": "PCB de Control Personalizada",
+        "description": "Se diseñó y fabricó una PCB a medida que integra la RPi Pico, el controlador de servos PCA9685, y sistemas de medición de corriente por pata, centralizando toda la electrónica de control."
+      },
+      {
+        "title": "Librería de Cinemática Inversa",
+        "description": "Desarrollo de una librería de software en Python que traduce comandos de movimiento de alto nivel (ej. \"avanzar\", \"rotar\") en los ángulos precisos para cada uno de los 18 ejes del robot."
+      }
+    ],
+    "challenges": "El principal desafío fue la gestión de la carga mecánica. La primera iteración sufría de oscilaciones por falta de torque, mientras que la segunda quemaba los servos de mayor esfuerzo. Esto exigió un rediseño completo de la estructura para integrar servomotores de alto rendimiento, validando la importancia del diseño iterativo.",
+    "learnings": "Este proyecto consolidó mis habilidades en diseño mecánico para fabricación aditiva, diseño de PCBs y la implementación práctica de algoritmos complejos. La lección fundamental fue la importancia de la iteración para resolver problemas imprevistos y la necesidad de sobredimensionar componentes críticos para garantizar la fiabilidad del sistema."
+  },
+  "en": {
+    "title": "Hexapod Robot",
+    "description": "An 8-month personal project integrating 3D mechanical design, custom PCB development, and inverse kinematics programming in Python to control an advanced 18-servo robot.",
+    "categoryText": "Innovation and Development",
+    "dateText": "August 2021",
+    "detailedDescription": [
+      "Conceived from scratch during the pandemic, this Hexapod robot represents one of my most comprehensive projects. Over 8 months, I designed and fabricated its entire structure using 3D printing, creating the complex mechanical parts that bring its 6 legs to life, each with 3 degrees of freedom.",
+      "Its electronic architecture is a distributed control system: a Raspberry Pi 4 handles the inverse kinematics calculations in Python, while a Raspberry Pi Pico is dedicated to real-time management of PWM signals for the 18 servomotors. This project was my gateway to PCB design, fueled by a sponsorship from JLCPCB I secured thanks to the project's visibility.",
+      "The robot's control is flexible, supporting remote operation via SSH terminal or wirelessly with a joystick. The software was designed with a multiprocessing approach, using sockets to decouple the control logic from the kinematics engine, ensuring smooth performance and a modular architecture."
+    ],
+    "tags": [
+      "Python",
+      "Inverse Kinematics",
+      "PCB Design",
+      "3D Design"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Evolutionary 3D Design",
+        "description": "The robot evolved through 3 major versions, improving structural robustness, optimizing cable routing, and adapting the chassis for progressively more powerful servomotors (from 8 kg·cm to 60 kg·cm)."
+      },
+      {
+        "title": "Dual Control System (Pi 4 + Pico)",
+        "description": "A distributed control architecture: a Raspberry Pi 4 handles the inverse kinematics calculations in Python, while a Raspberry Pi Pico acts as a real-time co-processor, dedicated exclusively to generating PWM signals for the 18 servos."
+      },
+      {
+        "title": "Custom Control PCB",
+        "description": "A custom PCB was designed and manufactured to integrate the RPi Pico, the PCA9685 servo controller, and current measurement systems per leg, centralizing all control electronics."
+      },
+      {
+        "title": "Inverse Kinematics Library",
+        "description": "Development of a Python software library that translates high-level movement commands (e.g., \"move forward\", \"rotate\") into the precise angles for each of the robot's 18 axes."
+      }
+    ],
+    "challenges": "The main challenge was managing the mechanical load. The first iteration suffered from oscillations due to a lack of torque, while the second burned out the most stressed servos. This required a complete redesign of the structure to integrate high-performance servomotors, validating the importance of iterative design.",
+    "learnings": "This project consolidated my skills in mechanical design for additive manufacturing, PCB design, and the practical implementation of complex algorithms. The fundamental lesson was the importance of iteration to solve unforeseen problems and the need to oversize critical components to ensure system reliability."
+  }
+}

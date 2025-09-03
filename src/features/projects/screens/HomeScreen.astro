@@ -14,10 +14,12 @@ import type { TranslatedProject, TranslatedSkill } from '../type';
 import SkillsSection from '../components/SkillsSection.astro';
 import SocialLinks from '../components/SocialLinks.astro';
 import UselessButton from '@/components/UselessButton.astro';
+import { ExperienceSection, type TranslatedExperience } from '@/features/experience';
 
 export type Props = {
   lang: LanguageCode;
   projects: Array<TranslatedProject>;
+  experiences: Array<TranslatedExperience>;
   heroGreeting: string;
   heroSubtitlePart: string;
   heroIntroduction: string;
@@ -33,6 +35,7 @@ export type Props = {
 const {
   lang,
   projects,
+  experiences,
   heroGreeting,
   heroSubtitlePart,
   heroIntroduction,
@@ -65,7 +68,7 @@ const {
       <!-- 1. El activador: un div alrededor de la imagen -->
       <div 
         id="hero-image-trigger" 
-        class="md:w-[460px] w-full h-92 bg-muted rounded-lg shadow-xl overflow-hidden md:mx-auto cursor-pointer group"
+        class="md:w-[460px] w-full h-full bg-muted rounded-lg shadow-xl overflow-hidden md:mx-auto cursor-pointer group"
         title="Haz clic aquí... quizás pase algo."
       >
         <Image
@@ -119,6 +122,8 @@ const {
     </a>
   </div>
 </section>
+
+{experiences && experiences.length > 0 && <ExperienceSection experiences={experiences} />}
 
 <section id="contact" class="py-16 sm:py-20 text-center">
   <Heading

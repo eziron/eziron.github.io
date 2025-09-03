@@ -1,0 +1,75 @@
+{
+  "id": "rodeoRobotica2022",
+  "slug": "rodeo-robotica",
+  "date": "2022-09-05",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Prototipo Experimental con Control FOC",
+    "description": "Desarrollo de un robot experimental para el \"Rodeo de Robótica\", siendo mi primera plataforma para probar y entender la tecnología de control de motores FOC con una Odrive 3.6.",
+    "imageAltText": "Robot experimental con Odrive y estructura impresa en 3D.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Septiembre 2022",
+    "detailedDescription": [
+      "Este robot fue concebido como un proyecto puramente experimental para participar en una actividad recreativa. Su principal objetivo era servir como plataforma de aprendizaje para la tecnología de control FOC (Field-Oriented Control), que hasta entonces solo conocía en teoría.",
+      "Utilizando el patrocinio de JLCPCB, diseñé una PCB a medida que permitía integrar de forma limpia un microcontrolador con la Odrive 3.6. Toda la estructura del robot se fabricó mediante impresión 3D, lo que facilitó la iteración rápida del diseño.",
+      "La participación en el \"Rodeo de Robótica\" proporcionó un entorno de baja presión ideal para realizar las primeras pruebas, entender el proceso de configuración de la Odrive y observar el comportamiento de los motores brushless bajo este tipo de control avanzado."
+    ],
+    "tags": [
+      "Control FOC",
+      "Diseño PCB",
+      "Impresión 3D"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Plataforma de Aprendizaje FOC",
+        "description": "Primer robot funcional en el que implementé y configuré una Odrive 3.6, sentando las bases para todos mis proyectos futuros con control de motores brushless."
+      },
+      {
+        "title": "PCB de Integración Personalizada",
+        "description": "Diseño de una placa de circuito impreso para conectar directamente el microcontrolador de control principal con la placa Odrive, simplificando el cableado y mejorando la fiabilidad."
+      },
+      {
+        "title": "Prototipado Rápido con Impresión 3D",
+        "description": "Uso intensivo de la impresión 3D para fabricar todo el chasis y los soportes, permitiendo un desarrollo ágil y a bajo costo."
+      }
+    ],
+    "challenges": "El principal desafío fue la pronunciada curva de aprendizaje del ecosistema Odrive, incluyendo su configuración, calibración y la programación de la comunicación con el microcontrolador principal. Fue un proceso de mucha prueba y error.",
+    "learnings": "Este proyecto fue fundamental. Me permitió comprender en la práctica los beneficios del control FOC, como el alto torque a cero RPM y la respuesta instantánea. La experiencia adquirida aquí fue la base sobre la que se construyeron robots de competencia mucho más complejos, como el BattleBot y \"Asura Kabuto\"."
+  },
+  "en": {
+    "title": "Experimental Prototype with FOC Control",
+    "description": "Development of an experimental robot for the \"Robotics Rodeo,\" my first platform for testing and understanding FOC motor control technology with an ODrive 3.6.",
+    "imageAltText": "Experimental robot with ODrive and 3D printed structure.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "September 2022",
+    "detailedDescription": [
+      "This robot was conceived as a purely experimental project to participate in a recreational activity. Its main objective was to serve as a learning platform for Field-Oriented Control (FOC) technology, which I had only known in theory until then.",
+      "Using a sponsorship from JLCPCB, I designed a custom PCB that allowed for a clean integration of a microcontroller with the ODrive 3.6. The entire robot structure was fabricated using 3D printing, which facilitated rapid design iteration.",
+      "Participating in the \"Robotics Rodeo\" provided a low-pressure environment ideal for conducting the first tests, understanding the ODrive configuration process, and observing the behavior of brushless motors under this advanced type of control."
+    ],
+    "tags": [
+      "FOC Control",
+      "PCB Design",
+      "3D Printing"
+    ],
+    "keyFeatures": [
+      {
+        "title": "FOC Learning Platform",
+        "description": "First functional robot in which I implemented and configured an ODrive 3.6, laying the foundation for all my future projects with brushless motor control."
+      },
+      {
+        "title": "Custom Integration PCB",
+        "description": "Design of a printed circuit board to directly connect the main control microcontroller with the ODrive board, simplifying wiring and improving reliability."
+      },
+      {
+        "title": "Rapid Prototyping with 3D Printing",
+        "description": "Intensive use of 3D printing to manufacture the entire chassis and supports, allowing for agile and low-cost development."
+      }
+    ],
+    "challenges": "The main challenge was the steep learning curve of the ODrive ecosystem, including its configuration, calibration, and programming the communication with the main microcontroller. It was a process of much trial and error.",
+    "learnings": "This project was fundamental. It allowed me to understand in practice the benefits of FOC control, such as high torque at zero RPM and instantaneous response. The experience gained here was the foundation upon which much more complex competition robots, like the BattleBot and \"Asura Kabuto,\" were built."
+  }
+}

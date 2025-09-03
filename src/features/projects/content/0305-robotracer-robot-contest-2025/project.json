@@ -1,0 +1,73 @@
+{
+  "id": "robotracerContest2025",
+  "slug": "robotracer-v5",
+  "date": "2025-01-15",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Robotracer V5 - Optimización Coreless",
+    "description": "Obtención del segundo lugar en la All Chile Robot Contest con una versión más ligera y ágil del robot, optimizada con dos motores coreless de alto rendimiento.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Enero 2025",
+    "detailedDescription": [
+      "Para la edición 2024 de la Robot Contest (celebrada en enero 2025), consolidamos nuestro diseño con una versión refinada que se enfrentó a un excelente nivel competitivo, incluyendo un equipo de México. El resultado fue un sólido segundo lugar que validó las mejoras implementadas.",
+      "El cambio clave fue la transición de cuatro motores a solo dos motores coreless de alto rendimiento. Este cambio redujo drásticamente el peso y la inercia del robot, mejorando notablemente su agilidad y tiempo de respuesta. A nivel de software, se finalizó la implementación de rutinas de control avanzadas en STM32 HAL, exprimiendo al máximo el nuevo hardware."
+    ],
+    "tags": [
+      "Nacional",
+      "STM32 HAL",
+      "Diseño 3D",
+      "Optimización"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Agilidad Mejorada con Motores Coreless",
+        "description": "Se reemplazó la configuración de 4 motores por 2 motores coreless, lo que disminuyó significativamente el peso total y mejoró la capacidad de respuesta y la aceleración en curvas."
+      },
+      {
+        "title": "Optimización de Firmware",
+        "description": "Se completó la migración a un código más robusto y optimizado en STM32 HAL, ajustando los parámetros de control para la nueva dinámica del robot y logrando un rendimiento más estable."
+      },
+      {
+        "title": "Validación de Diseño Competitivo",
+        "description": "El robot demostró ser una plataforma fiable y altamente competitiva, confirmando que las decisiones de diseño en torno a la aerodinámica y la electrónica integrada eran las correctas."
+      }
+    ],
+    "challenges": "El principal reto técnico fue reajustar por completo los parámetros del controlador PD para un robot mucho más ligero y reactivo. La presencia de competidores internacionales de alto nivel nos obligó a llevar el rendimiento del robot al límite absoluto.",
+    "learnings": "Esta competencia reforzó el principio de que, a menudo, \"menos es más\". La simplificación del tren motriz no solo redujo la complejidad, sino que resultó en una mejora directa del rendimiento. Fue una valiosa experiencia para medir nuestro nivel técnico frente a equipos internacionales."
+  },
+  "en": {
+    "title": "Robotracer V5 - Coreless Optimization",
+    "description": "Secured second place in the All Chile Robot Contest with a lighter, more agile version of the robot, optimized with two high-performance coreless motors.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "January 2025",
+    "detailedDescription": [
+      "For the 2024 edition of the Robot Contest (held in January 2025), we consolidated our design with a refined version that faced a high level of competition, including a team from Mexico. The result was a solid second place that validated the improvements implemented.",
+      "The key change was the transition from four motors to just two high-performance coreless motors. This change drastically reduced the robot's weight and inertia, noticeably improving its agility and response time. On the software side, the implementation of advanced control routines in STM32 HAL was completed, maximizing the new hardware's capabilities."
+    ],
+    "tags": [
+      "National",
+      "STM32 HAL",
+      "3D Design",
+      "Optimization"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Improved Agility with Coreless Motors",
+        "description": "The 4-motor setup was replaced by 2 coreless motors, which significantly decreased the total weight and improved responsiveness and acceleration in corners."
+      },
+      {
+        "title": "Firmware Optimization",
+        "description": "The migration to a more robust and optimized code in STM32 HAL was completed, adjusting the control parameters for the new robot dynamics and achieving more stable performance."
+      },
+      {
+        "title": "Validation of Competitive Design",
+        "description": "The robot proved to be a reliable and highly competitive platform, confirming that the design decisions around aerodynamics and integrated electronics were the right ones."
+      }
+    ],
+    "challenges": "The main technical challenge was completely readjusting the PD controller parameters for a much lighter and more reactive robot. The presence of high-level international competitors forced us to push the robot's performance to its absolute limit.",
+    "learnings": "This competition reinforced the principle that often, \"less is more.\" Simplifying the drivetrain not only reduced complexity but resulted in a direct performance improvement. It was a valuable experience to measure our technical level against international teams."
+  }
+}

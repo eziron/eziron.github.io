@@ -1,0 +1,73 @@
+{
+  "id": "robotracerContest2022",
+  "slug": "robotracer-v1",
+  "date": "2022-11-01",
+  "codeUrl": "https://github.com/eziron/OpenLamborghino",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Robotracer V1 - El Debut",
+    "description": "Obtención del segundo lugar en la All Chile Robot Contest tras superar un fallo crítico de hardware, reconstruyendo el robot desde cero en minutos durante la competencia.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Noviembre 2022",
+    "detailedDescription": [
+      "Este proyecto marcó el debut del equipo en la categoría de seguidores de linea. Me uní para apoyar a mis compañeros un día antes del evento, utilizando PCBs del proyecto de código abierto \"Open Lamborghino\" que habíamos fabricado previamente.",
+      "Tras una noche de trabajo intensivo para la puesta a punto, nos enfrentamos a un fallo crítico de hardware durante la competencia: el robot principal quedó inoperativo. Con el tiempo en contra, el equipo ejecutó un plan de contingencia, ensamblando un nuevo robot desde cero en solo 10 minutos utilizando las piezas de repuesto preparadas.",
+      "Esta rápida capacidad de respuesta y trabajo coordinado nos permitió asegurar un notable segundo lugar, sentando las bases de nuestra trayectoria en la categoría."
+    ],
+    "tags": [
+      "Nacional",
+      "Open Source",
+      "Trabajo en Equipo"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Plataforma Basada en Open Source",
+        "description": "Se utilizó el proyecto de código abierto \"Open Lamborghino\" como punto de partida para acelerar el desarrollo y aprovechar una plataforma probada por la comunidad."
+      },
+      {
+        "title": "Ensamblaje y Puesta a Punto Bajo Presión",
+        "description": "El equipo demostró una excepcional capacidad de ejecución al ensamblar y configurar un robot funcional desde cero en solo 10 minutos durante una competencia en vivo."
+      },
+      {
+        "title": "Gestión de Contingencia Efectiva",
+        "description": "El éxito en la recuperación se basó en la preparación previa de repuestos y en la colaboración y comunicación efectiva del equipo en un momento crítico."
+      }
+    ],
+    "challenges": "El desafío principal fue doble: la preparación del robot con un plazo muy ajustado y la gestión de un fallo de hardware total durante la competencia. Esto requirió una ejecución técnica precisa y una coordinación logística impecable bajo presión.",
+    "learnings": "Esta competencia demostró el valor de la preparación y la planificación de contingencias, incluyendo la disponibilidad de repuestos clave. Consolidó la importancia de un trabajo en equipo bien coordinado para la resolución de problemas en tiempo real, una habilidad fundamental en cualquier entorno de desarrollo."
+  },
+  "en": {
+    "title": "Robotracer V1 - The Debut",
+    "description": "Secured second place in the All Chile Robot Contest after overcoming a critical hardware failure by rebuilding the robot from scratch in 10 minutes during the event.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "November 2022",
+    "detailedDescription": [
+      "This project marked the team's debut in the line follower category. I joined to support my teammates one day before the event, using PCBs from the open-source \"Open Lamborghino\" project that we had previously manufactured.",
+      "After an intensive night of setup, we faced a critical hardware failure during the competition: the main robot became inoperative. With time against us, the team executed a contingency plan, assembling a new robot from scratch in just 10 minutes using prepared spare parts.",
+      "This rapid response capability and coordinated teamwork allowed us to secure a remarkable second place, laying the foundation for our journey in the category."
+    ],
+    "tags": [
+      "National",
+      "Open Source",
+      "Teamwork"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Open Source-Based Platform",
+        "description": "The \"Open Lamborghino\" open-source project was used as a starting point to accelerate development and leverage a community-tested platform."
+      },
+      {
+        "title": "Rapid Assembly and Tuning Under Pressure",
+        "description": "The team demonstrated exceptional execution capability by assembling and configuring a functional robot from scratch in just 10 minutes during a live competition."
+      },
+      {
+        "title": "Effective Contingency Management",
+        "description": "The successful recovery was based on the prior preparation of spare parts and on the team's effective collaboration and communication at a critical moment."
+      }
+    ],
+    "challenges": "The main challenge was twofold: preparing the robot on a very tight deadline and managing a total hardware failure during the competition. This required precise technical execution and flawless logistical coordination under pressure.",
+    "learnings": "This competition demonstrated the value of preparation and contingency planning, including the availability of key spare parts. It consolidated the importance of well-coordinated teamwork for real-time problem-solving, a fundamental skill in any development environment."
+  }
+}

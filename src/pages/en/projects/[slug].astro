@@ -2,26 +2,22 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import {
   ProjectScreen,
-  getTranslatedProjects,
+  getAllProjectsForStaticPaths,
+  getTranslatedProjectBySlug,
   type TranslatedProject,
 } from '@/features/projects';
 import { ui, type LanguageCode } from '@/i18n/ui';
 
 export async function getStaticPaths() {
-  const paths = [];
-  const langCode: LanguageCode = 'en';
-  const projects = getTranslatedProjects(langCode);
-  for (const project of projects) {
-    paths.push({
-      params: { slug: project.slug },
-      props: { project },
-    });
-  }
-  return paths;
+  const projects = await getAllProjectsForStaticPaths();
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+  }));
 }
 
-const lang = Astro.currentLocale as LanguageCode;
-const { project } = Astro.props as { project: TranslatedProject };
+const { slug } = Astro.params;
+const lang = 'en' as LanguageCode;
+const project = await getTranslatedProjectBySlug(slug!, lang);
 
 const t = ui[lang];
 

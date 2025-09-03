@@ -1,0 +1,75 @@
+{
+  "id": "robotracerBrc2024",
+  "slug": "robotracer-v4",
+  "date": "2024-11-17",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Robotracer V4 - Rediseño Total",
+    "description": "Doble primer lugar en la BRC 2024 (categorías Estudiantes y Open) gracias a un rediseño radical que incluyó un microcontrolador STM32H7 y un sensor personalizado de 12 canales.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Noviembre 2024",
+    "detailedDescription": [
+      "Con la experiencia ganada y el apoyo de un equipo español, realizamos un rediseño completo del robot para maximizar la eficiencia. La nueva arquitectura separó el chasis de la electrónica, creando una PCB de control mucho más compacta y potente.",
+      "El salto tecnológico fue inmenso: migramos a un microcontrolador STM32H7 de alto rendimiento y diseñamos nuestro propio sensor infrarrojo de 12 canales. Además, en un esfuerzo intensivo, migré todo el firmware a las librerías HAL de STM32 en solo tres días antes del evento.",
+      "El rediseño se tradujo directamente en los resultados, logrando un triple podio para el equipo y obteniendo el primer lugar en las dos categorías principales."
+    ],
+    "tags": [
+      "Nacional",
+      "STM32 HAL",
+      "Diseño de PCB",
+      "Firmware"
+    ],
+    "keyFeatures": [
+      {
+        "title": "PCB de Control con STM32H7",
+        "description": "Se diseñó una nueva PCB de 4 capas con un potente microcontrolador STM32H7, permitiendo un procesamiento de datos mucho más rápido y un control más sofisticado."
+      },
+      {
+        "title": "Sensor Infrarrojo Personalizado de 12 Canales",
+        "description": "Diseñamos y ensamblamos nuestro propio sensor, proporcionando una detección de la línea con mayor resolución que los sensores comerciales."
+      },
+      {
+        "title": "Migración a Firmware HAL",
+        "description": "Se reescribió el código para utilizar las librerías HAL de STM32, dándonos un control de bajo nivel sobre el hardware y optimizando la eficiencia."
+      }
+    ],
+    "challenges": "El desafío más grande fue migrar y depurar todo el firmware a STM32 HAL en un plazo extremadamente ajustado de 3 días. Esto requirió un conocimiento profundo de la arquitectura del microcontrolador y una depuración intensiva para garantizar la estabilidad.",
+    "learnings": "Esta experiencia demostró el enorme salto de rendimiento que se obtiene al pasar a un entorno de programación de bajo nivel (HAL vs. Arduino). Consolidó mis habilidades en diseño de PCBs complejas y en el desarrollo de firmware de alto rendimiento bajo presión."
+  },
+  "en": {
+    "title": "Robotracer V4 - Total Redesign",
+    "description": "Double first place at BRC 2024 (Student and Open categories) thanks to a radical redesign that included an STM32H7 microcontroller and a custom 12-channel sensor.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "November 2024",
+    "detailedDescription": [
+      "With experience gained and support from a Spanish team, we carried out a complete redesign of the robot to maximize efficiency. The new architecture separated the chassis from the electronics, creating a much more compact and powerful control PCB.",
+      "The technological leap was immense: we migrated to a high-performance STM32H7 microcontroller and designed our own 12-channel infrared sensor. Furthermore, in an intensive effort, I migrated the entire firmware to the STM32 HAL libraries in just three days before the event.",
+      "The redesign translated directly into results, achieving a triple podium for the team and securing first place in the two main categories."
+    ],
+    "tags": [
+      "National",
+      "STM32 HAL",
+      "PCB Design",
+      "Firmware"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Control PCB with STM32H7",
+        "description": "A new 4-layer PCB was designed with a powerful STM32H7 microcontroller, allowing for much faster data processing and more sophisticated control."
+      },
+      {
+        "title": "Custom 12-Channel Infrared Sensor",
+        "description": "We designed and assembled our own sensor, providing line detection with higher resolution than commercial sensors."
+      },
+      {
+        "title": "Migration to HAL Firmware",
+        "description": "The codebase was rewritten to use the STM32 HAL libraries, giving us low-level control over the hardware and optimizing efficiency."
+      }
+    ],
+    "challenges": "The biggest challenge was migrating and debugging the entire firmware to STM32 HAL in an extremely tight 3-day deadline. This required a deep understanding of the microcontroller's architecture and intensive debugging to ensure stability.",
+    "learnings": "This experience demonstrated the enormous performance leap gained by moving to a low-level programming environment (HAL vs. Arduino). It consolidated my skills in complex PCB design and high-performance firmware development under pressure."
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "battlebotBrc2022",
+  "slug": "battlebot",
+  "date": "2022-11-20",
+  "codeUrl": "",
+  "videoUrl": "https://www.youtube.com/embed/h7rRnIOr6zU",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "BattleBot para BRC 2022",
+    "description": "Desarrollo de un robot de combate para la BRC 2022, aplicando por primera vez el control FOC en un entorno destructivo con una estructura mixta de aluminio y piezas 3D.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Noviembre 2022",
+    "detailedDescription": [
+      "Este robot fue una evolución directa del prototipo experimental FOC, diseñado para llevar esa tecnología a un nuevo nivel de exigencia en la categoría BattleBot de la BRC. El objetivo era validar su rendimiento en un entorno de combate real.",
+      "La estructura era un híbrido que combinaba la resistencia del aluminio para el chasis principal con la versatilidad de la impresión 3D para geometrías complejas y soportes internos. Se utilizó una Odrive para el control de tracción y un ESC tradicional para el arma giratoria.",
+      "Para este proyecto diseñé una nueva PCB más compacta y robusta, que integraba el microcontrolador y la Odrive de forma eficiente, optimizando la distribución del espacio y la protección de los componentes electrónicos."
+    ],
+    "tags": [
+      "Nacional",
+      "Control FOC",
+      "Diseño 3D",
+      "Diseño PCB"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Tracción Precisa con Control FOC",
+        "description": "Implementación de una Odrive para gobernar los motores brushless de tracción, permitiendo una maniobrabilidad ágil y un torque instantáneo, cruciales para el combate."
+      },
+      {
+        "title": "Arma Rotativa de Alto Impacto",
+        "description": "Uso de un potente motor brushless, controlado por un ESC, para maximizar la energía cinética del arma y el daño infligido al oponente."
+      },
+      {
+        "title": "Diseño Híbrido para Supervivencia",
+        "description": "Combinación de aluminio y piezas impresas en 3D para lograr un equilibrio óptimo entre peso, resistencia estructural y capacidad para absorber impactos."
+      }
+    ],
+    "challenges": "El reto principal fue diseñar una estructura que protegiera eficazmente la electrónica, especialmente la Odrive, de los violentos impactos del combate. Además, gestionar la distribución de energía entre un sistema de tracción FOC y un arma de alta demanda fue complejo.",
+    "learnings": "Este proyecto fue la validación definitiva del control FOC en una aplicación de alta exigencia. Aprendí a diseñar sistemas mecánicos para resistir fallos catastróficos y la importancia de aislar y proteger los componentes electrónicos en un entorno extremadamente hostil."
+  },
+  "en": {
+    "title": "BattleBot for BRC 2022",
+    "description": "Development of a combat robot for BRC 2022, applying FOC control for the first time in a destructive environment with a mixed structure of aluminum and 3D printed parts.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "November 2022",
+    "detailedDescription": [
+      "This robot was a direct evolution of the experimental FOC prototype, designed to take that technology to a new level of demand in the BRC BattleBot category. The goal was to validate its performance in a real combat environment.",
+      "The structure was a hybrid, combining the strength of aluminum for the main chassis with the versatility of 3D printing for complex geometries and internal supports. An ODrive was used for traction control and a traditional ESC for the spinning weapon.",
+      "For this project, I designed a new, more compact and robust PCB that efficiently integrated the microcontroller and the ODrive, optimizing space distribution and the protection of electronic components."
+    ],
+    "tags": [
+      "National",
+      "FOC Control",
+      "3D Design",
+      "PCB Design"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Precise Traction with FOC Control",
+        "description": "Implementation of an ODrive to govern the brushless traction motors, allowing for agile maneuverability and instantaneous torque, crucial for combat."
+      },
+      {
+        "title": "High-Impact Spinning Weapon",
+        "description": "Use of a powerful brushless motor, controlled by an ESC, to maximize the weapon's kinetic energy and the damage inflicted on the opponent."
+      },
+      {
+        "title": "Hybrid Design for Survivability",
+        "description": "Combination of aluminum and 3D printed parts to achieve an optimal balance between weight, structural strength, and the ability to absorb impacts."
+      }
+    ],
+    "challenges": "The main challenge was designing a structure that effectively protected the electronics, especially the ODrive, from the violent impacts of combat. Additionally, managing power distribution between an FOC traction system and a high-demand weapon was complex.",
+    "learnings": "This project was the ultimate validation of FOC control in a high-demand application. I learned to design mechanical systems to withstand catastrophic failures and the importance of isolating and protecting electronic components in an extremely hostile environment."
+  }
+}

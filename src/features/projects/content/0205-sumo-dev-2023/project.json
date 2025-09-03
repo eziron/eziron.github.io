@@ -1,0 +1,75 @@
+{
+  "id": "sumoDev2023",
+  "slug": "sumo-3d-prototype",
+  "date": "2023-08-02",
+  "codeUrl": "https://cults3d.com/es/modelo-3d/variado/robot-sumo-eziron",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Prototipo de Sumo 'Asura Kabuto' (3D)",
+    "description": "La fase de prototipado crucial para 'Asura Kabuto', donde se validó el diseño mecánico y la integración de la ODrive mediante 4 iteraciones impresas en 3D.",
+    "categoryText": "Innovación y Desarrollo",
+    "dateText": "Agosto 2023",
+    "detailedDescription": [
+      "Este proyecto fue el puente entre años de diseños conceptuales y el robot de competencia final. El objetivo era crear un prototipo totalmente funcional impreso en 3D para validar cada aspecto del diseño antes de invertir en el mecanizado CNC de aluminio.",
+      "El desarrollo fue un proceso iterativo que comenzó con el diseño de la 'unidad motor', un bloque que integraba motor, engranajes, rueda y encoder. Tras perfeccionar este módulo, se realizaron 4 iteraciones completas del robot, cada una mejorando detalles de tolerancia, robustez y ensamblaje.",
+      "El resultado fue un robot 100% impreso en 3D, pero con el mismo tren de potencia FOC (motores Sunnysky y ODrive) que la versión final. Para la electrónica de control, se reutilizó la PCB diseñada para el BattleBot de 2022. El diseño del chasis incluyó una solución inteligente para montar los imanes, utilizando las primeras capas de la impresión para retenerlos."
+    ],
+    "tags": [
+      "Diseño 3D",
+      "Impresión 3D",
+      "Control FOC",
+      "Prototipado"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Validación del Diseño Mecánico",
+        "description": "Se perfeccionaron las tolerancias de los engranajes y la robustez estructural a través de múltiples prototipos, asegurando un rendimiento mecánico fiable antes de la fabricación final."
+      },
+      {
+        "title": "Plataforma de Pruebas para FOC",
+        "description": "Sirvió como el banco de pruebas real para la combinación de los motores Sunnysky X3120 y la ODrive 3.6, permitiendo ajustar los parámetros de control en un chasis con el peso y la geometría correctos."
+      },
+      {
+        "title": "Diseño Funcional y Comercializable",
+        "description": "El prototipo final fue tan robusto y bien diseñado que sus archivos se pusieron a la venta en Cults3D, validando la calidad del diseño más allá de la competencia."
+      }
+    ],
+    "challenges": "El principal reto fue lograr la rigidez estructural necesaria utilizando únicamente impresión 3D, especialmente en las zonas de alto estrés como los soportes de los motores y los ejes. Ajustar las tolerancias para que los engranajes funcionaran suavemente sin holguras fue un proceso de prueba y error constante.",
+    "learnings": "Este proyecto demostró el inmenso valor del prototipado rápido para mitigar riesgos en proyectos costosos. Aprendí a diseñar piezas 3D para aplicaciones mecánicas de alta exigencia y confirmé que la arquitectura electrónica definida era la correcta para el objetivo final."
+  },
+  "en": {
+    "title": "'Asura Kabuto' Sumo Prototype (3D)",
+    "description": "The crucial prototyping phase for 'Asura Kabuto,' where the mechanical design and ODrive integration were validated through four 3D-printed iterations.",
+    "categoryText": "Innovation and Development",
+    "dateText": "August 2023",
+    "detailedDescription": [
+      "This project served as the bridge between years of conceptual designs and the final competition robot. The goal was to create a fully functional 3D-printed prototype to validate every aspect of the design before investing in CNC aluminum machining.",
+      "Development was an iterative process that began with designing the 'motor unit,' a block integrating the motor, gears, wheel, and encoder. After perfecting this module, four complete iterations of the robot were made, each improving details of tolerance, robustness, and assembly.",
+      "The result was a 100% 3D-printed robot with the same FOC powertrain (Sunnysky motors and ODrive) as the final version. For the control electronics, PCB designed for the 2022 BattleBot was reused. The chassis design included a clever solution for mounting the magnets, using the initial print layers to retain them."
+    ],
+    "tags": [
+      "3D Design",
+      "3D Printing",
+      "FOC Control",
+      "Prototyping"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Mechanical Design Validation",
+        "description": "Gear tolerances and structural robustness were perfected through multiple prototypes, ensuring reliable mechanical performance before final manufacturing."
+      },
+      {
+        "title": "FOC Testing Platform",
+        "description": "It served as the real-world testbed for the combination of Sunnysky X3120 motors and the ODrive 3.6, allowing control parameters to be tuned in a chassis with the correct weight and geometry."
+      },
+      {
+        "title": "Functional and Marketable Design",
+        "description": "The final prototype was so robust and well-designed that its files were made available for sale on Cults3D, validating the design's quality beyond the competition."
+      }
+    ],
+    "challenges": "The main challenge was achieving the necessary structural rigidity using only 3D printing, especially in high-stress areas like the motor mounts and axles. Adjusting tolerances for the gears to run smoothly without backlash was a constant process of trial and error.",
+    "learnings": "This project demonstrated the immense value of rapid prototyping in mitigating risks on expensive projects. I learned to design 3D parts for demanding mechanical applications and confirmed that the chosen electronic architecture was right for the final goal."
+  }
+}

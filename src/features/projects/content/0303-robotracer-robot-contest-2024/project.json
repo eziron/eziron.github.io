@@ -1,0 +1,75 @@
+{
+  "id": "robotracerContest2024",
+  "slug": "robotracer-v3",
+  "date": "2024-01-15",
+  "codeUrl": "",
+  "videoUrl": "https://www.youtube.com/embed/Vr5NUf_jjDw",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Robotracer V3 - La Innovación de la Turbina",
+    "description": "Primer lugar en la All Chile Robot Contest y clasificación a Japón con \"Verstappen\", el primer robot en Chile con una turbina de succión para generar efecto suelo.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Enero 2024",
+    "detailedDescription": [
+      "Este proyecto marcó un antes y un después en la escena nacional de seguidores de línea. Introdujimos \"Verstappen\", el primer robot de competencia en Chile en implementar exitosamente una turbina de succión para generar \"efecto suelo\", una técnica avanzada inspirada en las competencias japonesas.",
+      "Sobre la base de la electrónica con STM32 del robot anterior, se diseñó un chasis impreso en 3D para integrar una configuración de 4 ruedas motrices y la turbina en el centro. La ventaja generada por el efecto suelo fue decisiva, permitiéndonos tomar curvas a una velocidad superior a la de nuestros competidores.",
+      "Este hito tecnológico nos aseguró el primer lugar y la acreditación para representar a Chile en la \"All Japan Micromouse Contest\"."
+    ],
+    "tags": [
+      "Nacional",
+      "Innovación",
+      "STM32",
+      "Diseño 3D"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Pioneros en Turbina de Succión",
+        "description": "Implementamos por primera vez en Chile una turbina para generar efecto suelo, aumentando drásticamente la tracción del robot al crear una zona de baja presión bajo el chasis."
+      },
+      {
+        "title": "Chasis 4WD Integrado",
+        "description": "Se diseñó un cuerpo impreso en 3D que albergaba los 4 motores y la turbina, acoplándolo a la PCB basada en STM32 del robot anterior."
+      },
+      {
+        "title": "Clasificación a Competencia Internacional",
+        "description": "El rendimiento superior, producto de la innovación, nos otorgó el primer lugar y el pase para competir en el prestigioso evento de Robotracer en Japón."
+      }
+    ],
+    "challenges": "El principal reto fue diseñar un sistema de turbina funcional desde cero, balanceando el consumo energético, el peso adicional y la fuerza de succión generada. La integración de esta nueva tecnología en un chasis impreso en 3D fue un desafío de diseño mecánico complejo.",
+    "learnings": "Este proyecto demostró que la innovación disruptiva, inspirada en tecnologías de otras regiones, puede ofrecer una ventaja competitiva abrumadora. Fue un profundo aprendizaje en la aplicación de principios de aerodinámica en la robótica móvil."
+  },
+  "en": {
+    "title": "Robotracer V3 - The Turbine Innovation",
+    "description": "First place in the All Chile Robot Contest and qualification for Japan with \"Verstappen,\" the first robot in Chile with a suction turbine to generate ground effect.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "January 2024",
+    "detailedDescription": [
+      "This project marked a turning point in the national line follower scene. We introduced \"Verstappen,\" the first competition robot in Chile to successfully implement a suction turbine to generate \"ground effect,\" an advanced technique inspired by Japanese competitions.",
+      "Building on the previous robot's STM32 electronics, a 3D printed chassis was designed to integrate a 4-wheel drive configuration and the turbine in the center. The advantage from the ground effect was decisive, allowing us to take corners at a much higher speed than our competitors.",
+      "This technological milestone secured us first place and the accreditation to represent Chile at the \"All Japan Micromouse Contest\"."
+    ],
+    "tags": [
+      "National",
+      "Innovation",
+      "STM32",
+      "3D Design"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Pioneers in Suction Turbine",
+        "description": "We were the first in Chile to implement a turbine to generate ground effect, dramatically increasing the robot's traction by creating a low-pressure zone under the chassis."
+      },
+      {
+        "title": "Integrated 4WD Chassis",
+        "description": "A 3D printed body was designed to house the 4 motors and the turbine, connecting them to the previous robot's STM32-based PCB."
+      },
+      {
+        "title": "Qualification for International Competition",
+        "description": "The superior performance, a result of innovation, earned us first place and a ticket to compete in the prestigious Robotracer event in Japan."
+      }
+    ],
+    "challenges": "The main challenge was designing a functional turbine system from scratch, balancing power consumption, additional weight, and the suction force generated. Integrating this new technology into a 3D printed chassis was a complex mechanical design challenge.",
+    "learnings": "This project demonstrated that disruptive innovation, inspired by technologies from other regions, can offer an overwhelming competitive advantage. It was a profound learning experience in applying aerodynamic principles to mobile robotics."
+  }
+}

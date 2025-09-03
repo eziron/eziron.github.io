@@ -1,0 +1,67 @@
+{
+  "id": "pcbRobotracer",
+  "slug": "pcb-robotracer-v1",
+  "date": "2024-10-17",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "PCB de Control para Robotracer con STM32H7",
+    "description": "El cerebro de la última generación de robotracers: una PCB 'All-in-One' diseñada a medida con un microcontrolador STM32H7 de alto rendimiento y periféricos optimizados para la competencia.",
+    "categoryText": "Diseño de PCB",
+    "dateText": "Octubre 2024",
+    "detailedDescription": [
+      "Tras las lecciones aprendidas con prototipos anteriores, decidí rediseñar por completo la electrónica del robotracer. El resultado fue esta placa de control compacta y centralizada, concebida para maximizar el rendimiento y la fiabilidad. Su corazón es un potente microcontrolador STM32H743, elegido por su capacidad de procesamiento para ejecutar un lazo de control a 4 kHz y gestionar múltiples periféricos en tiempo real.",
+      "El diseño de 4 capas integra toda la lógica de control y la etapa de potencia en un solo lugar. Incluye drivers DRV8874 para los motores, un robusto sistema de alimentación y conectores JST SH estandarizados para todos los módulos externos. Esta placa fue la base sobre la cual se construyeron los robots que obtuvieron un rendimiento superior en las competencias de 2024 y compitieron en Japón en 2025."
+    ],
+    "tags": [
+      "STM32 HAL",
+      "Control de Motores",
+      "Electrónica de Potencia"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Arquitectura de Triple ADC",
+        "description": "Aprovecha los 3 ADCs de 16 bits del STM32H7 para realizar mediciones en paralelo (12 canales de línea + sensores laterales), mejorando la estabilidad de la señal y reduciendo el ruido al aumentar el tiempo de muestreo por canal."
+      },
+      {
+        "title": "Entradas de Encoder Optimizadas por Hardware",
+        "description": "Incluye una puerta lógica XOR entre las señales A y B de los encoders. Esto genera pulsos con una resolución x4 y permite medir el delta de tiempo entre ellos con un timer de alta resolución, logrando un cálculo de velocidad extremadamente preciso."
+      },
+      {
+        "title": "Control de Potencia Integrado",
+        "description": "Integra dos drivers DRV8874 capaces de entregar hasta 6A por motor, controlados por una señal PWM de 48 kHz para una respuesta suave y de alta frecuencia."
+      }
+    ]
+  },
+  "en": {
+    "title": "Robotracer Control PCB with STM32H7",
+    "description": "The brain of the latest generation of robotracers: a custom-designed 'All-in-One' PCB with a high-performance STM32H7 microcontroller and competition-optimized peripherals.",
+    "categoryText": "PCB Design",
+    "dateText": "October 2024",
+    "detailedDescription": [
+      "After the lessons learned from previous prototypes, I decided to completely redesign the robotracer's electronics. The result was this compact, centralized control board, conceived to maximize performance and reliability. Its heart is a powerful STM32H743 microcontroller, chosen for its processing power to run a 4 kHz control loop and manage multiple peripherals in real-time.",
+      "The 4-layer design integrates all control logic and the power stage in one place. It includes DRV8874 motor drivers, a robust power system, and standardized JST SH connectors for all external modules. This board was the foundation upon which the robots that demonstrated superior performance in the 2024 competitions and competed in Japan in 2025 were built."
+    ],
+    "tags": [
+      "STM32 HAL",
+      "Motor Control",
+      "Power Electronics"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Triple ADC Architecture",
+        "description": "Leverages the STM32H7's 3 independent 16-bit ADCs for parallel measurements (12 line channels + side sensors), improving signal stability and reducing noise by increasing the sampling time per channel."
+      },
+      {
+        "title": "Hardware-Optimized Encoder Inputs",
+        "description": "Includes an XOR logic gate between the A and B signals of the encoders. This generates pulses at x4 resolution and allows measuring the time delta between them with a high-resolution timer, achieving extremely accurate speed calculation."
+      },
+      {
+        "title": "Integrated Power Control",
+        "description": "Integrates two DRV8874 drivers capable of delivering up to 6A per motor, controlled by a 48 kHz PWM signal for a smooth, high-frequency response."
+      }
+    ]
+  }
+}

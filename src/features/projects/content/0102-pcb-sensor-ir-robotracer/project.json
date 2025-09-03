@@ -1,0 +1,111 @@
+{
+  "id": "pcbSensorRobotracer",
+  "slug": "sensor-ir",
+  "date": "2024-10-17",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Sensor de Línea IR de 12 Canales",
+    "description": "Diseño de un sensor infrarrojo personalizado con 12 canales en disposición de arco, creado para mejorar la detección de línea en robots seguidores de línea.",
+    "categoryText": "Diseño de PCB",
+    "dateText": "Octubre 2024",
+    "detailedDescription": [
+      "Los sensores comerciales de 8 canales limitaban el rendimiento del robot seguidor de línea. Para obtener una lectura más precisa de la pista, especialmente en curvas a alta velocidad, se desarrolló este sensor personalizado desde cero.",
+      "El diseño aumenta la cantidad de puntos de lectura a 12 y utiliza una disposición geométrica en arco. Esta forma asegura que la distancia de los sensores a la línea se mantenga constante durante los giros, lo que reduce distorsiones en la lectura y proporciona datos más estables para el algoritmo de control."
+    ],
+    "tags": [
+      "Diseño de Sensores",
+      "Optoelectrónica",
+      "Procesamiento Analógico"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Diseño Geométrico en Arco",
+        "description": "Los 12 sensores QRE1113 están dispuestos en un arco cuyo radio coincide con el centro de giro del robot. Esto ayuda a mantener una lectura de la línea consistente y precisa en las curvas."
+      },
+      {
+        "title": "Mayor Densidad de Lectura",
+        "description": "Al tener 12 canales, el sensor ofrece un 50% más de puntos de datos que los módulos comerciales estándar, permitiendo al algoritmo de control realizar ajustes más precisos."
+      },
+      {
+        "title": "Control Centralizado de Emisores",
+        "description": "Integra un MOSFET para encender y apagar los 12 emisores IR de forma simultánea. Esto facilita la calibración del sensor y ayuda a gestionar el consumo de energía."
+      }
+    ],
+    "galleryImages": {
+      "main": {
+        "alt": "Sensor de línea IR de 12 canales ensamblado y montado en un soporte 3D.",
+        "caption": "Vista detallada del sensor ensamblado, mostrando la disposición en arco de los 12 componentes optoelectrónicos."
+      },
+      "gal1": {
+        "alt": "Esquemático del circuito del sensor de línea infrarrojo.",
+        "caption": "El diseño del circuito incluye 12 sensores QRE1113GR, resistencias de limitación de corriente y un MOSFET para controlar los emisores."
+      },
+      "gal2": {
+        "alt": "Vista superior del diseño de la PCB del sensor de línea.",
+        "caption": "Diseño de la capa superior de la PCB, mostrando la ubicación de los sensores en arco y los componentes centrales."
+      },
+      "gal3": {
+        "alt": "Vista inferior del diseño de la PCB del sensor de línea.",
+        "caption": "Capa inferior con los conectores de salida y un plano de tierra con patrón de panal para mejorar la integridad de la señal."
+      },
+      "gal4": {
+        "alt": "Ruteado de las pistas de cobre de la PCB del sensor.",
+        "caption": "Visualización de las pistas de cobre en ambas capas, optimizadas para un diseño compacto y funcional."
+      }
+    }
+  },
+  "en": {
+    "title": "12-Channel IR Line Sensor",
+    "description": "Design of a custom infrared sensor with 12 channels in an arc layout, created to improve line detection in line-follower robots.",
+    "categoryText": "PCB Design",
+    "dateText": "October 2024",
+    "detailedDescription": [
+      "Commercial 8-channel sensors were limiting the performance of the line-follower robot. To obtain a more accurate track reading, especially in high-speed corners, this custom sensor was developed from scratch.",
+      "The design increases the number of reading points to 12 and uses a geometric arc layout. This shape ensures that the distance from the sensors to the line remains constant during turns, which reduces reading distortions and provides more stable data for the control algorithm."
+    ],
+    "tags": [
+      "Sensor Design",
+      "Optoelectronics",
+      "Analog Processing"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Geometric Arc Design",
+        "description": "The 12 QRE1113 sensors are arranged in an arc whose radius matches the robot's turning center. This helps maintain a consistent and accurate line reading in corners."
+      },
+      {
+        "title": "Higher Reading Density",
+        "description": "Having 12 channels, the sensor provides 50% more data points than standard commercial modules, allowing the control algorithm to make more precise adjustments."
+      },
+      {
+        "title": "Centralized Emitter Control",
+        "description": "It integrates a MOSFET to turn the 12 IR emitters on and off simultaneously. This simplifies sensor calibration and helps manage power consumption."
+      }
+    ],
+    "galleryImages": {
+      "main": {
+        "alt": "Assembled 12-channel IR line sensor mounted on a 3D-printed stand.",
+        "caption": "Detailed view of the assembled sensor, showing the arc layout of the 12 optoelectronic components."
+      },
+      "gal1": {
+        "alt": "Schematic of the infrared line sensor circuit.",
+        "caption": "The circuit design includes 12 QRE1113GR sensors, current-limiting resistors, and a MOSFET to control the emitters."
+      },
+      "gal2": {
+        "alt": "Top view of the line sensor PCB design.",
+        "caption": "Top layer PCB design, showing the location of the sensors in an arc and the central components."
+      },
+      "gal3": {
+        "alt": "Bottom view of the line sensor PCB design.",
+        "caption": "Bottom layer with the output connectors and a honeycomb ground plane to improve signal integrity."
+      },
+      "gal4": {
+        "alt": "Routing of the sensor's PCB copper traces.",
+        "caption": "Visualization of the copper traces on both layers, optimized for a compact and functional design."
+      }
+    }
+  }
+}

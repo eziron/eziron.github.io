@@ -1,10 +1,12 @@
 ---
-// src/components/SocialLinks.astro
 import { Icon } from 'astro-icon/components';
 import EmailButton from './EmailButton.astro';
+import { useTranslations, defaultLanguage, type LanguageCode } from '@/i18n/ui';
+
+const lang = (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
+const t = useTranslations(lang, 'homePage'); 
 
 // --- CONFIGURACIÓN CENTRAL DE TUS REDES ---
-// Edita esta sección con tus enlaces personales. Es el único lugar que necesitas tocar.
 const socialLinks = [
   {
     href: 'https://www.linkedin.com/in/rodrigo-fuentes-35b10b246',
@@ -16,7 +18,7 @@ const socialLinks = [
   {
     href: 'https://github.com/eziron',
     label: 'GitHub',
-    iconName: 'mdi:github-box', // Nota: Usé mdi:github que es más estándar, pero puedes usar mdi:github-box si prefieres el cuadrado.
+    iconName: 'mdi:github-box',
     ariaLabel: 'Visitar mi perfil de GitHub',
     isSpecialLink: true,
   },
@@ -28,15 +30,24 @@ const socialLinks = [
     isSpecialLink: true,
   },
 ];
+
+const emailLabel = 'Email'; 
+const emailAriaLabel = 'Copiar mi correo electrónico'; 
+const emailSuccessLabel = '¡Copy!'; 
+const emailTitle = 'Copiar correo'; 
+
 ---
 
-<!-- 
-  Este contenedor organiza los enlaces en una fila. 
-  'flex-wrap' permite que se ajusten en pantallas pequeñas.
-  'gap' añade espacio entre los iconos.
--->
 <div class="flex flex-wrap justify-center gap-6 md:gap-8">
-    <EmailButton email="rodrigo.fuentes357@gmail.com" /> 
+    <EmailButton 
+      email="rodrigo.fuentes357@gmail.com"
+      label={emailLabel}
+      ariaLabel={emailAriaLabel}
+      title={emailTitle}
+      successLabel={emailSuccessLabel}
+      layout="vertical"
+    /> 
+
     {
         socialLinks.map((link) => (
         <a
@@ -47,12 +58,10 @@ const socialLinks = [
             rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
             data-astro-reload={link.isSpecialLink} 
         >
-            <!-- El icono. La clase 'group-hover:scale-110' le da un pequeño efecto de zoom al pasar el ratón. -->
             <Icon
-            name={link.iconName}
-            class="size-16 transition-transform duration-300 group-hover:scale-110"
+              name={link.iconName}
+              class="size-16 transition-transform duration-300 group-hover:scale-110"
             />
-            <!-- El texto debajo del icono. -->
             <span class="text-sm font-medium">{link.label}</span>
         </a>
         ))

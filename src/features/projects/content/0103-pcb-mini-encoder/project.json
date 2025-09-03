@@ -1,0 +1,127 @@
+{
+  "id": "pcbEncoderRobotracer",
+  "slug": "mini-encoder",
+  "date": "2024-10-17",
+  "codeUrl": "https://github.com/eziron/PCBs/tree/master/mini%20encoder%20AS5047P",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Mini Encoder Magnético AS5047P",
+    "description": "Diseño de una mini PCB de 17x15mm para el encoder AS5047P, optimizada para la integración rápida en proyectos de robótica.",
+    "categoryText": "Diseño de PCB",
+    "dateText": "Octubre 2024",
+    "detailedDescription": [
+      "Esta placa fue concebida como un módulo reutilizable para simplificar la implementación del encoder magnético de alta resolución AS5047P. Su diseño ultra-compacto de solo 17x15 mm permite montarla directamente sobre la carcasa de un motor, minimizando el espacio y asegurando que los capacitores de desacoplo estén lo más cerca posible del integrado.",
+      "La PCB actúa como una 'breakout board', exponiendo las dos interfaces principales del sensor a través de conectores JST-SH: el puerto SPI para lectura de posición absoluta y el puerto ABI para señales incrementales en cuadratura. Esta dualidad la hizo extremadamente versátil, siendo utilizada para proporcionar realimentación de velocidad al Robotracer."
+    ],
+    "tags": [
+      "Encoders",
+      "Soldadura SMD",
+      "Diseño Compacto"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Diseño Ultra-Compacto (17x15mm)",
+        "description": "Su reducido tamaño es ideal para aplicaciones de robótica móvil, permitiendo una instalación limpia y directa en el motor para una medición precisa del eje."
+      },
+      {
+        "title": "Doble Interfaz (SPI y ABI)",
+        "description": "Proporciona acceso tanto a la lectura de posición absoluta de 14 bits (vía SPI) como a las señales incrementales (vía ABI), ofreciendo flexibilidad para distintos algoritmos de control."
+      },
+      {
+        "title": "Optimización para STM32",
+        "description": "Diseñada para aprovechar los timers de hardware de los STM32, que pueden decodificar las señales de cuadratura (AB) del encoder de forma autónoma, simplificando el firmware."
+      },
+      {
+        "title": "Diseño Robusto y Flexible",
+        "description": "Incluye resistores pull-down para las líneas SPI no utilizadas, un jumper para seleccionar el voltaje de operación (3.3V o 5V) y un LED de estado, haciendo la placa adaptable y fiable."
+      }
+    ],
+    "galleryImages": {
+      "main": {
+        "alt": "Vista superior de la PCB del encoder con el integrado AS5047P soldado.",
+        "caption": "El integrado está centrado para una alineación precisa con el imán del motor."
+      },
+      "gal0": {
+        "alt": "Vista inferior de la PCB con los conectores JST-SH y componentes SMD.",
+        "caption": "Los conectores modulares facilitan la conexión y desconexión rápida del sensor."
+      },
+      "gal1": {
+        "alt": "Esquemático electrónico de la placa del encoder AS5047P.",
+        "caption": "El circuito incluye capacitores de desacoplo, resistores pull-down y un jumper de selección de voltaje."
+      },
+      "gal2": {
+        "alt": "Diseño 2D de la capa inferior (Top Layer en el software) de la PCB, mostrando los pads para conectores.",
+        "caption": "Layout de la cara inferior con los componentes de soporte y conectores."
+      },
+      "gal3": {
+        "alt": "Diseño 2D de la capa superior (Bottom Layer en el software) de la PCB, destacando el footprint del integrado.",
+        "caption": "Layout de la cara superior, centrado en el posicionamiento del sensor."
+      },
+      "gal4": {
+        "alt": "Vista completa del enrutado de pistas de la PCB del encoder.",
+        "caption": "El enrutado está optimizado para mantener las señales críticas cortas y minimizar el ruido."
+      }
+    }
+  },
+  "en": {
+    "title": "AS5047P Magnetic Mini Encoder",
+    "description": "Design of a 17x15mm mini PCB for the AS5047P encoder, optimized for rapid integration into robotics projects.",
+    "categoryText": "PCB Design",
+    "dateText": "October 2024",
+    "detailedDescription": [
+      "This board was conceived as a reusable module to simplify the implementation of the high-resolution AS5047P magnetic encoder. Its ultra-compact 17x15 mm design allows it to be mounted directly on a motor casing, minimizing space and ensuring decoupling capacitors are as close as possible to the IC.",
+      "The PCB acts as a 'breakout board,' exposing the sensor's two main interfaces through JST-SH connectors: the SPI port for absolute position reading and the ABI port for incremental quadrature signals. This duality made it extremely versatile, being used to provide speed feedback to the Robotracer."
+    ],
+    "tags": [
+      "Encoders",
+      "SMD Soldering",
+      "Compact Design"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Ultra-Compact Design (17x15mm)",
+        "description": "Its small size is ideal for mobile robotics applications, allowing for a clean and direct installation on the motor for precise shaft measurement."
+      },
+      {
+        "title": "Dual Interface (SPI & ABI)",
+        "description": "Provides access to both 14-bit absolute position reading (via SPI) and incremental signals (via ABI), offering flexibility for different control algorithms."
+      },
+      {
+        "title": "Optimized for STM32",
+        "description": "Designed to leverage the hardware timers of STM32 microcontrollers, which can decode the encoder's quadrature signals (AB) autonomously, drastically simplifying the firmware."
+      },
+      {
+        "title": "Robust and Flexible Design",
+        "description": "Includes pull-down resistors for unused SPI lines, a solder jumper for selecting operating voltage (3.3V or 5V), and a status LED, making the board adaptable and reliable."
+      }
+    ],
+    "galleryImages": {
+      "main": {
+        "alt": "Top view of the encoder PCB with the soldered AS5047P integrated circuit.",
+        "caption": "The main IC is centered for precise alignment with the motor's magnet."
+      },
+      "gal0": {
+        "alt": "Bottom view of the PCB with JST-SH connectors and SMD components.",
+        "caption": "Modular connectors facilitate quick connection and disconnection of the sensor."
+      },
+      "gal1": {
+        "alt": "Electronic schematic of the AS5047P encoder board.",
+        "caption": "The circuit includes decoupling capacitors, pull-down resistors, and a voltage selection jumper."
+      },
+      "gal2": {
+        "alt": "2D design of the bottom layer (Top Layer in software) of the PCB, showing pads for connectors.",
+        "caption": "Layout of the bottom side with support components and connectors."
+      },
+      "gal3": {
+        "alt": "2D design of the top layer (Bottom Layer in software) of the PCB, highlighting the IC footprint.",
+        "caption": "Layout of the top side, focused on the sensor's positioning."
+      },
+      "gal4": {
+        "alt": "Complete view of the encoder PCB's trace routing.",
+        "caption": "The routing is optimized to keep critical signals short and minimize noise."
+      }
+    }
+  }
+}

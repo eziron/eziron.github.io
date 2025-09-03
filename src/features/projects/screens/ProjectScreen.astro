@@ -71,12 +71,11 @@ const { project, t, lang } = Astro.props;
           </iframe>
         </div>
       ) : project.imageUrl ? (
-        // Bloque para mostrar la IMAGEN (si no hay video)
-        <div class="mb-8 aspect-[16/9] overflow-hidden rounded-lg shadow-lg">
+        <div class="not-prose mb-8 flex w-full justify-center">
           <Image
             src={project.imageUrl}
             alt={project.imageAltText}
-            class="h-full w-full object-cover transition-transform duration-300 ease-in-out hover:scale-105"
+            class="max-w-full max-h-[75vh] w-auto h-auto rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105"
             widths={[400, 800, 1200, 1600]}
             sizes="(max-width: 768px) 100vw, 768px"
             quality="high"

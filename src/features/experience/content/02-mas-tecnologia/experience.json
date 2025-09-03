@@ -1,0 +1,20 @@
+{
+  "id": "mas-tecnologia",
+  "slug": "director-mas-tecnologia",
+  "startDate": "2025-08-25",
+  "endDate": null,
+  "isCurrent": true,
+  "companyUrl": "https://fundacionmastecnologia.cl/",
+  "linkedinUrl": "https://www.linkedin.com/company/fundaci%C3%B3n-m%C3%A1s-tecnolog%C3%ADa/",
+  "email": "rfuentes@fundacionmastecnologia.cl",
+  "isFeatured": true,
+  
+  "es": {
+    "title": "Director de Nuevas Tecnologías",
+    "companyName": "Fundación Más Tecnología"
+  },
+  "en": {
+    "title": "Director of New Technologies",
+    "companyName": "Fundación Más Tecnología"
+  }
+}

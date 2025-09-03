@@ -1,0 +1,71 @@
+{
+  "id": "driverFocV02021",
+  "slug": "foc-v0",
+  "date": "2021-06-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Driver FOC V0 - Experimento Inicial",
+    "description": "El punto de partida: un driver de motores fabricado artesanalmente con ácido para materializar los primeros conceptos de electrónica de potencia.",
+    "categoryText": "Innovación y Desarrollo",
+    "dateText": "Junio 2021",
+    "detailedDescription": [
+      "La versión V0 fue mi primer intento tangible de construir un controlador de motores brushless desde cero. Inspirado por diseños de la comunidad, como los del youtuber Electronoobs, me lancé a fabricar mi primera PCB de forma totalmente artesanal utilizando ácido.",
+      "El diseño era minimalista y se centraba exclusivamente en la etapa de potencia: un puente MOSFET trifásico con sus respectivos controladores de puerta. Combinaba componentes Through-Hole y SMD en una sola capa. El objetivo no era crear un producto final, sino un 'lienzo' para aprender los fundamentos del diseño de hardware de potencia y validar mi capacidad para materializar un esquemático."
+    ],
+    "tags": [
+      "Diseño de PCB",
+      "Electrónica de Potencia",
+      "DIY"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Fabricación Artesanal con Ácido",
+        "description": "Proceso de fabricación manual de la PCB, un ejercicio fundamental para entender las bases del ruteado y el diseño físico de circuitos."
+      },
+      {
+        "title": "Diseño Minimalista (Solo Potencia)",
+        "description": "La placa contenía únicamente el puente MOSFET y los gate drivers, diseñada para ser controlada por una lógica externa y así aislar el aprendizaje en la etapa de potencia."
+      },
+      {
+        "title": "Primer Contacto Práctico",
+        "description": "Fue la primera vez que ensamblé un circuito de potencia diseñado por mí, un paso crucial para pasar de la teoría a la práctica."
+      }
+    ],
+    "challenges": "El principal reto fue traducir la teoría a un objeto físico, enfrentando las limitaciones de la fabricación casera. La precisión del ruteado y la calidad de las conexiones eran difíciles de garantizar, lo que limitó la posibilidad de realizar pruebas exhaustivas.",
+    "learnings": "Aprendí los fundamentos del diseño de un puente MOSFET y la importancia de un buen layout, incluso en un prototipo simple. Esta experiencia fue la confirmación de que necesitaba migrar a un proceso de fabricación profesional para poder avanzar y construir algo fiable."
+  },
+  "en": {
+    "title": "FOC Driver V0 - Initial Experiment",
+    "description": "The starting point: a motor driver handcrafted with acid to materialize the first concepts of power electronics.",
+    "categoryText": "Innovation and Development",
+    "dateText": "June 2021",
+    "detailedDescription": [
+      "The V0 version was my first tangible attempt to build a brushless motor controller from scratch. Inspired by community designs, like those from the YouTuber Electronoobs, I embarked on manufacturing my first PCB completely by hand using acid etching.",
+      "The design was minimalist and focused exclusively on the power stage: a three-phase MOSFET bridge with its respective gate drivers. It combined Through-Hole and SMD components on a single layer. The goal was not to create a final product, but a 'canvas' to learn the fundamentals of power hardware design and validate my ability to bring a schematic to life."
+    ],
+    "tags": [
+      "PCB Design",
+      "Power Electronics",
+      "DIY"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Handcrafted Acid Etching",
+        "description": "A manual PCB manufacturing process, a fundamental exercise to understand the basics of routing and physical circuit design."
+      },
+      {
+        "title": "Minimalist Design (Power Stage Only)",
+        "description": "The board contained only the MOSFET bridge and gate drivers, designed to be controlled by external logic to isolate the learning process to the power stage."
+      },
+      {
+        "title": "First Practical Experience",
+        "description": "It was the first time I assembled a power circuit I designed myself, a crucial step in moving from theory to practice."
+      }
+    ],
+    "challenges": "The main challenge was translating theory into a physical object, facing the limitations of homemade manufacturing. The precision of the routing and the quality of the connections were difficult to guarantee, which limited the possibility of extensive testing.",
+    "learnings": "I learned the fundamentals of MOSFET bridge design and the importance of a good layout, even in a simple prototype. This experience confirmed that I needed to migrate to a professional manufacturing process to move forward and build something reliable."
+  }
+}

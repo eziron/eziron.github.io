@@ -1,0 +1,20 @@
+{
+  "id": "asesorCicla3d",
+  "slug": "asesor-cicla-3d",
+  "startDate": "2022-05-02",
+  "endDate": "2022-07-31",
+  "isCurrent": false,
+  "companyUrl": "https://cicla3d.cl/",
+  "linkedinUrl": "https://www.linkedin.com/company/cicla3d/",
+  "email": null,
+  "isFeatured": true,
+  
+  "es": {
+    "title": "Asesor de Diseño e Impresión 3D",
+    "companyName": "CICLA 3D"
+  },
+  "en": {
+    "title": "3D Design and Printing Advisor",
+    "companyName": "CICLA 3D"
+  }
+}

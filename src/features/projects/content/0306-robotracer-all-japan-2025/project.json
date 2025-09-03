@@ -1,0 +1,73 @@
+{
+  "id": "robotracerJapan2025",
+  "slug": "robotracer-v6",
+  "date": "2025-02-15",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": true,
+  "isHidden": false,
+  "es": {
+    "title": "Robotracer V6 en Japón",
+    "description": "Culminación de años de desarrollo al competir en la \"All Japan Micromouse Contest\", llevando nuestro diseño con turbina al más alto nivel internacional en Tokio.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Febrero 2025",
+    "detailedDescription": [
+      "Participamos en la prestigiosa \"All Japan Micromouse Contest\". Este evento representó la prueba definitiva para nuestro diseño, enfrentándonos a los mejores equipos del mundo.",
+      "Las mejoras finales se centraron en la precisión y la fiabilidad. Se integraron encoders magnéticos para implementar un control de velocidad de lazo cerrado, permitiendo fijar velocidades constantes en m/s. Además, se fabricaron nuevas hélices de alta resistencia para la turbina para maximizar el efecto suelo de forma segura."
+    ],
+    "tags": [
+      "Internacional",
+      "STM32 HAL",
+      "Diseño 3D",
+      "Control de Motores"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Control de Velocidad con Encoders",
+        "description": "Se implementó un control de velocidad en bucle cerrado utilizando encoders magnéticos, lo que permitió al robot mantener una velocidad constante y precisa, independientemente de la carga o el nivel de la batería."
+      },
+      {
+        "title": "Optimización de Turbina para Alto Rendimiento",
+        "description": "Las hélices de la turbina se fabricaron en resina de alta tenacidad, permitiendo que operara a mayores RPM de forma segura para generar una fuerza descendente superior."
+      },
+      {
+        "title": "Puesta a Punto para Pista Internacional",
+        "description": "Se realizaron calibraciones finas de los sensores y ajustes en los algoritmos para adaptar el robot a las condiciones específicas de la pista oficial en Japón."
+      }
+    ],
+    "challenges": "El mayor contratiempo fue la rotura de la turbina durante las pruebas, lo que exigió una reparación de emergencia con piezas de un dron adquirido en Akihabara. Posteriormente, el uso de un nuevo material de alta adherencia en las ruedas expuso una desalineación mínima en los ejes (producto del desgaste), provocando que el exceso de agarre frenara al robot en las curvas de la pista oficial.",
+    "learnings": "La lección fundamental fue sobre la interdependencia de los sistemas: la optimización de un componente (la adherencia de las ruedas) expuso una debilidad latente en otro (la desalineación por desgaste mecánico). Esto demostró la importancia crítica de realizar pruebas de validación integrales en condiciones idénticas a las de la competencia."
+  },
+  "en": {
+    "title": "Robotracer V6 in Japan",
+    "description": "Culmination of years of development by competing in the \"All Japan Micromouse Contest,\" taking our turbine-based design to the highest international level in Tokyo.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "February 2025",
+    "detailedDescription": [
+      "We participated in the prestigious \"All Japan Micromouse Contest.\" This event was the ultimate test for our design, facing the best teams on a world-class stage.",
+      "Final improvements focused on precision and reliability. Magnetic encoders were integrated to implement closed-loop speed control, allowing for constant speeds set in m/s. Additionally, new high-strength turbine propellers were manufactured to safely maximize the ground effect."
+    ],
+    "tags": [
+      "International",
+      "STM32 HAL",
+      "3D Design",
+      "Motor Control"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Speed Control with Encoders",
+        "description": "A closed-loop speed control was implemented using magnetic encoders, allowing the robot to maintain a constant and precise speed, regardless of load or battery level."
+      },
+      {
+        "title": "Turbine Optimization for High Performance",
+        "description": "The turbine propellers were made from high-toughness resin, allowing them to operate at higher RPMs safely to generate superior downforce and improve grip."
+      },
+      {
+        "title": "Tuning for International Track",
+        "description": "Fine-tuning of sensors and adjustments to control algorithms were made to adapt the robot's behavior to the specific conditions of the official track in Japan."
+      }
+    ],
+    "challenges": "The biggest setback was the turbine breaking during testing, which required an emergency repair with parts from a drone purchased in Akihabara. Later, using a new high-grip material on the wheels exposed a minimal axle misalignment (due to wear), causing the excess grip to slow the robot down in the corners of the official track.",
+    "learnings": "The fundamental lesson was about system interdependence: optimizing one component (wheel grip) exposed a latent weakness in another (mechanical misalignment). This demonstrated the critical importance of conducting comprehensive validation tests under conditions identical to the competition."
+  }
+}

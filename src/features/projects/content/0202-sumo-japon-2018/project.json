@@ -1,0 +1,71 @@
+{
+  "id": "sumoJapon2018",
+  "slug": "sumo-v2",
+  "date": "2018-12-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Mundial de Sumo de Japón 2018",
+    "description": "Primera participación en la \"All Japan Robot-Sumo Tournament\" en Tokio. Una experiencia fundamental para analizar el estado del arte y definir la hoja de ruta tecnológica para futuros desarrollos.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Diciembre 2018",
+    "detailedDescription": [
+      "Tras la victoria nacional, obtuvimos la acreditación para el mundial de Fujisoft en Tokio. Esta fue una inmersión en una competencia de élite, participando como estudiante de enseñanza media.",
+      "Para el evento, se optimizó el robot campeón con sensores de mayor precisión y una lógica de control mejorada. Sin embargo, la competencia reveló una brecha tecnológica y estratégica significativa, evidenciando el nivel de optimización requerido en la élite mundial."
+    ],
+    "tags": [
+      "Internacional",
+      "Arduino",
+      "brushless"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Experiencia Competitiva de Élite",
+        "description": "Enfrentar a los mejores equipos de sumo robótico del mundo, obteniendo una perspectiva invaluable sobre el estado del arte de la disciplina."
+      },
+      {
+        "title": "Optimización de Hardware y Software",
+        "description": "Implementación de mejoras en los sistemas de detección y en el algoritmo de control para competir en un escenario de mayor exigencia."
+      },
+      {
+        "title": "Representación Nacional",
+        "description": "Tener el honor de representar a Chile en una de las competencias de robótica más prestigiosas del mundo."
+      }
+    ],
+    "challenges": "El principal desafío fue la brecha de rendimiento. Los robots competidores demostraron ser significativamente más rápidos y potentes, exponiendo las limitaciones de nuestro diseño en términos de velocidad punta y la respuesta del tren motriz basado en ESCs comerciales.",
+    "learnings": "Esta experiencia fue un análisis práctico del estado del arte en la robótica de sumo. Permitió identificar las tecnologías y estrategias clave de la élite mundial, como el uso de sistemas de control de motores altamente optimizados. La observación directa del rendimiento de otros equipos confirmó la necesidad de desarrollar un controlador personalizado para superar las limitaciones de los ESCs y ser competitivo a ese nivel."
+  },
+  "en": {
+    "title": "2018 Japan Sumo World Championship",
+    "description": "First participation in the \"All Japan Robot-Sumo Tournament\" in Tokyo. A fundamental experience for analyzing the state-of-the-art and defining the technological roadmap for future developments.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "December 2018",
+    "detailedDescription": [
+      "After the national victory, we earned a spot at the Fujisoft World Robot-Sumo Tournament in Tokyo. This was an immersion into elite competition, participating as a high school student.",
+      "For the event, the champion robot was optimized with more precise sensors and improved control logic. However, the competition revealed a significant technological and strategic gap, highlighting the level of optimization required at the world-class level."
+    ],
+    "tags": [
+      "International",
+      "Arduino",
+      "Brushless"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Elite Competition Experience",
+        "description": "Facing the best robot sumo teams on the planet, gaining an invaluable perspective on the state-of-the-art in the discipline."
+      },
+      {
+        "title": "Hardware and Software Optimization",
+        "description": "Implementation of improvements in detection systems and control algorithms to compete in a more demanding scenario."
+      },
+      {
+        "title": "National Representation",
+        "description": "Having the honor of representing Chile in one of the most prestigious robotics competitions in the world."
+      }
+    ],
+    "challenges": "The main challenge was the performance gap. Competing robots proved to be significantly faster and more powerful, exposing our design's limitations in terms of top speed and the responsiveness of the commercial ESC-based powertrain.",
+    "learnings": "This experience served as a practical analysis of the state-of-the-art in sumo robotics. It allowed us to identify the key technologies and strategies of the world's elite, such as the use of highly optimized motor control systems. Direct observation of other teams' performance confirmed the need to develop a custom controller to overcome the limitations of ESCs and be competitive at that level."
+  }
+}

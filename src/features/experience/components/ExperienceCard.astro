@@ -1,0 +1,106 @@
+---
+// src/features/experience/components/ExperienceCard.astro
+
+import type { TranslatedExperience } from '../type';
+import { Card } from '@/components/ui/card';
+import { buttonVariants } from '@/components/ui/button';
+import { Image } from 'astro:assets';
+import { ExternalLink, Linkedin } from 'lucide-react';
+import EmailButton from '@/features/projects/components/EmailButton.astro';
+import { useTranslations, type LanguageCode } from '@/i18n/ui';
+
+interface Props {
+  experience: TranslatedExperience;
+}
+
+const { experience } = Astro.props;
+const { 
+  companyUrl, 
+  companyName,
+  imageUrl, 
+  imageAltText, 
+  title, 
+  dateText, 
+  linkedinUrl, 
+  isCurrent, 
+  email 
+} = experience;
+
+const lang = Astro.currentLocale as LanguageCode;
+const t = useTranslations(lang, 'experiencePage');
+---
+
+<Card className="flex flex-col p-0 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
+  
+  <!-- 1. SECCIÓN DE IMAGEN (LOGO) - Ahora es un enlace -->
+  {imageUrl && (
+    <a 
+      href={companyUrl} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      aria-label={`Visitar sitio web de ${companyName}`}
+      class="block aspect-square overflow-hidden rounded-t-lg bg-white group focus-visible:outline-none"
+    >
+      <Image 
+        src={imageUrl} 
+        alt={imageAltText}
+        class="w-full h-full object-contain p-6 transition-transform duration-300 group-hover:scale-105"
+        width={256}
+        height={256}
+      />
+    </a>
+  )}
+
+  <!-- 2. CONTENIDO (TEXTO + BOTONES) -->
+  <div class="p-4 flex flex-col flex-grow">
+    <!-- Sección de Texto -->
+    <div>
+      <a 
+        href={companyUrl} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="focus-visible:outline-none"
+      >
+        <h3 class="font-semibold text-foreground hover:text-primary transition-colors">{title}</h3>
+      </a>
+      <p class="text-sm text-muted-foreground">{companyName}</p>
+      <p class="text-xs text-muted-foreground mt-1">{dateText}</p>
+    </div>
+    
+    <!-- Sección de Botones -->
+    <div class="mt-auto pt-4 flex items-center gap-2">
+      <a 
+        href={companyUrl} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class={buttonVariants({ variant: 'outline', size: 'icon'})}
+        aria-label={t('websiteButton')}
+        title={t('websiteButton')}
+      >
+        <ExternalLink className="size-4"/>
+      </a>
+      {linkedinUrl && (
+        <a 
+          href={linkedinUrl} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class={buttonVariants({ variant: 'outline', size: 'icon'})}
+          aria-label={t('linkedinButton')}
+          title={t('linkedinButton')}
+        >
+          <Linkedin className="size-4"/>
+        </a>
+      )}
+      {isCurrent && email && (
+        <EmailButton 
+          email={email}
+          ariaLabel={`Copiar correo: ${email}`}
+          iconName="mdi:email"
+          iconSizeClass="size-4"
+          class={buttonVariants({ variant: 'outline', size: 'icon'})}
+          title="Copiar Email"
+        />
+      )}
+    </div>
+  </div>
+</Card>

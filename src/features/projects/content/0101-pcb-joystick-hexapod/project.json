@@ -1,0 +1,69 @@
+{
+  "id": "pcbJoystickHexapod",
+  "slug": "joystick-hexapod",
+  "date": "2021-09-06",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "PCB de Control para Joystick del Hexapod",
+    "description": "Diseño de un joystick a medida para el robot Hexapod, uno de mis primeros proyectos de PCB que integró un Arduino Due y una Raspberry Pi Zero en una sola placa.",
+    "categoryText": "Diseño de PCB",
+    "dateText": "Septiembre 2021",
+    "detailedDescription": [
+      "Como parte del desarrollo del Hexapod, y aprovechando el patrocinio de JLCPCB, diseñé este joystick personalizado. El objetivo era crear una solución de control 'todo en uno' que centralizara la lectura de entradas y las comunicaciones inalámbricas.",
+      "La arquitectura se basa en un sistema dual: un Arduino Due se encarga de procesar en tiempo real todos los botones y sticks analógicos, mientras que una Raspberry Pi Zero W gestiona las comunicaciones (WiFi/NRF24L01) y una pequeña pantalla LCD para depuración.",
+      "Posteriormente, la placa fue adaptada para funcionar como un periférico SPI altamente configurable, donde una Raspberry Pi externa podía modificar el comportamiento de cada entrada (modo normal, mantenido, incremental, etc.) sin necesidad de reprogramar el firmware del Arduino."
+    ],
+    "tags": [
+      "Arduino",
+      "Raspberry Pi",
+      "SPI"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Arquitectura Dual (Arduino + Raspberry Pi)",
+        "description": "Combina un Arduino Due para el procesamiento de entradas en tiempo real con una Raspberry Pi Zero W para la lógica de alto nivel, comunicaciones y visualización."
+      },
+      {
+        "title": "Firmware Remotamente Configurable",
+        "description": "Implementación de un firmware en el Arduino que permite a un maestro (vía SPI) cambiar el modo de operación de cada botón y stick, ofreciendo una gran flexibilidad y capacidad de configuración."
+      },
+      {
+        "title": "Sistema de Control Integrado",
+        "description": "Una única PCB aloja los microcontroladores, la pantalla, los conectores para módulos de comunicación y todas las entradas, creando un dispositivo de control compacto y autónomo."
+      }
+    ]
+  },
+  "en": {
+    "title": "Control PCB for Hexapod Joystick",
+    "description": "Design of a custom joystick for the Hexapod robot, one of my first PCB projects that integrated an Arduino Due and a Raspberry Pi Zero on a single board.",
+    "categoryText": "PCB Design",
+    "dateText": "September 2021",
+    "detailedDescription": [
+      "As part of the Hexapod's development and taking advantage of a JLCPCB sponsorship, I designed this custom joystick. The goal was to create an 'all-in-one' control solution that centralized input reading and wireless communications.",
+      "The architecture is based on a dual system: an Arduino Due handles real-time processing of all buttons and analog sticks, while a Raspberry Pi Zero W manages communications (WiFi/NRF24L01) and a small LCD for debugging.",
+      "Later, the board was adapted to function as a highly configurable SPI peripheral, where an external Raspberry Pi could modify the behavior of each input (normal, toggle, incremental mode, etc.) without needing to reflash the Arduino's firmware."
+    ],
+    "tags": [
+      "Arduino",
+      "Raspberry Pi",
+      "SPI"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Dual Architecture (Arduino + Raspberry Pi)",
+        "description": "Combines an Arduino Due for real-time input processing with a Raspberry Pi Zero W for high-level logic, communications, and display."
+      },
+      {
+        "title": "Remotely Configurable Firmware",
+        "description": "Implementation of firmware on the Arduino that allows a master device (via SPI) to change the operating mode of each button and stick, offering significant flexibility and configurability."
+      },
+      {
+        "title": "Integrated Control System",
+        "description": "A single PCB houses the microcontrollers, display, connectors for communication modules, and all inputs, creating a compact and standalone control device."
+      }
+    ]
+  }
+}

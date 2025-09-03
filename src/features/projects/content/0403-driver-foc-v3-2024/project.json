@@ -1,0 +1,77 @@
+{
+  "id": "driverFocV32024",
+  "slug": "foc-v3",
+  "date": "2025-03-31",
+  "codeUrl": "https://github.com/eziron/driver_FOC",
+  "videoUrl": "",
+  "isFeatured": true,
+  "isHidden": false,
+  "es": {
+    "title": "Driver FOC V3 - Proyecto de Título",
+    "description": "Diseño e implementación de un controlador FOC para motores brushless como proyecto de título, materializando el objetivo que me impulsó a estudiar Ingeniería en Electrónica.",
+    "categoryText": "Innovación y Desarrollo",
+    "dateText": "Marzo 2025",
+    "detailedDescription": [
+      "Este proyecto representa la culminación de mis estudios y materializa el objetivo que me impulsó a comenzar la carrera: crear un controlador de motores brushless que superara las limitaciones de los ESC comerciales, basado en el Control Orientado a Campo (FOC).",
+      "El diseño V3 fue una respuesta directa a las lecciones de los prototipos anteriores, especialmente de la falla crítica de la V2. El hardware se concibió con tres pilares: rendimiento, seguridad y facilidad de depuración. Se integró un potente microcontrolador STM32F743 directamente en la PCB, rodeado de una etapa de potencia capaz de manejar hasta 200A continuos y un sistema de protección por hardware para evitar fallas catastróficas.",
+      "El firmware fue desarrollado desde cero utilizando las librerías HAL de STM32. La arquitectura se centra en una rutina de interrupción de alta prioridad que se ejecuta a 48 kHz, responsable de todo el lazo de control FOC. Dentro de esta rutina se realizan la adquisición de datos del encoder y los sensores de corriente, las transformadas de Clarke y Park, la ejecución de los controladores PI de corriente y velocidad, y finalmente la generación de las señales PWM mediante Modulación de Espacio Vectorial (SVM).",
+      "Tras un año de trabajo, el proyecto fue defendido el 31 de marzo de 2025, obteniendo la calificación máxima. Este driver no solo es una solución funcional, sino el testimonio de un ciclo completo de investigación, desarrollo y perseverancia."
+    ],
+    "tags": [
+      "Control FOC",
+      "Diseño de PCB",
+      "STM32 HAL",
+      "Firmware"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Firmware FOC de Alta Frecuencia (48 kHz)",
+        "description": "Implementación de un lazo de control en tiempo real que ejecuta las transformadas de Clarke, Park y SVM, junto con controladores PI para los lazos de corriente y velocidad, todo dentro de una interrupción de ~20µs."
+      },
+      {
+        "title": "Etapa de Potencia de 200A con Protección Hardware",
+        "description": "Puente MOSFET trifásico con transistores BSC011N03LSI en paralelo y drivers UCC27211. Incluye puertas lógicas AND como 'ENABLE' de hardware, una medida de seguridad crítica para desactivar el puente."
+      },
+      {
+        "title": "Diseño de PCB Integrado y Optimizado",
+        "description": "Placa de 4 capas con el microcontrolador STM32F743 integrado, un árbol de alimentación robusto con múltiples reguladores (12V, 5V, 3.3V) y conectores dedicados para programación (SWD) y depuración con analizador lógico."
+      }
+    ],
+    "challenges": "El principal desafío fue la implementación del lazo de control FOC para que se ejecutara de forma fiable a 48 kHz, lo que exigió una optimización cuidadosa del código. Diseñar el layout de la PCB para manejar corrientes de hasta 200A, minimizando la inductancia parásita, fue igualmente crítico.",
+    "learnings": "Este proyecto consolidó mi habilidad para diseñar sistemas embebidos complejos desde cero, abarcando el diseño de esquemáticos, el layout de PCBs de potencia, la programación de firmware de bajo nivel (bare-metal) con HAL y la validación sistemática. Aprendí a traducir requisitos de alto rendimiento y seguridad en un diseño electrónico tangible y robusto."
+  },
+  "en": {
+    "title": "FOC Driver V3 - Thesis Project",
+    "description": "Design and implementation of an FOC-type controller for brushless motors as a thesis project, materializing the goal that drove me to study Electronics Engineering.",
+    "categoryText": "Innovation and Development",
+    "dateText": "March 2025",
+    "detailedDescription": [
+      "This project represents the culmination of my studies and materializes the goal that drove me to start the degree: to create a brushless motor controller that could overcome the limitations of commercial ESCs, based on Field-Oriented Control (FOC).",
+      "The V3 design was a direct response to lessons from previous prototypes, especially the V2's critical failure. The hardware was conceived with three pillars: performance, safety, and debuggability. A powerful STM32F743 microcontroller was integrated directly onto the PCB, surrounded by a power stage capable of handling up to 200A continuous and a hardware protection system to prevent catastrophic failures.",
+      "The firmware was developed from scratch using STM32 HAL libraries. The architecture centers on a high-priority interrupt routine running at 48 kHz, responsible for the entire FOC control loop. This routine performs data acquisition from the encoder and current sensors, Clarke and Park transforms, execution of PI controllers, and PWM generation via Space Vector Modulation (SVM).",
+      "After a year of work, the project was defended on March 31, 2025, earning the highest grade. This driver is not just a functional solution but a testament to a complete cycle of research, development, and perseverance."
+    ],
+    "tags": [
+      "FOC Control",
+      "PCB Design",
+      "STM32 HAL",
+      "Firmware"
+    ],
+    "keyFeatures": [
+      {
+        "title": "High-Frequency FOC Firmware (48 kHz)",
+        "description": "Implementation of a real-time control loop executing Clarke, Park, and SVM transforms, along with PI controllers for current and speed loops, all within a ~20µs interrupt window."
+      },
+      {
+        "title": "200A Power Stage with Hardware Protection",
+        "description": "Three-phase MOSFET bridge with parallel BSC011N03LSI transistors and UCC27211 drivers. It includes AND logic gates as a hardware 'ENABLE', a critical safety feature to disable the bridge."
+      },
+      {
+        "title": "Integrated and Optimized PCB Design",
+        "description": "A 4-layer board with an integrated STM32F743 microcontroller, a robust power tree with multiple regulators (12V, 5V, 3.3V), and dedicated headers for programming (SWD) and debugging."
+      }
+    ],
+    "challenges": "The main challenge was implementing the FOC control loop to run reliably at 48 kHz, demanding careful code optimization. Designing the PCB layout to handle currents up to 200A while minimizing parasitic inductance was equally critical.",
+    "learnings": "This project consolidated my ability to design complex embedded systems from scratch, covering schematic design, power PCB layout, low-level firmware programming (bare-metal) with HAL, and systematic validation. I learned to translate high-performance and safety requirements into a tangible, robust electronic design."
+  }
+}

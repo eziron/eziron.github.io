@@ -1,0 +1,73 @@
+{
+  "id": "freelanceBobinadora2025",
+  "slug": "bobinadora",
+  "date": "2025-04-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Controlador para Bobinadora de Filamento",
+    "description": "Desarrollo de un controlador a medida para una máquina bobinadora, destacando por su firmware con control de movimiento trapezoidal y una librería de display no bloqueante.",
+    "categoryText": "Freelance",
+    "dateText": "Abril 2025",
+    "detailedDescription": [
+      "Este proyecto freelance consistió en el diseño de una PCB y el desarrollo de un firmware a medida para automatizar una bobinadora de filamento de cobre. El sistema debía sincronizar con precisión el giro del carrete y el desplazamiento de un vástago guía, además de medir la longitud del filamento.",
+      "La principal complejidad residió en el software: programé desde cero un algoritmo de control de movimiento con perfil trapezoidal para los motores paso a paso, asegurando arranques y paradas suaves. Adicionalmente, desarrollé una librería no bloqueante para el display TM1637, ya que las soluciones existentes interferían con el control en tiempo real de los motores."
+    ],
+    "tags": [
+      "STM32 HAL",
+      "Firmware",
+      "Diseño de PCB",
+      "Sistemas Embebidos"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Control de Movimiento Trapezoidal",
+        "description": "Implementación de un algoritmo para motores paso a paso con rampas de aceleración y desaceleración, programado desde cero usando los timers del STM32 para un movimiento preciso y sincronizado."
+      },
+      {
+        "title": "Librería de Display No Bloqueante",
+        "description": "Desarrollo de una librería de comunicación a medida para el integrado TM1637, utilizando interrupciones para evitar el bloqueo del bucle principal y garantizar el rendimiento en tiempo real."
+      },
+      {
+        "title": "Metodología de Desarrollo Remoto",
+        "description": "Todo el firmware fue desarrollado y depurado sin acceso físico al hardware final, utilizando un entorno de pruebas con un analizador lógico y una estructura de proyectos \"gemelos\" en WSL para compilar el mismo código para dos microcontroladores diferentes."
+      }
+    ],
+    "challenges": "El mayor reto fue desarrollar y depurar el firmware completamente a ciegas, sin acceso a la máquina. Esto exigió crear un entorno de simulación y validación de señales con un analizador lógico, además de una estructura de compilación dual para asegurar la compatibilidad del código entre mi plataforma de pruebas y la del cliente.",
+    "learnings": "Este proyecto consolidó mis habilidades en programación de bajo nivel con STM32 HAL y me enseñó a crear soluciones robustas bajo restricciones extremas. La necesidad de un desarrollo remoto me impulsó a diseñar un flujo de trabajo de software altamente estructurado y verificable."
+  },
+  "en": {
+    "title": "Controller for Filament Winding Machine",
+    "description": "Development of a custom controller for a winding machine, featuring firmware with trapezoidal motion control and a non-blocking display library.",
+    "categoryText": "Freelance",
+    "dateText": "April 2025",
+    "detailedDescription": [
+      "This freelance project involved designing a PCB and developing custom firmware to automate a copper filament winding machine. The system needed to precisely synchronize the spool's rotation and the movement of a guide rod, as well as measure filament length.",
+      "The main complexity was in the software: I programmed a motion control algorithm with a trapezoidal profile for the stepper motors from scratch, ensuring smooth starts and stops. Additionally, I developed a non-blocking library for the TM1637 display, as existing solutions interfered with real-time motor control."
+    ],
+    "tags": [
+      "STM32 HAL",
+      "Firmware",
+      "PCB Design",
+      "Embedded Systems"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Trapezoidal Motion Control",
+        "description": "Implementation of a control algorithm for stepper motors with acceleration/deceleration ramps, programmed from scratch using STM32 timers for precise, synchronized movement."
+      },
+      {
+        "title": "Non-Blocking Display Library",
+        "description": "Development of a custom communication library for the TM1637 IC, using interrupts to avoid blocking the main loop and ensure real-time system performance."
+      },
+      {
+        "title": "Remote Development Methodology",
+        "description": "The entire firmware was developed and debugged without physical access to the final hardware, using a test environment with a logic analyzer and a \"twin\" project structure in WSL to compile the same code for two different microcontrollers."
+      }
+    ],
+    "challenges": "The biggest challenge was developing and debugging the firmware completely blind, without access to the machine. This required creating a simulation and signal validation environment with a logic analyzer, as well as a dual-compilation structure to ensure code compatibility between my test platform and the client's.",
+    "learnings": "This project consolidated my skills in low-level programming with STM32 HAL and taught me how to create robust solutions under extreme constraints. The need for remote development pushed me to design a highly structured and verifiable software workflow."
+  }
+}

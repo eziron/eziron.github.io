@@ -1,0 +1,71 @@
+{
+  "id": "driverFocV12021",
+  "slug": "foc-v1",
+  "date": "2021-09-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Driver FOC V1 - La Lección del 'Dead Time'",
+    "description": "El primer driver fabricado profesionalmente. Un salto en calidad que trajo consigo una lección fundamental y costosa sobre el 'dead time' en la conmutación de MOSFETs.",
+    "categoryText": "Innovación y Desarrollo",
+    "dateText": "Septiembre 2021",
+    "detailedDescription": [
+      "Gracias al patrocinio de JLCPCB, la V1 representó el salto a la fabricación profesional. Esta versión fue una evolución de la V0, ahora diseñada completamente con componentes SMD en una placa de 2 capas. El diseño fue más ambicioso, incluyendo una cantidad excesiva de MOSFETs en paralelo (18 en total) en un intento por sobredimensionar la capacidad de corriente.",
+      "Con esta placa realicé mis primeros experimentos de control en lazo abierto. Sin embargo, en una de estas pruebas, ocurrió una falla catastrófica: un cortocircuito en el puente H quemó uno de mis motores. El diagnóstico reveló que la causa fue la falta de 'dead time' entre la conmutación de los MOSFETs de una misma fase. Fue una lección costosa pero invaluable."
+    ],
+    "tags": [
+      "Diseño de PCB",
+      "Electrónica de Potencia",
+      "Soldadura SMD"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Fabricación Profesional (JLCPCB)",
+        "description": "Primera PCB fabricada con un servicio profesional, lo que permitió un diseño de 2 capas, mayor densidad de componentes y una calidad muy superior."
+      },
+      {
+        "title": "Diseño 100% SMD",
+        "description": "Migración completa a componentes de montaje superficial para un diseño más compacto y moderno."
+      },
+      {
+        "title": "La Lección del 'Dead Time'",
+        "description": "La falla crítica del motor se convirtió en un pilar del aprendizaje, demostrando en la práctica la importancia de la gestión de tiempos en la conmutación de potencia."
+      }
+    ],
+    "challenges": "El diseño sobre-ingenierizado y la falta de una implementación de 'dead time' llevaron a una falla destructiva. El reto fue diagnosticar la causa raíz del problema y entender que un buen diseño de potencia no solo depende de los componentes, sino también de la lógica de control que los gobierna.",
+    "learnings": "La lección más importante fue entender por qué el 'dead time' no es opcional, sino un requisito crítico para la integridad del hardware. Este error me enseñó a ser mucho más riguroso en el diseño de la lógica de control y la gestión de la conmutación."
+  },
+  "en": {
+    "title": "FOC Driver V1 - The 'Dead Time' Lesson",
+    "description": "The first professionally manufactured driver. A leap in quality that came with a fundamental and costly lesson about 'dead time' in MOSFET switching.",
+    "categoryText": "Innovation and Development",
+    "dateText": "September 2021",
+    "detailedDescription": [
+      "Thanks to a sponsorship from JLCPCB, the V1 represented the leap to professional manufacturing. This version was an evolution of the V0, now designed entirely with SMD components on a 2-layer board. The design was more ambitious, including an excessive number of parallel MOSFETs (18 in total) in an attempt to over-engineer the current capacity.",
+      "With this board, I conducted my first open-loop control experiments. However, during one of these tests, a catastrophic failure occurred: a short circuit in the H-bridge burned out one of my motors. The diagnosis revealed the cause was the lack of 'dead time' between the switching of MOSFETs in the same phase. It was an expensive but invaluable lesson."
+    ],
+    "tags": [
+      "PCB Design",
+      "Power Electronics",
+      "SMD Soldering"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Professional Manufacturing (JLCPCB)",
+        "description": "First PCB manufactured with a professional service, allowing for a 2-layer design, higher component density, and far superior quality."
+      },
+      {
+        "title": "100% SMD Design",
+        "description": "Complete migration to surface-mount components for a more compact and modern design."
+      },
+      {
+        "title": "The 'Dead Time' Lesson",
+        "description": "The critical motor failure became a cornerstone of my learning, demonstrating in practice the importance of timing management in power switching."
+      }
+    ],
+    "challenges": "The over-engineered design and the lack of a 'dead time' implementation led to a destructive failure. The challenge was to diagnose the root cause and understand that good power design depends not only on the components but also on the control logic that governs them.",
+    "learnings": "The most important lesson was understanding why 'dead time' is not optional, but a critical requirement for hardware integrity. This mistake taught me to be much more rigorous in designing control logic and managing switching."
+  }
+}

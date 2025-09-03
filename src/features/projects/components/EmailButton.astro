@@ -1,59 +1,73 @@
 ---
-// src/features/projects/components/EmailButton.astro
 import { Icon } from 'astro-icon/components';
 
 export interface Props {
   email: string;
-  label?: string;
+  ariaLabel: string; // Crítico para la accesibilidad, especialmente en modo icono
+  label?: string; // El texto a mostrar. Si se omite, se crea un botón de solo icono.
   successLabel?: string;
   iconName?: string;
   successIconName?: string;
-  ariaLabel?: string;
+  class?: string; // Permite pasar clases personalizadas para estilizar el botón
+  iconSizeClass?: string; // Controla el tamaño del icono (ej. "size-4", "size-16")
+  layout?: 'vertical' | 'horizontal'; // Define la disposición
+  title?: string;
 }
 
 const {
   email,
-  label = 'Email',
-  successLabel = 'Copy!',
+  ariaLabel,
+  label,
+  successLabel = 'Copiado!',
   iconName = 'mdi:email',
-  successIconName = 'mdi:check-circle-outline',
-  ariaLabel = `Copiar mi correo: ${email}`,
+  successIconName = 'mdi:check',
+  class: className,
+  iconSizeClass = 'size-16', // Por defecto, mantiene el tamaño grande para la sección de contacto
+  layout = 'vertical', // Por defecto, mantiene la disposición vertical
+  title,
 } = Astro.props;
+
+// Clases base para el botón
+const baseClasses = 'group flex transition-colors duration-300 focus-visible:outline-none';
+
+// Clases dinámicas según el layout
+const layoutClasses = {
+  vertical: 'flex-col items-center gap-2 text-muted-foreground hover:text-primary focus-visible:text-primary',
+  horizontal: 'flex-row items-center gap-2', // Clases para un botón horizontal
+};
 ---
 
 <button
-  class="group flex flex-col items-center gap-2 text-muted-foreground transition-colors duration-300 hover:text-primary focus-visible:text-primary focus-visible:outline-none"
+  class:list={[baseClasses, layoutClasses[layout], className]}
   aria-label={ariaLabel}
   data-email={email}
-  data-label={label}
+  data-label={label ?? ''}
   data-success-label={successLabel}
+  title={title}
 >
-  <!-- Icono Inicial (visible por defecto) -->
-  <span class="email-icon">
-    <Icon
-      name={iconName}
-      class="size-16 transition-transform duration-300 group-hover:scale-110"
-    />
+  <span class="icon-wrapper">
+    <span class="email-icon">
+      <Icon
+        name={iconName}
+        class:list={[iconSizeClass, "transition-transform duration-300 group-hover:scale-110"]}
+      />
+    </span>
+    <span class="success-icon hidden">
+      <Icon
+        name={successIconName}
+        class:list={[iconSizeClass, "text-green-500"]}
+      />
+    </span>
   </span>
-  <!-- Icono de Éxito (oculto por defecto) -->
-  <span class="success-icon hidden">
-    <Icon
-      name={successIconName}
-      class="size-16 text-green-500"
-    />
-  </span>
-  <!-- Etiqueta de Texto -->
-  <span class="email-label text-sm font-medium">{label}</span>
+  
+  {label && <span class="email-label text-sm font-medium">{label}</span>}
 </button>
 
-<script is:inline>
-  // Esta función se encarga de inicializar todos los botones de email en la página.
+<script>
   function setupEmailCopyButtons() {
     const emailButtons = document.querySelectorAll('button[data-email]');
 
     emailButtons.forEach((button) => {
-      // Usamos una propiedad en el elemento para asegurarnos de no añadir el listener dos veces.
-      // Esto es importante para las transiciones de vista de Astro ("View Transitions").
       if (button.dataset.listenerAdded === 'true') {
         return;
       }
@@ -63,13 +77,9 @@ const {
         const currentButton = event.currentTarget;
         const email = currentButton.dataset.email;
 
-        if (!email) {
-          console.error('No se encontró el atributo data-email en el botón.');
-          return;
-        }
+        if (!email) return;
 
         navigator.clipboard.writeText(email).then(() => {
-          // Éxito al copiar: dar feedback visual
           const initialIcon = currentButton.querySelector('.email-icon');
           const successIcon = currentButton.querySelector('.success-icon');
           const labelElement = currentButton.querySelector('.email-label');
@@ -77,38 +87,31 @@ const {
           const originalLabelText = currentButton.dataset.label;
           const successLabelText = currentButton.dataset.successLabel;
 
-          if (!initialIcon || !successIcon || !labelElement) return;
+          if (!initialIcon || !successIcon) return;
 
-          // 1. Cambiar icono y texto para dar feedback
           initialIcon.classList.add('hidden');
           successIcon.classList.remove('hidden');
-          labelElement.textContent = successLabelText;
 
-          // 2. Volver al estado original después de 2 segundos
+          // Solo actualiza el texto si el label existe
+          if (labelElement && originalLabelText) {
+            labelElement.textContent = successLabelText;
+          }
+
           setTimeout(() => {
             initialIcon.classList.remove('hidden');
             successIcon.classList.add('hidden');
-            labelElement.textContent = originalLabelText;
+            if (labelElement && originalLabelText) {
+              labelElement.textContent = originalLabelText;
+            }
           }, 2000);
 
         }).catch(err => {
-          console.error('Error al copiar el email al portapapeles:', err);
-          // Opcional: Mostrar un mensaje de error al usuario
-          const labelElement = currentButton.querySelector('.email-label');
-          if (labelElement) {
-            const originalLabelText = labelElement.textContent;
-            labelElement.textContent = 'Error!';
-            setTimeout(() => {
-              labelElement.textContent = originalLabelText;
-            }, 2000);
-          }
+          console.error('Error al copiar el email:', err);
         });
       });
     });
   }
 
-  // Ejecutar la función cuando el DOM esté listo por primera vez.
   document.addEventListener('DOMContentLoaded', setupEmailCopyButtons);
-  // Y también después de cada transición de página que hace Astro.
   document.addEventListener('astro:after-swap', setupEmailCopyButtons);
 </script>

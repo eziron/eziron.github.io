@@ -1,0 +1,75 @@
+{
+  "id": "sumoUtfsm2018",
+  "slug": "sumo-v1",
+  "date": "2018-10-01",
+  "codeUrl": "",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Campeón Nacional de Mega Sumo 2018",
+    "description": "Primer lugar en Mega Sumo Autónomo en la UTFSM, logrando la clasificación a Japón con un robot basado en motores brushless y sentando las bases de mi futuro proyecto de título.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Octubre 2018",
+    "detailedDescription": [
+      "Aplicando las lecciones del año anterior, este proyecto se enfocó en la robustez y el rendimiento. Se diseñó un robot nuevo, reemplazando el chasis impreso en 3D por una estructura de aluminio mecanizado para una mayor durabilidad y rigidez.",
+      "Fue mi primera implementación de motores brushless para la tracción, una decisión técnica clave para el rendimiento superior del robot. La electrónica, basada en Arduino, fue optimizada para un control más eficaz.",
+      "El rendimiento aseguró el primer lugar en la competencia nacional, otorgándonos la acreditación para representar a Chile en la All Japan Robot-Sumo Tournament."
+    ],
+    "tags": [
+      "Nacional",
+      "Diseño 3D",
+      "Arduino",
+      "Brushless"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Chasis de Aluminio Mecanizado",
+        "description": "Se migró a un chasis metálico que proporcionó una rigidez y resistencia a impactos muy superior, logrando una ventaja competitiva decisiva."
+      },
+      {
+        "title": "Implementación de Motores Brushless",
+        "description": "Primera aplicación de motores brushless para la tracción, lo que resultó en un aumento significativo de potencia y velocidad."
+      },
+      {
+        "title": "Campeonato Nacional y Clasificación Mundial",
+        "description": "La victoria validó el nuevo enfoque de diseño y aseguró un cupo para la All Japan Robot-Sumo Tournament en Tokio."
+      }
+    ],
+    "challenges": "El principal desafío técnico fue la gestión de los motores brushless con ESCs comerciales. Estos controladores mostraron serias limitaciones en torque de arranque y tiempo de respuesta, lo que requirió una calibración y programación cuidadosa.",
+    "learnings": "Este proyecto consolidó la importancia del diseño mecánico de alta calidad. Sin embargo, el aprendizaje más significativo fue identificar las limitaciones de los ESCs comerciales, demostrando que para explotar su potencial era necesario un controlador superior. Esta conclusión fue determinante y sentó las bases para mi futuro proyecto de título, motivando mi investigación y desarrollo de un controlador de motores personalizado de tipo FOC."
+  },
+  "en": {
+    "title": "2018 National Mega Sumo Champion",
+    "description": "Secured first place at UTFSM, qualifying for Japan with a brushless motor-based robot and laying the groundwork for my future thesis project.",
+    "categoryText": "Competitive Robotics",
+    "dateText": "October 2018",
+    "detailedDescription": [
+      "Applying lessons from the previous year, this project focused on robustness and performance. A new robot was designed, replacing the 3D printed chassis with a machined aluminum structure for enhanced durability.",
+      "It was my first implementation of brushless motors for traction, a key technical decision for the robot's superior performance. The Arduino-based electronics were optimized for more effective control.",
+      "The robot's performance secured first place in the national competition, granting us accreditation to represent Chile at the All Japan Robot-Sumo Tournament."
+    ],
+    "tags": [
+      "National",
+      "3D Design",
+      "Arduino",
+      "Brushless"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Machined Aluminum Chassis",
+        "description": "Migrated to a metal chassis that provided far superior rigidity and impact resistance, achieving a decisive competitive advantage."
+      },
+      {
+        "title": "Brushless Motor Implementation",
+        "description": "First application of brushless motors for traction, resulting in a significant increase in power and speed."
+      },
+      {
+        "title": "National Championship and World Qualification",
+        "description": "The victory validated the new design approach and secured a spot for the All Japan Robot-Sumo Tournament in Tokyo."
+      }
+    ],
+    "challenges": "The main technical challenge was managing brushless motors with commercial ESCs. These controllers exhibited serious limitations in starting torque and response time, which required careful calibration and programming.",
+    "learnings": "This project consolidated the importance of high-quality mechanical design. However, the most significant takeaway was identifying the limitations of commercial ESCs. This conclusion was decisive and laid the foundation for my future thesis project, motivating my research and development of a custom, FOC-type motor controller."
+  }
+}

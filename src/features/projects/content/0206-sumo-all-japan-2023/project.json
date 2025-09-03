@@ -1,0 +1,73 @@
+{
+  "id": "sumoJapan2023",
+  "slug": "asura-kabuto",
+  "date": "2023-12-01",
+  "codeUrl": "",
+  "videoUrl": "https://www.youtube.com/embed/zOOkVbwjxT4",
+  "isFeatured": true,
+  "isHidden": false,
+  "es": {
+    "title": "Mega Sumo \"Asura Kabuto\"",
+    "description": "Diseño y fabricación de un robot Mega Sumo con chasis de aluminio CNC y control FOC, representando a Chile en la \"All Japan Robot-Sumo Tournament\" de 2023.",
+    "categoryText": "Robótica Competitiva",
+    "dateText": "Diciembre 2023",
+    "detailedDescription": [
+      "\"Asura Kabuto\" representa la culminación de años de desarrollo en robótica de sumo. Fue concebido como mi diseño más avanzado, aplicando el conocimiento adquirido sobre control FOC y diseño mecánico.",
+      "El proyecto dio un salto cualitativo gracias al patrocinio de PCBWAY, que permitió fabricar el chasis final en aluminio 7075 mediante CNC. El tren de potencia se basa en dos motores brushless Sunnysky X3120 de 1600W.",
+      "En combate, el robot demostró una fuerza de empuje frontal excepcional. Sin embargo, su velocidad punta, inferior a la de los competidores de élite, se convirtió en una desventaja táctica crucial que resultó en una derrota por flanqueo en la primera ronda."
+    ],
+    "tags": [
+      "Internacional",
+      "Diseño CNC",
+      "Control FOC"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Chasis de Aluminio 7075 CNC",
+        "description": "Estructura principal fabricada en aluminio de grado aeroespacial para maximizar la rigidez y durabilidad, soportando los violentos impactos del sumo de alto nivel."
+      },
+      {
+        "title": "Control FOC de Alta Potencia",
+        "description": "Uso de dos motores brushless de 1600W (Sunnysky X3120) controlados por una ODrive 3.6, para entregar un torque masivo e instantáneo."
+      },
+      {
+        "title": "Estrategia de \"Tanque\"",
+        "description": "Diseño enfocado en la fuerza bruta y la resistencia, utilizando una matriz de imanes de neodimio para maximizar la adherencia y anular el empuje rival."
+      }
+    ],
+    "challenges": "El principal desafío técnico fue adaptar la Odrive 3.6 para soportar los picos de corriente de los motores sin sobrecalentarse. En competencia, el reto fue táctico: la baja velocidad punta (aprox. 3 m/s vs 6-8 m/s de la élite) hacía al robot vulnerable a ser flanqueado por oponentes más ágiles.",
+    "learnings": "Esta experiencia demostró que la fuerza bruta por sí sola no es suficiente en la élite. Fue un aprendizaje clave sobre el 'meta-juego' competitivo: un diseño hiper-especializado en fuerza puede ser neutralizado por la agilidad, demostrando que el equilibrio óptimo entre torque y velocidad es fundamental."
+  },
+  "en": {
+    "title": "Mega Sumo \"Asura Kabuto\"",
+    "description": "Design and fabrication of a high-performance Mega Sumo robot with a CNC aluminum chassis and FOC control, representing Chile at the 2023 \"All Japan Robot-Sumo Tournament\".",
+    "categoryText": "Competitive Robotics",
+    "dateText": "December 2023",
+    "detailedDescription": [
+      "\"Asura Kabuto\" represents the culmination of years of development in sumo robotics. It was conceived as my most advanced design, applying knowledge acquired about FOC control and mechanical design.",
+      "The project took a qualitative leap thanks to a sponsorship from PCBWAY, allowing the final chassis to be manufactured in 7075 aluminum via CNC. The powertrain is based on two 1600W Sunnysky X3120 brushless motors.",
+      "In combat, the robot demonstrated exceptional frontal pushing force. However, its top speed, lower than elite competitors, became a crucial tactical disadvantage that resulted in a defeat by flanking in the first round."
+    ],
+    "tags": [
+      "International",
+      "CNC Design",
+      "FOC Control"
+    ],
+    "keyFeatures": [
+      {
+        "title": "7075 CNC Aluminum Chassis",
+        "description": "Main structure made of aerospace-grade aluminum to maximize rigidity and durability, withstanding the violent impacts of high-level sumo."
+      },
+      {
+        "title": "High-Power FOC Control",
+        "description": "Use of two 1600W brushless motors (Sunnysky X3120) controlled by an ODrive 3.6, to deliver massive, instantaneous torque."
+      },
+      {
+        "title": "\"Tank\" Strategy",
+        "description": "Design focused on brute force and endurance, using an array of neodymium magnets to maximize grip and nullify the opponent's push."
+      }
+    ],
+    "challenges": "The main technical challenge was adapting the ODrive 3.6 to withstand the motor's current spikes. In competition, the challenge was tactical: the low top speed (approx. 3 m/s vs 6-8 m/s of the elite) made the robot vulnerable to being outflanked.",
+    "learnings": "This experience showed that brute force alone is not enough at the elite level. It was a key lesson about the competitive 'meta-game': a hyper-specialized design focused on strength can be neutralized by agility, demonstrating that the optimal balance between torque and speed is fundamental."
+  }
+}

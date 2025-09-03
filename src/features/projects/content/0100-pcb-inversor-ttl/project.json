@@ -1,0 +1,113 @@
+{
+  "id": "pcbInversor",
+  "slug": "inversor-ttl",
+  "date": "2022-10-18",
+  "codeUrl": "https://github.com/eziron/PCBs/tree/master/inversor",
+  "videoUrl": "",
+  "isFeatured": false,
+  "isHidden": false,
+  "es": {
+    "title": "Módulo Inversor de Señal TTL con MAX3232",
+    "description": "Diseño y fabricación de un módulo reutilizable que invierte señales lógicas TTL, solucionando la incompatibilidad de comunicación con protocolos como S.BUS de FrSky.",
+    "categoryText": "Diseño de PCB",
+    "dateText": "Octubre 2022",
+    "detailedDescription": [
+      "Este proyecto nació de una necesidad recurrente en mis proyectos, la incompatibilidad entre la lógica de señal UART estándar de los microcontroladores y la lógica invertida utilizada por los receptores de radiocontrol FrSky.",
+      "La primera implementación de este circuito inversor, basado en el integrado MAX3232, se realizó directamente en la placa principal del robot para el 'Rodeo de Robótica'. Sin embargo, al darme cuenta de que esta sería una solución necesaria en futuros proyectos, decidí evolucionar el diseño.",
+      "Para el robot Battlebot y con la visión de utilizarlo en futuros proyectos, rediseñé el circuito como un módulo independiente y estandarizado. Mandé a fabricar un lote de 10 unidades ya ensambladas a JLCPCB, creando un componente 'plug-and-play' que podría integrar fácilmente en cualquier proyecto. Posteriormente, este módulo fue utilizado en el robot de sumo 'Asura Kabuto', simplificando notablemente el diseño de su placa de control principal."
+    ],
+    "tags": [
+      "Soldadura SMD",
+      "UART",
+      "S.BUS"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Solución para Lógica Invertida",
+        "description": "Permite la correcta interpretación de las señales de protocolos como S.BUS y S.PORT, actuando como un puente de comunicación indispensable entre el microcontrolador y el receptor."
+      },
+      {
+        "title": "Diseño Modular y Reutilizable",
+        "description": "Evolucionó de un circuito integrado a un módulo independiente fabricado en un pequeño lote, optimizando el tiempo de diseño y la complejidad en proyectos posteriores."
+      },
+      {
+        "title": "Robusto y Fiable",
+        "description": "Basado en el integrado MAX3232, que ofrece hasta 4 canales de comunicación y una alta protección contra descargas electrostáticas, garantizando una conexión segura."
+      }
+    ],
+    "galleryImages": {
+      "main": {
+        "alt": "Varios módulos inversores TTL con MAX3232 ensamblados",
+        "caption": "Lote de módulos fabricados con el servicio de PCBA de JLCPCB, listos para ser integrados."
+      },
+      "gal1": {
+        "alt": "Esquemático del circuito inversor TTL",
+        "caption": "Diagrama esquemático mostrando las conexiones del MAX3232, los capacitores de la bomba de carga y los conectores."
+      },
+      "gal2": {
+        "alt": "Vista superior del layout de la PCB del inversor TTL",
+        "caption": "Layout de componentes en la capa superior de la PCB, con serigrafía indicando la dirección de las señales."
+      },
+      "gal3": {
+        "alt": "Vista de la serigrafía superior de la PCB del inversor TTL",
+        "caption": "Serigrafía de la capa superior, destacando las etiquetas de los pines TTL e INV."
+      },
+      "gal4": {
+        "alt": "Vista de las capas de la PCB del inversor TTL",
+        "caption": "Diseño de la placa mostrando las pistas de cobre de la capa superior e inferior."
+      }
+    }
+  },
+  "en": {
+    "title": "TTL Signal Inverter Module with MAX3232",
+    "description": "Design and fabrication of a reusable module that inverts TTL logic signals, solving communication incompatibility with protocols like FrSky's S.BUS.",
+    "categoryText": "PCB Design",
+    "dateText": "October 2022",
+    "detailedDescription": [
+      "This project stemmed from a recurring need in my projects, the incompatibility between the standard UART signal logic of microcontrollers and the inverted logic used by FrSky radio control receivers.",
+      "The first implementation of this inverter circuit, based on the MAX3232 IC, was integrated directly onto the main board of the robot for the 'Rodeo de Robótica'. However, realizing that this would be a necessary solution for future projects, I decided to evolve the design.",
+      "For the Battlebot robot and with future projects in mind, I redesigned the circuit as a standalone, standardized module. I had a batch of 10 assembled units manufactured by JLCPCB, creating a 'plug-and-play' component that could be easily integrated into any project. This module was later used in the 'Asura Kabuto' sumo robot, significantly simplifying the design of its main control board."
+    ],
+    "tags": [
+      "SMD Soldering",
+      "UART",
+      "S.BUS"
+    ],
+    "keyFeatures": [
+      {
+        "title": "Solution for Inverted Logic",
+        "description": "Enables the correct interpretation of signals from protocols like S.BUS and S.PORT, acting as an indispensable communication bridge between the microcontroller and the receiver."
+      },
+      {
+        "title": "Modular and Reusable Design",
+        "description": "It evolved from an integrated circuit to a standalone module manufactured in a small batch, optimizing design time and complexity in subsequent projects."
+      },
+      {
+        "title": "Robust and Reliable",
+        "description": "Based on the MAX3232 IC, it offers up to 4 communication channels and high protection against electrostatic discharge, ensuring a secure connection."
+      }
+    ],
+    "galleryImages": {
+      "main": {
+        "alt": "Several assembled TTL inverter modules with MAX3232",
+        "caption": "Batch of modules manufactured using JLCPCB's PCBA service, ready for integration."
+      },
+      "gal1": {
+        "alt": "Schematic of the TTL inverter circuit",
+        "caption": "Schematic diagram showing the MAX3232 connections, charge pump capacitors, and connectors."
+      },
+      "gal2": {
+        "alt": "Top view of the TTL inverter PCB layout",
+        "caption": "Component layout on the top layer of the PCB, with silkscreen indicating signal direction."
+      },
+      "gal3": {
+        "alt": "Top silkscreen view of the TTL inverter PCB",
+        "caption": "Top layer silkscreen highlighting the TTL and INV pin labels."
+      },
+      "gal4": {
+        "alt": "Layer view of the TTL inverter PCB",
+        "caption": "Board design showing the copper traces of the top and bottom layers."
+      }
+    }
+  }
+}
